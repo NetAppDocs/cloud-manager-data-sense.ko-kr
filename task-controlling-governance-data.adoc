@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-data.html 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어할 수 있습니다. Cloud Data Sense는 오래된 데이터, 비업무용 데이터, 중복 파일 및 시스템의 대용량 파일을 식별하므로 일부 파일을 제거하거나 더 저렴한 오브젝트 스토리지에 계층화할 것인지 결정할 수 있습니다. 
+---
+= 조직에 저장된 데이터에 대한 거버넌스 세부 정보 보기
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어할 수 있습니다. Cloud Data Sense는 오래된 데이터, 비업무용 데이터, 중복 파일 및 시스템의 대용량 파일을 식별하므로 일부 파일을 제거하거나 더 저렴한 오브젝트 스토리지에 계층화할 것인지 결정할 수 있습니다.
+
+또한, 데이터를 사내 위치에서 클라우드로 마이그레이션하려는 경우 데이터의 크기와 데이터를 이동하기 전에 중요한 정보가 포함되어 있는지 여부를 확인할 수 있습니다.
+
+
+
+== Governance 대시보드
+
+Governance 대시보드는 스토리지 리소스에 저장된 데이터와 관련된 효율성을 높이고 비용을 제어할 수 있는 정보를 제공합니다.
+
+image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense Governance 대시보드 스크린샷"]
+
+
+
+=== 기회 저장
+
+삭제할 데이터가 있는지 또는 더 저렴한 오브젝트 스토리지에 계층화해야 하는지 여부를 확인하려면 _Saving Opportunities_ 영역의 항목을 조사하십시오. 조사 페이지에서 필터링된 결과를 보려면 각 항목을 클릭합니다.
+
+* * 오래된 데이터 * - 3년 전에 마지막으로 수정된 데이터
+* * 비 비즈니스 데이터 * - 범주 또는 파일 형식에 따라 업무와 관련이 없는 것으로 간주되는 데이터 여기에는 다음이 포함됩니다.
++
+** 애플리케이션 데이터
+** 오디오
+** 실행 파일
+** 이미지
+** 로그
+** 비디오
+** 기타(일반 "기타" 범주)
+
+
+* * 중복 파일 * - 스캔할 데이터 원본의 다른 위치에 중복되는 파일입니다. link:task-controlling-private-data.html#viewing-all-duplicated-files["어떤 유형의 중복 파일이 표시되는지 확인합니다"].
+
+
+
+
+=== 결과 수가 가장 많은 정책입니다
+
+조사 페이지에 결과를 표시하려면 _Policy_영역에서 정책 이름을 클릭합니다. 사용 가능한 모든 정책 목록을 보려면 * 모두 보기 * 를 클릭합니다.
+
+을 클릭합니다 link:task-managing-highlights.html#controlling-your-data-using-policies["여기"^] 정책에 대해 자세히 알아보십시오.
+
+
+
+=== 데이터 개요
+
+스캔 중인 모든 데이터의 간단한 개요 버튼을 클릭하여 모든 작업 환경 및 데이터 소스에 대한 사용 용량, 데이터 수명, 데이터 크기 및 파일 유형이 포함된 전체 데이터 매핑 보고서를 다운로드합니다. 을 참조하십시오 link:task-generating-compliance-reports.html#data-mapping-report["데이터 매핑 보고서"] 을 참조하십시오.
+
+
+
+=== 데이터 민감도에 따라 나열된 상위 데이터 리포지토리
+
+민감도 수준별 상위 데이터 리포지토리_영역에는 가장 중요한 항목이 포함된 상위 4개의 데이터 리포지토리(작업 환경 및 데이터 소스)가 나열됩니다. 각 작업 환경의 막대 차트는 다음과 같이 구분됩니다.
+
+* 비개인 데이터
+* 개인 데이터
+* 민감한 개인 데이터
+
+
+각 섹션 위로 마우스를 가져가면 각 범주의 총 항목 수를 볼 수 있습니다.
+
+조사 페이지에서 필터링된 결과를 보려면 각 영역을 클릭하여 더 자세히 조사할 수 있습니다.
+
+
+
+=== 열기 권한 유형별로 나열된 데이터
+
+Open Permissions_영역에는 스캔되는 모든 파일에 대해 존재하는 각 권한 유형의 백분율이 표시됩니다. 차트에는 다음과 같은 유형의 사용 권한이 표시됩니다.
+
+* 개방 액세스 없음
+* 조직에 열기
+* 공개
+* 알 수 없는 액세스
+
+
+각 섹션 위로 마우스를 가져가면 각 범주의 총 파일 수를 볼 수 있습니다. 조사 페이지에서 필터링된 결과를 보려면 각 영역을 클릭하여 더 자세히 조사할 수 있습니다.
+
+
+
+=== 데이터 기간 및 데이터 크기 그래프
+
+Age_and_Size_graphs의 항목을 조사하여 삭제해야 할 데이터가 있는지 또는 더 저렴한 오브젝트 스토리지에 계층화해야 하는지 여부를 확인해야 할 수 있습니다.
+
+차트의 한 지점 위로 마우스를 가져가면 해당 범주의 데이터 사용 기간 또는 크기에 대한 세부 정보를 볼 수 있습니다. 해당 기간 또는 크기 범위로 필터링된 모든 파일을 보려면 클릭합니다.
+
+* * 데이터 그래프의 기간 * - 데이터가 생성된 시간, 마지막으로 액세스한 시간 또는 마지막으로 수정된 시간을 기준으로 데이터를 분류합니다.
+* * 데이터 그래프 크기 * - 크기에 따라 데이터를 분류합니다.
+
+
+
+
+=== 가장 많이 식별된 데이터 분류
+
+Classification_area는 가장 많이 식별된 목록을 제공합니다 link:task-controlling-private-data.html#viewing-files-by-categories["범주"^], link:task-controlling-private-data.html#viewing-files-by-file-types["파일 형식"^], 및 link:task-managing-highlights.html#categorizing-your-data-using-aip-labels["AIP 레이블"^] 스캔 데이터.
+
+
+
+==== 범주
+
+범주는 보유한 정보의 유형을 표시하여 데이터의 상태를 이해하는 데 도움이 됩니다. 예를 들어 "이력서" 또는 "직원 계약"과 같은 범주에는 중요한 데이터가 포함될 수 있습니다. 결과를 조사할 때 직원 계약이 안전하지 않은 위치에 저장되어 있는 것을 발견할 수 있습니다. 그런 다음 해당 문제를 해결할 수 있습니다.
+
+을 참조하십시오 link:task-controlling-private-data.html#viewing-files-by-categories["범주별로 파일 보기"^] 를 참조하십시오.
+
+
+
+==== 파일 형식
+
+파일 형식을 검토하면 특정 파일 형식이 올바르게 저장되지 않은 것을 발견할 수 있으므로 중요한 데이터를 제어하는 데 도움이 됩니다.
+
+을 참조하십시오 link:task-controlling-private-data.html#viewing-files-by-file-types["파일 형식 보기"^] 를 참조하십시오.
+
+
+
+==== AIP 레이블
+
+AIP(Azure Information Protection)에 가입한 경우 콘텐츠에 레이블을 적용하여 문서와 파일을 분류하고 보호할 수 있습니다. 파일에 할당된 가장 많이 사용되는 AIP 레이블을 검토하면 파일에서 가장 많이 사용되는 레이블을 확인할 수 있습니다.
+
+을 참조하십시오 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP 레이블"^] 를 참조하십시오.

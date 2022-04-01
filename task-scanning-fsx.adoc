@@ -1,0 +1,221 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-fsx.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
+summary: 클라우드 데이터 센스를 사용하여 ONTAP 볼륨에 대한 Amazon FSx 스캔을 시작하려면 몇 단계를 완료하십시오. 
+---
+= ONTAP용 Amazon FSx에 대한 클라우드 데이터 센스를 시작해 보십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클라우드 데이터 센스를 사용하여 ONTAP 볼륨에 대한 Amazon FSx 스캔을 시작하려면 몇 단계를 완료하십시오.
+
+
+
+== 시작하기 전에
+
+* 데이터 센스를 구축 및 관리하려면 AWS에 액티브 커넥터가 필요합니다.
+* 작업 환경을 생성할 때 선택한 보안 그룹은 Cloud Data Sense 인스턴스의 트래픽을 허용해야 합니다. ONTAP용 FSx 파일 시스템에 연결된 ENI를 사용하여 관련 보안 그룹을 찾은 다음 AWS 관리 콘솔을 사용하여 편집할 수 있습니다.
++
+link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux 인스턴스용 AWS 보안 그룹"]
+
++
+link:https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows 인스턴스용 AWS 보안 그룹"]
+
++
+link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS의 탄력적인 네트워크 인터페이스(ENI)"]
+
+
+
+
+
+== 빠른 시작
+
+다음 단계를 따라 빠르게 시작하거나 아래로 스크롤하여 자세한 내용을 확인하십시오.
+
+[role="quick-margin-para"]
+ONTAP 볼륨에 대해 FSx를 스캔하기 전에 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["볼륨이 구성된 FSx 작업 환경이 있어야 합니다"^].
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["Cloud Manager에 클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
+
+[role="quick-margin-para"]
+데이터 감지 * 를 클릭하고 * 구성 * 탭을 선택한 다음 특정 작업 환경의 볼륨에 대한 규정 준수 스캔을 활성화합니다.
+
+[role="quick-margin-para"]
+이제 Cloud Data Sense가 활성화되었으므로 모든 볼륨에 액세스할 수 있는지 확인하십시오.
+
+* 클라우드 데이터 감지 인스턴스에는 ONTAP 서브넷을 위해 각 FSx에 대한 네트워크 연결이 필요합니다.
+* 데이터 감지 인스턴스에 대해 다음 포트가 열려 있는지 확인합니다.
++
+** NFS – 포트 111 및 2049의 경우
+** CIFS – 포트 139 및 445의 경우
+
+
+* NFS 볼륨 엑스포트 정책은 데이터 감지 인스턴스에서 액세스할 수 있어야 합니다.
+* CIFS 볼륨을 검색하려면 Data Sense에 Active Directory 자격 증명이 필요합니다. + * Compliance * > * Configuration * > * Edit CIFS Credentials * 를 클릭하고 자격 증명을 입력합니다.
+
+
+[role="quick-margin-para"]
+스캔할 볼륨을 선택하거나 선택 취소하면 Cloud Data Sense에서 스캔을 시작하거나 중지합니다.
+
+
+
+== 검사할 ONTAP 파일 시스템용 FSx 검색
+
+스캔할 ONTAP 파일 시스템용 FSx가 Cloud Manager에 작업 환경으로 설정되어 있지 않은 경우 이 파일을 캔버스에 추가할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/task-creating-fsx-working-environment.html["Cloud Manager에서 ONTAP 파일 시스템용 FSx를 검색 또는 생성하는 방법을 확인하십시오"^].
+
+
+
+== Cloud Data Sense 인스턴스 구축
+
+link:task-deploy-cloud-compliance.html["클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
+
+AWS용 커넥터 및 스캔하려는 FSx 볼륨과 동일한 AWS 네트워크에 데이터 센스를 구축해야 합니다.
+
+* 참고: * FSx 볼륨을 스캔할 때는 현재 온-프레미스 위치에 클라우드 데이터 감지 배포를 지원하지 않습니다.
+
+데이터 감지 소프트웨어로 업그레이드하는 것은 인스턴스에 인터넷 연결이 있는 한 자동으로 수행됩니다.
+
+
+
+== 작업 환경에서 클라우드 데이터 센스를 활성화합니다
+
+ONTAP 볼륨에 대해 FSx에 대한 클라우드 데이터 센스를 활성화할 수 있습니다.
+
+. Cloud Manager 상단에서 * 데이터 감지 * 를 클릭한 다음 * 구성 * 탭을 선택합니다.
++
+image:screenshot_fsx_scanning_activate.png["Cloud Data Sense 인스턴스를 구축한 직후 구성 탭의 스크린샷"]
+
+. 각 작업 환경의 볼륨을 스캔할 방법을 선택합니다. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["매핑 및 분류 스캔에 대해 알아봅니다"]:
++
+** 모든 볼륨을 매핑하려면 * Map All Volumes * 를 클릭합니다.
+** 모든 볼륨을 매핑하고 분류하려면 * 모든 볼륨 매핑 및 분류 * 를 클릭합니다.
+** 각 볼륨에 대한 스캔을 사용자 정의하려면 * 를 클릭하거나 각 볼륨에 대한 스캐닝 유형을 선택한 다음 매핑 및/또는 분류할 볼륨을 선택합니다.
++
+을 참조하십시오 <<Enabling and disabling compliance scans on volumes,볼륨에서 규정 준수 검사 활성화 및 비활성화>> 를 참조하십시오.
+
+
+
+. 확인 대화 상자에서 * Approve * (승인 *)를 클릭하여 데이터 센스에서 체적 스캔을 시작하도록 합니다.
+
+
+Cloud Data Sense는 작업 환경에서 선택한 볼륨을 스캔하기 시작합니다. Cloud Data Sense에서 초기 스캔을 마치면 Compliance 대시보드에서 결과를 얻을 수 있습니다. 소요되는 시간은 데이터 양에 따라 다릅니다. 몇 분 또는 몇 시간이 걸릴 수도 있습니다.
+
+
+
+== Cloud Data Sense가 볼륨에 액세스할 수 있는지 확인
+
+네트워킹, 보안 그룹 및 엑스포트 정책을 확인하여 Cloud Data Sense가 볼륨에 액세스할 수 있는지 확인하십시오.
+
+CIFS 볼륨에 액세스할 수 있도록 CIFS 자격 증명을 사용하여 데이터 센스를 제공해야 합니다.
+
+.단계
+. Configuration_페이지에서 * View Details * 를 클릭하여 상태를 검토하고 오류를 수정합니다.
++
+예를 들어, 다음 이미지는 Data Sense 인스턴스와 볼륨 간의 네트워크 연결 문제로 인해 Cloud Data Sense에서 스캔할 수 없는 볼륨을 보여 줍니다.
+
++
+image:screenshot_fsx_scanning_no_network_error.png["데이터 센스와 볼륨 사이의 네트워크 연결로 인해 스캔 중이 아닌 볼륨을 보여주는 스캔 구성의 세부 정보 보기 페이지 스크린샷."]
+
+. 클라우드 데이터 감지 인스턴스와 ONTAP용 FSx 볼륨을 포함하는 각 네트워크 사이에 네트워크 연결이 있는지 확인합니다.
++
+
+NOTE: ONTAP용 FSx의 경우 Cloud Data Sense는 Cloud Manager와 동일한 영역에서만 볼륨을 스캔할 수 있습니다.
+
+. 다음 포트가 Data Sense 인스턴스에 열려 있는지 확인합니다.
++
+** NFS – 포트 111 및 2049의 경우
+** CIFS – 포트 139 및 445의 경우
+
+
+. NFS 볼륨 내보내기 정책에 데이터 감지 인스턴스의 IP 주소가 포함되어 각 볼륨의 데이터에 액세스할 수 있는지 확인합니다.
+. CIFS를 사용하는 경우 CIFS 볼륨을 스캔할 수 있도록 Active Directory 자격 증명을 사용하여 데이터 센스를 제공합니다.
++
+.. Cloud Manager 상단에서 * 데이터 감지 * 를 클릭합니다.
+.. Configuration * 탭을 클릭합니다.
+.. 각 작업 환경에서 * CIFS 자격 증명 편집 * 을 클릭하고 Data Sense가 시스템의 CIFS 볼륨을 액세스하는 데 필요한 사용자 이름과 암호를 입력합니다.
++
+자격 증명은 읽기 전용일 수 있지만 관리자 자격 증명을 제공하면 Data Sense에서 상승된 사용 권한이 필요한 모든 데이터를 읽을 수 있습니다. 자격 증명은 Cloud Data Sense 인스턴스에 저장됩니다.
+
++
+자격 증명을 입력한 후 모든 CIFS 볼륨이 성공적으로 인증되었다는 메시지가 표시됩니다.
+
+
+
+
+
+
+
+== 볼륨에서 규정 준수 검사 활성화 및 비활성화
+
+구성 페이지에서 언제든지 작업 환경에서 매핑 전용 스캔 또는 매핑 및 분류 스캔을 시작하거나 중지할 수 있습니다. 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 변경할 수도 있습니다. 모든 볼륨을 검사하는 것이 좋습니다.
+
+image:screenshot_volume_compliance_selection.png["개별 볼륨 스캔을 활성화 또는 비활성화할 수 있는 구성 페이지의 스크린 샷"]
+
+[cols="45,45"]
+|===
+| 대상: | 방법은 다음과 같습니다. 
+
+
+| 볼륨에서 매핑 전용 스캔을 활성화합니다 | 볼륨 영역에서 * Map * 을 클릭합니다 
+
+
+| 볼륨에서 전체 스캔을 활성화합니다 | 볼륨 영역에서 * Map & Classify * 를 클릭합니다 
+
+
+| 볼륨에서 스캔을 비활성화합니다 | 볼륨 영역에서 * Off * 를 클릭합니다 
+
+
+|  |  
+
+
+| 모든 볼륨에서 매핑 전용 스캔을 활성화합니다 | 제목 영역에서 * Map * 을 클릭합니다 
+
+
+| 모든 볼륨에서 전체 스캔을 활성화합니다 | 제목 영역에서 * 지도 및 분류 * 를 클릭합니다 
+
+
+| 모든 볼륨에서 스캔을 비활성화합니다 | 제목 영역에서 * Off * 를 클릭합니다 
+|===
+
+NOTE: 작업 환경에 추가된 새 볼륨은 머리글 영역에서 * Map * 또는 * Map & Classify * 설정을 설정한 경우에만 자동으로 스캔됩니다. 제목 영역에서 * 사용자 정의 * 또는 * 끄기 * 로 설정하면 작업 환경에 추가한 새 볼륨마다 매핑 및/또는 전체 스캔을 활성화해야 합니다.
+
+
+
+== 데이터 보호 볼륨을 검색하는 중입니다
+
+기본적으로 데이터 보호(DP) 볼륨은 외부에서 노출되지 않고 Cloud Data Sense에서 액세스할 수 없기 때문에 스캔되지 않습니다. ONTAP 파일 시스템용 FSx의 SnapMirror 작업을 위한 대상 볼륨입니다.
+
+처음에 볼륨 목록은 이러한 볼륨을 _Type_* DP*로 식별하며 _Status_* Not Scanning* 및 _Required Action_* DP 볼륨에 대한 액세스 사용*.
+
+image:screenshot_cloud_compliance_dp_volumes.png["데이터 보호 볼륨을 스캔하도록 선택할 수 있는 DP 볼륨에 대한 액세스 활성화 버튼이 표시된 스크린샷"]
+
+이러한 데이터 보호 볼륨을 스캔하려는 경우:
+
+. 페이지 맨 위에서 * DP 볼륨에 대한 액세스 활성화 * 를 클릭합니다.
+. 확인 메시지를 검토하고 * DP 볼륨에 대한 액세스 활성화 * 를 다시 클릭합니다.
++
+** 소스 FSx for ONTAP 파일 시스템에서 처음에 NFS 볼륨으로 생성된 볼륨이 활성화됩니다.
+** 소스 FSx for ONTAP 파일 시스템에서 처음에 CIFS 볼륨으로 생성된 볼륨을 사용하려면 CIFS 자격 증명을 입력하여 해당 DP 볼륨을 스캔해야 합니다. Cloud Data Sense가 CIFS 볼륨을 스캔할 수 있도록 Active Directory 자격 증명을 이미 입력한 경우 해당 자격 증명을 사용하거나 다른 관리자 자격 증명 세트를 지정할 수 있습니다.
++
+image:screenshot_compliance_dp_cifs_volumes.png["CIFS 데이터 보호 볼륨을 설정하기 위한 두 가지 옵션의 스크린샷"]
+
+
+
+. 스캔할 각 DP 볼륨을 활성화합니다 <<Enabling and disabling compliance scans on volumes,다른 볼륨을 활성화해도 마찬가지입니다>>.
+
+
+활성화되면 Cloud Data Sense는 스캔을 위해 활성화된 각 DP 볼륨에서 NFS 공유를 생성합니다. 공유 내보내기 정책은 데이터 감지 인스턴스에서만 액세스를 허용합니다.
+
+* 참고: * 처음에 DP 볼륨에 대한 액세스를 설정한 후 나중에 추가할 때 CIFS 데이터 보호 볼륨이 없는 경우 구성 페이지 맨 위에 * CIFS DP에 대한 액세스 활성화 * 버튼이 나타납니다. 이 버튼을 클릭하고 CIFS 자격 증명을 추가하여 이러한 CIFS DP 볼륨에 대한 액세스를 설정합니다.
+
+
+NOTE: Active Directory 자격 증명은 첫 번째 CIFS DP 볼륨의 스토리지 VM에만 등록되므로 해당 SVM의 모든 DP 볼륨이 검사됩니다. 다른 SVM에 상주하는 볼륨에 Active Directory 자격 증명이 등록되지 않으므로 DP 볼륨이 검색되지 않습니다.

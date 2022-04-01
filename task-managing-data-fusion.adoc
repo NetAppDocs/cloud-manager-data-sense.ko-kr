@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-managing-data-fusion.html 
+keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
+summary: '"Data Fusion"라고 하는 기능을 사용하면 조직의 데이터를 검사하여 데이터베이스에서 고유한 식별자가 파일 또는 기타 데이터베이스에서 검색되는지 여부를 확인할 수 있습니다. 기본적으로 클라우드 데이터 감지 스캔에서 식별된 "개인 데이터" 목록을 만듭니다. 이렇게 하면 잠재적으로 중요한 데이터가 모든 파일에 있는 위치를 전체적으로 파악할 수 있습니다.' 
+---
+= Data Fusion를 사용하여 개인 데이터 식별자를 추가합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Fusion _ 라는 기능을 사용하면 조직의 데이터를 스캔하여 데이터베이스의 고유 식별자가 파일 또는 기타 데이터베이스에서 검색되는지 여부를 확인할 수 있습니다. 기본적으로 클라우드 데이터 감지 스캔에서 식별된 "개인 데이터" 목록을 만듭니다. 이렇게 하면 잠재적으로 중요한 데이터가 _ all_your 파일에 있는 위치를 전체적으로 파악할 수 있습니다.
+
+자체 데이터베이스를 스캔하기 때문에 데이터가 저장된 언어가 향후 Cloud Data Sense 스캔에서 데이터를 식별하는 데 사용됩니다.
+
+
+NOTE: 이 섹션에 설명된 기능은 데이터 소스에서 전체 분류 검사를 수행하도록 선택한 경우에만 사용할 수 있습니다. 매핑 전용 스캔이 있는 데이터 원본은 파일 수준 세부 정보를 표시하지 않습니다.
+
+
+
+== 데이터베이스에서 사용자 지정 개인 데이터 식별자를 만듭니다
+
+데이터베이스 테이블에서 특정 열 또는 열을 선택하여 클라우드 데이터 센스가 해당 스캔에서 찾을 추가 식별자를 선택할 수 있습니다. 예를 들어, 아래 다이어그램은 Data Fusion를 사용하여 볼륨, 버킷 및 데이터베이스를 검사하여 Oracle 데이터베이스에서 모든 고객 ID를 확인하는 방법을 보여 줍니다.
+
+image:diagram_compliance_data_fusion.png["데이터베이스의 콘텐츠를 원본으로 사용하여 동일한 데이터가 포함된 파일을 식별하는 방법을 보여 주는 다이어그램입니다."]
+
+보시다시피, 2개의 볼륨과 1개의 S3 버킷에서 2개의 고유 고객 ID가 발견되었습니다. 데이터베이스 테이블의 모든 일치 항목도 식별됩니다.
+
+이(가) 있어야 합니다 link:task-scanning-databases.html#adding-the-database-server["하나 이상의 데이터베이스 서버가 추가되었습니다"^] 클라우드 데이터 센스에 데이터를 추가하려면 먼저 Fusion 소스를 추가해야 합니다.
+
+. 구성 페이지에서 소스 데이터가 있는 데이터베이스에서 * 데이터 관리 Fusion * 를 클릭합니다.
++
+image:screenshot_compliance_manage_data_fusion.png["데이터 관리 Fusion 버튼을 선택하여 소스 열을 추가하는 스크린샷"]
+
+. 다음 페이지에서 * 데이터 Fusion 소스 추가 * 를 클릭합니다.
+. Add Data Fusion Source _ 페이지에서 다음을 수행합니다.
++
+.. 드롭다운 메뉴에서 데이터베이스 스키마를 선택합니다.
+.. 해당 스키마에 테이블 이름을 입력합니다.
+.. 사용할 고유 식별자가 포함된 열 또는 열을 입력합니다.
++
+여러 열을 추가할 때는 각 열 이름 또는 표 보기 이름을 별도의 줄에 입력합니다.
+
++
+image:screenshot_compliance_add_data_fusion.png["Data Fusion 소스의 스키마, 테이블 및 열을 식별하는 스크린샷."]
+
+
+
+. 데이터 Fusion 소스 추가 * 를 클릭합니다.
++
+Data Fusion 인벤토리 페이지에는 클라우드 데이터 센스를 위해 구성한 데이터베이스 소스 열이 표시됩니다.
+
++
+image:screenshot_compliance_data_fusion_list.png["Data Fusion로 구성한 모든 데이터 원본 참조의 스크린샷"]
+
+
+
+다음 검사 후 결과에는 "개인" 결과 섹션의 대시보드 및 "개인 데이터" 필터의 조사 페이지에 이 새로운 정보가 포함됩니다. 추가한 각 원본 열이 필터 목록에 "Table.Column"(예: "Customers.Customer ID")로 나타납니다.
+
+
+
+== Data Fusion 소스를 삭제합니다
+
+특정 Data Fusion 소스를 사용하여 파일을 검색하지 않기로 결정한 경우 Data Fusion 인벤토리 페이지에서 소스 행을 선택하고 * Delete Data Fusion Source * 를 클릭할 수 있습니다.
+
+image:screenshot_compliance_delete_data_fusion.png["데이터 Fusion 소스를 제거하는 방법을 보여 주는 스크린샷"]

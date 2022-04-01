@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-onedrive.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
+summary: Cloud Data Sense를 사용하여 사용자의 OneDrive 폴더에 있는 파일을 스캔하려면 몇 단계를 완료하십시오. 
+---
+= OneDrive 계정 스캔 중
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense를 사용하여 사용자의 OneDrive 폴더에 있는 파일을 스캔하려면 몇 단계를 완료하십시오.
+
+
+
+== 빠른 시작
+
+다음 단계를 따라 빠르게 시작하거나 나머지 섹션을 아래로 스크롤하여 자세한 내용을 확인하십시오.
+
+[role="quick-margin-para"]
+OneDrive 계정에 로그인할 수 있는 관리자 자격 증명이 있는지 확인합니다.
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
+
+[role="quick-margin-para"]
+관리자 사용자 자격 증명을 사용하여 액세스할 OneDrive 계정에 로그인하여 새 작업 환경으로 추가합니다.
+
+[role="quick-margin-para"]
+스캔할 OneDrive 계정의 사용자 목록을 추가하고 스캔 유형을 선택합니다. 한 번에 최대 100명의 사용자를 추가할 수 있습니다.
+
+
+
+== OneDrive 요구 사항 검토
+
+Cloud Data Sense를 활성화하기 전에 다음 사전 요구 사항을 검토하여 지원되는 구성이 있는지 확인하십시오.
+
+* 모든 사용자 파일에 대한 읽기 권한을 제공하는 비즈니스용 OneDrive 계정에 대한 관리자 로그인 자격 증명이 있어야 합니다.
+* 스캔할 OneDrive 폴더가 있는 모든 사용자의 전자 메일 주소 목록이 선으로 구분되어 있어야 합니다.
+
+
+
+
+== Cloud Data Sense 인스턴스 구축
+
+이미 구축된 인스턴스가 없으면 Cloud Data Sense를 구축하십시오.
+
+데이터 센스 가능 link:task-deploy-cloud-compliance.html["클라우드에 구축"^] 또는 link:task-deploy-compliance-onprem.html["인터넷 액세스가 가능한 사내 위치"^].
+
+데이터 감지 소프트웨어로 업그레이드하는 것은 인스턴스에 인터넷 연결이 있는 한 자동으로 수행됩니다.
+
+데이터 센스도 가능합니다 link:task-deploy-compliance-dark-site.html["인터넷에 액세스할 수 없는 온프레미스 위치에 배포되었습니다"^]. 그러나 OneDrive 파일을 스캔하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["필요한 엔드포인트 목록은 여기 를 참조하십시오"].
+
+
+
+== OneDrive 계정 추가
+
+사용자 파일이 있는 OneDrive 계정을 추가합니다.
+
+.단계
+. 작업 환경 구성 페이지에서 * 데이터 소스 추가 * > * OneDrive 계정 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_add_onedrive_button.png["OneDrive 추가 단추를 클릭할 수 있는 스캔 구성 페이지의 스크린샷."]
+
+. OneDrive 계정 추가 대화 상자에서 * OneDrive에 로그인 * 을 클릭합니다.
+. Microsoft 페이지가 나타나면 OneDrive 계정을 선택하고 필요한 관리자 사용자 및 암호를 입력한 다음 * 수락 * 을 클릭하여 Cloud Data Sense가 이 계정에서 데이터를 읽을 수 있도록 합니다.
+
+
+OneDrive 계정이 작업 환경 목록에 추가됩니다.
+
+
+
+== 규정 준수 검사에 OneDrive 사용자 추가
+
+개별 OneDrive 사용자 또는 모든 OneDrive 사용자를 추가하여 Cloud Data Sense에서 파일을 검색할 수 있습니다.
+
+.단계
+. Configuration_ 페이지에서 OneDrive 계정의 * Configuration * 버튼을 클릭합니다.
++
+image:screenshot_compliance_onedrive_add_users.png["구성 버튼을 선택할 수 있는 Scan Configuration(스캔 구성) 페이지의 스크린 샷"]
+
+. 이 OneDrive 계정에 사용자를 처음으로 추가하는 경우 * 첫 번째 OneDrive 사용자 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_onedrive_add_initial_users.png["계정에 초기 사용자를 추가하기 위한 첫 번째 OneDrive 사용자 추가 단추를 보여 주는 스크린샷"]
+
++
+OneDrive 계정에서 다른 사용자를 추가하는 경우 * OneDrive 사용자 추가 * 를 클릭합니다.
+
++
+image:screenshot_compliance_onedrive_add_more_users.png["계정에 사용자를 더 추가하는 데 사용할 수 있는 OneDrive 사용자 추가 단추를 보여 주는 스크린샷"]
+
+. 파일을 스캔할 사용자의 이메일 주소를 한 줄에 하나씩 추가하고(세션당 최대 100개) * 사용자 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_onedrive_add_email_addresses.png["스캔할 사용자를 추가할 수 있는 OneDrive 사용자 추가 페이지의 스크린샷"]
+
++
+확인 대화 상자에 추가된 사용자 수가 표시됩니다.
+
++
+대화 상자에 추가할 수 없는 사용자가 나열되어 있으면 이 정보를 캡처하여 문제를 해결할 수 있습니다. 경우에 따라 수정된 이메일 주소로 사용자를 다시 추가할 수 있습니다.
+
+. 사용자 파일에서 매핑 전용 스캔 또는 매핑 및 분류 스캔을 활성화합니다.
++
+[cols="45,45"]
+|===
+| 대상: | 방법은 다음과 같습니다. 
+
+
+| 사용자 파일에 대한 매핑 전용 스캔을 활성화합니다 | Map * 을 클릭합니다 
+
+
+| 사용자 파일에 대한 전체 스캔을 활성화합니다 | 지도 및 분류 * 를 클릭합니다 
+
+
+| 사용자 파일 스캔을 비활성화합니다 | Off * 를 클릭합니다 
+|===
+
+
+Cloud Data Sense는 추가한 사용자의 파일 스캔을 시작하고, 결과는 대시보드와 다른 위치에 표시됩니다.
+
+
+
+== 규정 준수 검사에서 OneDrive 사용자 제거
+
+사용자가 회사를 떠나거나 이메일 주소가 변경되면 개별 OneDrive 사용자가 파일을 스캔하지 못하도록 할 수 있습니다. 구성 페이지에서 * OneDrive 사용자 제거 * 를 클릭하면 됩니다.
+
+image:screenshot_compliance_onedrive_remove_user.png["단일 사용자의 파일 스캔 작업을 제거하는 방법을 보여 주는 스크린샷"]

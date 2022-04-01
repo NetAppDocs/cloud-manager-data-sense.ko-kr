@@ -1,0 +1,259 @@
+---
+sidebar: sidebar 
+permalink: concept-cloud-compliance.html 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+summary: Cloud Data Sense는 Cloud Manager를 위한 데이터 거버넌스 서비스로, 회사의 사내 및 클라우드 데이터 소스와 작업 환경을 검사하여 데이터를 매핑 및 분류하고 프라이빗 정보를 식별합니다. 따라서 보안 및 규정 준수 위험을 줄이고 스토리지 비용을 절감하며 데이터 마이그레이션 프로젝트를 지원할 수 있습니다. 
+---
+= 클라우드 데이터 센스에 대해 알아보십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense는 Cloud Manager를 위한 데이터 거버넌스 서비스로, 회사의 사내 및 클라우드 데이터 소스와 작업 환경을 검사하여 데이터를 매핑 및 분류하고 프라이빗 정보를 식별합니다. 따라서 보안 및 규정 준수 위험을 줄이고 스토리지 비용을 절감하며 데이터 마이그레이션 프로젝트를 지원할 수 있습니다.
+
+https://cloud.netapp.com/netapp-cloud-data-sense["클라우드 데이터 센스의 사용 사례에 대해 알아보십시오"^].
+
+
+
+== 피처
+
+Cloud Data Sense는 규정 준수 작업에 도움이 되는 여러 가지 도구를 제공합니다. 데이터 센스를 사용하여 다음을 수행할 수 있습니다.
+
+* 개인 식별 정보(PII) 식별
+* GDPR, CCPA, PCI 및 HIPAA 개인 정보 보호 규정에서 요구하는 광범위한 중요 정보를 식별합니다
+* Data Subject Access Request(SAR)에 응답
+* 파일에 특정 PII가 포함된 경우 이메일을 통해 Cloud Manager 사용자에게 알립니다(을 사용하여 이 기준을 정의합니다 link:task-org-private-data.html#controlling-your-data-using-policies["정책"^])
+* 보고 수정합니다 link:https://azure.microsoft.com/en-us/services/information-protection/["AIP(Azure Information Protection) 레이블"^] 파일을 선택합니다
+* 파일에 사용자 지정 태그(예: "이동해야 함")를 추가하고 Cloud Manager 사용자를 할당하여 사용자가 파일에 대한 업데이트를 소유할 수 있도록 합니다
+* 파일 복사, 이동, 삭제
+
+
+Cloud Data Sense는 거버넌스 작업에 도움이 되는 툴도 제공합니다. 클라우드 데이터 센스를 사용하여 다음을 수행할 수 있습니다.
+
+* 오래된 데이터, 비업무용 데이터, 중복 파일, 열린 권한이 있는 파일 및 시스템의 대용량 파일을 식별합니다.
++
+이 정보를 사용하여 일부 파일을 보다 저렴한 오브젝트 스토리지로 이동, 삭제 또는 계층화할 것인지 결정할 수 있습니다.
+
+* 데이터를 이동하기 전에 데이터의 크기와 데이터에 중요한 정보가 포함되어 있는지 여부를 확인합니다.
++
+이 기능은 데이터를 사내 위치에서 클라우드로 마이그레이션하려는 경우에 유용합니다.
+
+
+
+
+
+== 지원되는 작업 환경 및 데이터 소스
+
+Cloud Data Sense는 다음과 같은 유형의 작업 환경 및 데이터 소스에서 데이터를 스캔할 수 있습니다.
+
+* 작업 환경: *
+
+* Cloud Volumes ONTAP(AWS, Azure 또는 GCP에 구축)
+* 온프레미스 ONTAP 클러스터
+* Azure NetApp Files
+* ONTAP용 Amazon FSx
+* Amazon S3
+
+
+* 데이터 소스: *
+
+* 비 NetApp 파일 공유
+* 오브젝트 스토리지(S3 프로토콜 사용)
+* 데이터베이스를 지원합니다
+* OneDrive 계정
+* SharePoint 계정
+
+
+Data Sense는 NFS 버전 3.x, 4.0, 4.1 및 CIFS 버전 1.x, 2.0, 2.1 및 3.0을 지원합니다.
+
+
+
+== 비용
+
+* 클라우드 데이터 센스를 사용하는 비용은 스캔하는 데이터의 양에 따라 다릅니다. Cloud Manager 작업 공간에서 Data Sense가 스캔하는 첫 번째 1TB의 데이터는 무료입니다. 여기에는 모든 작업 환경 및 데이터 소스의 모든 데이터가 포함됩니다. AWS, Azure 또는 GCP Marketplace에 대한 가입 또는 NetApp의 BYOL 라이센스를 구입해야 하며, 이후 계속해서 데이터를 스캔할 수 있습니다. 을 참조하십시오 https://cloud.netapp.com/netapp-cloud-data-sense["가격"^] 를 참조하십시오.
++
+link:task-licensing-datasense.html["Cloud Data Sense에 대한 라이센스 부여 방법을 알아보십시오"^].
+
+* 클라우드에 Cloud Data Sense를 설치하려면 클라우드 인스턴스를 구축해야 하므로 클라우드 인스턴스가 구축된 클라우드 공급자가 비용을 지불해야 합니다. 을 참조하십시오 <<The Cloud Data Sense instance,각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다>>. 사내 시스템에 Data Sense를 설치하면 비용이 들지 않습니다.
+* Cloud Data Sense를 사용하려면 Connector를 구축해야 합니다. 대부분의 경우 Cloud Manager에서 사용 중인 다른 스토리지 및 서비스로 인해 이미 Connector를 사용하고 있습니다. Connector 인스턴스를 사용하면 배포된 클라우드 공급자가 비용을 청구합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다"^]. 커넥터를 온프레미스 시스템에 설치하는 경우 비용이 들지 않습니다.
+
+
+
+
+=== 데이터 전송 비용
+
+데이터 전송 비용은 설정에 따라 다릅니다. Cloud Data Sense 인스턴스 및 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 클러스터 또는 S3 버킷과 같은 데이터 소스가 _different_Availability Zone 또는 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다. 자세한 내용은 다음 링크를 참조하십시오.
+
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS: Amazon EC2 가격"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure: 대역폭 가격 세부 정보"^]
+* https://cloud.google.com/storage-transfer/pricing["Google Cloud: 스토리지 전송 서비스 가격"^]
+
+
+
+
+== 클라우드 데이터 감지 인스턴스
+
+클라우드에 Data Sense를 구축하면 Cloud Manager가 Connector와 동일한 서브넷에 인스턴스를 배포합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오."^]
+
+
+NOTE: Connector가 내부에 설치된 경우, Cloud Data Sense 인스턴스는 요청에 포함된 첫 번째 Cloud Volumes ONTAP 시스템과 동일한 VPC 또는 VNET에 구축됩니다. Data Sense를 온프레미스에 설치할 수도 있습니다.
+
+image:diagram_cloud_compliance_instance.png["클라우드 공급자가 실행 중인 Cloud Manager 인스턴스와 Cloud Data Sense 인스턴스를 보여주는 다이어그램입니다."]
+
+기본 인스턴스에 대한 다음 사항에 유의하십시오.
+
+* AWS에서 Cloud Data Sense는 에서 실행됩니다 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4x큰 인스턴스"] 500GB GP2 디스크 사용. 운영 체제 이미지는 Amazon Linux 2(Red Hat 7.3.1)입니다.
++
+m5.4xLarge를 사용할 수 없는 지역에서는 데이터 센스를 m4.4x4xLarge 인스턴스에서 대신 실행합니다.
+
+* Azure에서 Cloud Data Sense는 에서 실행됩니다 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["standard_d16s_v3 vm"] 512GB 디스크 사용 운영 체제 이미지는 CentOS 7.8입니다.
+* GCP에서 Cloud Data Sense는 에서 실행됩니다 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-표준-16 VM"] 512GB 표준 영구 디스크 사용. 운영 체제 이미지는 CentOS 7.9입니다.
++
+n2-standard-16을 사용할 수 없는 지역에서는 n2d-standard-16 또는 n1-standard-16 VM에서 데이터 센스를 대신 실행합니다.
+
+* 인스턴스의 이름은 _CloudCompliance_이며 생성된 해시(UUID)와 연결됩니다. 예: _CloudCompliance-16b6564-38ad-4080-9a92-36f5fd2f71c7_
+* Connector당 하나의 데이터 감지 인스턴스만 배포됩니다.
+* 데이터 감지 소프트웨어의 업그레이드는 인스턴스에 인터넷 액세스 권한이 있는 경우 자동으로 수행됩니다.
+
+
+
+TIP: Cloud Data Sense는 지속적으로 데이터를 스캔하기 때문에 인스턴스는 항상 실행 상태를 유지해야 합니다.
+
+
+
+=== 더 작은 인스턴스 유형 사용
+
+CPU가 적고 RAM이 적은 시스템에 데이터 센스를 배포할 수 있지만 이러한 덜 강력한 시스템을 사용할 때는 몇 가지 제한 사항이 있습니다.
+
+[cols="18,26,56"]
+|===
+| 시스템 크기 | 사양 | 제한 사항 
+
+
+| 매우 큼(기본값) | CPU 16개, 64GB RAM, 500GB SSD | 없음 
+
+
+| 중간 | CPU 8개, 32GB RAM, 200GB SSD | 스캔 속도가 느리며 최대 100만 개의 파일만 스캔할 수 있습니다. 
+
+
+| 작은 크기 | CPU 8개, 16GB RAM, 100GB SSD | "중간"과 동일한 제한 사항과 식별 기능을 제공합니다 link:task-responding-to-dsar.html["데이터 주체 이름"] 내부 파일이 비활성화되었습니다. 
+|===
+클라우드에 데이터 센스를 배포할 때 이러한 소형 시스템 중 하나를 사용하려면 ng-contact-data-sense@netapp.com 으로 이메일을 보내 지원을 요청하십시오. 이러한 소규모 클라우드 구성을 구축하려면 반드시 협력해야 합니다.
+
+온프레미스에 Data Sense를 배포할 때는 작은 사양의 Linux 호스트만 사용하십시오. NetApp에 지원을 요청할 필요가 없습니다.
+
+
+
+== 클라우드 데이터 센스의 작동 방식
+
+개략적인 Cloud Data Sense는 다음과 같이 작동합니다.
+
+. Cloud Manager에 데이터 센스의 인스턴스를 배포합니다.
+. 하나 이상의 작업 환경 또는 데이터 소스에서 고급 매핑 또는 심층 스캔을 수행할 수 있습니다.
+. 데이터 센스 는 AI 학습 프로세스를 사용하여 데이터를 스캔합니다.
+. 제공된 대시보드 및 보고 도구를 사용하여 규정 준수 및 거버넌스 작업에 도움을 줄 수 있습니다.
+
+
+
+
+== 스캔 작동 방식
+
+Cloud Data Sense를 활성화하고 스캔할 볼륨, 버킷, 데이터베이스 스키마 또는 OneDrive 또는 SharePoint 사용자 데이터를 선택한 후 즉시 데이터를 스캔하여 개인 데이터와 중요한 데이터를 식별합니다. 조직 데이터를 매핑하고 각 파일을 분류하며 데이터에서 엔터티 및 미리 정의된 패턴을 식별 및 추출합니다. 검사 결과는 개인 정보, 민감한 개인 정보, 데이터 범주 및 파일 형식의 인덱스입니다.
+
+Data Sense는 NFS 및 CIFS 볼륨을 마운트하여 다른 클라이언트와 마찬가지로 데이터에 연결됩니다. CIFS 볼륨을 스캔하려면 Active Directory 자격 증명을 제공해야 하지만 NFS 볼륨은 읽기 전용으로 자동 액세스됩니다.
+
+image:diagram_cloud_compliance_scan.png["클라우드 공급자가 실행 중인 Cloud Manager 인스턴스와 Cloud Data Sense 인스턴스를 보여주는 다이어그램입니다. Data Sense 인스턴스는 NFS 및 CIFS 볼륨, S3 버킷, OneDrive 계정 및 데이터베이스에 연결하여 검색합니다."]
+
+초기 스캔 후 데이터 센스에서 지속적으로 데이터를 스캔하여 변동분 변화를 감지합니다(인스턴스 실행을 유지하는 것이 중요한 이유).
+
+볼륨 수준, 버킷 수준, 데이터베이스 스키마 수준, OneDrive 사용자 수준 및 SharePoint 사이트 수준에서 스캔을 활성화 및 비활성화할 수 있습니다.
+
+
+
+=== 매핑 스캔과 분류 스캔의 차이점은 무엇입니까
+
+Cloud Data Sense를 사용하면 선택한 작업 환경 및 데이터 소스에서 일반적인 "매핑" 스캔을 실행할 수 있습니다. 매핑은 데이터에 대한 상위 수준의 개요만 제공하는 반면 분류는 데이터에 대한 세부 수준의 스캐닝을 제공합니다. 내부 데이터를 보기 위해 파일에 액세스하지 않기 때문에 데이터 소스에서 매핑을 매우 빠르게 수행할 수 있습니다.
+
+많은 사용자가 데이터를 신속하게 스캔하여 더 많은 연구가 필요한 데이터 소스를 식별하려고 하므로 이 기능을 좋아하고, 그런 다음 이러한 데이터 소스 또는 볼륨에서만 분류 검사를 활성화할 수 있습니다.
+
+아래 표에는 몇 가지 차이점이 나와 있습니다.
+
+[cols="50,20,20"]
+|===
+| 피처 | 분류 | 매핑 
+
+
+| 스캔 속도 | 느림 | 빠릅니다 
+
+
+| 파일 유형 및 사용된 용량 목록입니다 | 예 | 예 
+
+
+| 파일 수 및 사용된 용량입니다 | 예 | 예 
+
+
+| 파일의 수명 및 크기 | 예 | 예 
+
+
+| 을 실행하는 기능 link:task-generating-compliance-reports.html#data-mapping-report["데이터 매핑 보고서"] | 예 | 예 
+
+
+| 파일 세부 정보를 보려면 데이터 조사 페이지 를 참조하십시오 | 예 | 아니요 
+
+
+| 파일 내에서 이름을 검색합니다 | 예 | 아니요 
+
+
+| 생성 link:task-org-private-data.html#controlling-your-data-using-policies["정책"] 맞춤형 검색 결과를 제공합니다 | 예 | 아니요 
+
+
+| AIP 레이블 및 상태 태그를 사용하여 데이터를 분류합니다 | 예 | 아니요 
+
+
+| 원본 파일을 복사, 삭제 및 이동합니다 | 예 | 아니요 
+
+
+| 다른 보고서를 실행할 수 있습니다 | 예 | 아니요 
+|===
+
+
+== Cloud Data Sense가 인덱싱하는 정보입니다
+
+데이터 센스는 데이터(파일)에 범주를 수집, 색인 및 할당합니다. Data Sense 색인에는 다음과 같은 데이터가 포함됩니다.
+
+표준 메타데이터:: Cloud Data Sense는 파일 유형, 크기, 생성 및 수정 날짜 등과 같은 파일에 대한 표준 메타데이터를 수집합니다.
+개인 데이터:: 이메일 주소, 식별 번호 또는 신용 카드 번호와 같은 개인 식별 정보 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["개인 데이터에 대해 자세히 알아보십시오"^].
+민감한 개인 데이터:: GDPR 및 기타 개인 정보 보호 규정에 정의된 의료 데이터, 인종 또는 정치적 의견과 같은 민감한 정보의 특별한 유형. link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["중요한 개인 데이터에 대해 자세히 알아보십시오"^].
+범주:: Cloud Data Sense는 스캔한 데이터를 다양한 유형의 범주로 나눕니다. 범주는 각 파일의 콘텐츠 및 메타데이터에 대한 AI 분석을 기반으로 하는 주제입니다. link:task-controlling-private-data.html#viewing-files-by-categories["범주에 대해 자세히 알아보십시오"^].
+유형:: Cloud Data Sense는 스캔한 데이터를 파일 형식별로 분해합니다. link:task-controlling-private-data.html#viewing-files-by-file-types["유형에 대해 자세히 알아보십시오"^].
+이름 요소 인식:: 클라우드 데이터 센스(Cloud Data Sense)는 AI를 사용하여 문서에서 자연인의 이름을 추출합니다. link:task-responding-to-dsar.html["데이터 주체 액세스 요청에 응답하는 방법에 대해 알아봅니다"^].
+
+
+
+
+== 네트워킹 개요
+
+Cloud Manager는 Connector 인스턴스의 인바운드 HTTP 연결을 활성화하는 보안 그룹과 함께 Cloud Data Sense 인스턴스를 배포합니다.
+
+SaaS 모드에서 Cloud Manager를 사용할 경우 Cloud Manager에 대한 연결이 HTTPS를 통해 제공되고 브라우저와 Data Sense 인스턴스 간에 전송되는 개인 데이터는 엔드 투 엔드 암호화로 보호됩니다. 즉, NetApp과 타사에서 해당 데이터를 읽을 수 없습니다.
+
+아웃바운드 규칙은 완전히 열립니다. 데이터 감지 소프트웨어를 설치 및 업그레이드하고 사용량 메트릭을 전송하려면 인터넷에 액세스해야 합니다.
+
+네트워킹 요구 사항이 엄격하면 link:task-deploy-cloud-compliance.html#reviewing-prerequisites["Cloud Data Sense가 접촉하는 엔드포인트에 대해 알아보십시오"^].
+
+
+
+== 규정 준수 정보에 대한 사용자 액세스
+
+각 사용자에게 할당된 역할은 Cloud Manager 및 Cloud Data Sense 내에서 서로 다른 기능을 제공합니다.
+
+* 계정 관리자 * 는 규정 준수 설정을 관리하고 모든 작업 환경에 대한 규정 준수 정보를 볼 수 있습니다.
+* Workspace Admin * 은 액세스 권한이 있는 시스템에 대해서만 준수 설정을 관리하고 준수 정보를 볼 수 있습니다. 작업 영역 관리자가 Cloud Manager의 작업 환경에 액세스할 수 없는 경우 데이터 감지 탭에서 작업 환경에 대한 규정 준수 정보를 볼 수 없습니다.
+* Compliance Viewer * 역할의 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 시스템에 대한 보고서만 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마 스캔을 활성화/비활성화할 수 없습니다. 이러한 사용자는 파일을 복사, 이동 또는 삭제할 수 없습니다.
+
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager 역할에 대해 자세히 알아보십시오"^] 및 방법 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-cloud-central-accounts.html#adding-users["특정 역할을 가진 사용자를 추가합니다"^].

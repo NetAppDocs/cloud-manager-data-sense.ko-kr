@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-sharepoint.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, data sense 
+summary: Cloud Data Sense를 사용하여 SharePoint 계정의 파일 스캔을 시작하려면 몇 단계를 완료하십시오. 
+---
+= SharePoint 계정 스캔 중
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data Sense를 사용하여 SharePoint 계정의 파일 스캔을 시작하려면 몇 단계를 완료하십시오.
+
+
+
+== 빠른 시작
+
+다음 단계를 따라 빠르게 시작하거나 나머지 섹션을 아래로 스크롤하여 자세한 내용을 확인하십시오.
+
+[role="quick-margin-para"]
+SharePoint 계정에 로그인할 관리자 자격 증명이 있고 검색할 SharePoint 사이트의 URL이 있는지 확인합니다.
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
+
+[role="quick-margin-para"]
+관리자 사용자 자격 증명을 사용하여 액세스할 SharePoint 계정에 로그인하여 새 데이터 원본/작업 환경으로 추가합니다.
+
+[role="quick-margin-para"]
+SharePoint 계정에서 검색할 SharePoint 사이트 URL 목록을 추가하고 검색 유형을 선택합니다. 한 번에 최대 100개의 URL을 추가할 수 있습니다.
+
+
+
+== SharePoint 요구 사항 검토
+
+다음 필수 구성 요소를 검토하여 SharePoint 계정에서 Cloud Data Sense를 활성화할 준비가 되었는지 확인합니다.
+
+* 모든 SharePoint 사이트에 읽기 권한을 제공하는 SharePoint 계정에 대한 관리자 로그인 자격 증명이 있어야 합니다.
+* 검색할 모든 데이터에 대해 SharePoint 사이트 URL의 줄 구분 목록이 필요합니다.
+
+
+
+
+== Cloud Data Sense 인스턴스 구축
+
+이미 구축된 인스턴스가 없으면 Cloud Data Sense를 구축하십시오.
+
+데이터 센스 가능 link:task-deploy-cloud-compliance.html["클라우드에 구축"^] 또는 link:task-deploy-compliance-onprem.html["인터넷 액세스가 가능한 사내 위치"^].
+
+데이터 감지 소프트웨어로 업그레이드하는 것은 인스턴스에 인터넷 연결이 있는 한 자동으로 수행됩니다.
+
+데이터 센스도 가능합니다 link:task-deploy-compliance-dark-site.html["인터넷에 액세스할 수 없는 온프레미스 위치에 배포되었습니다"^]. 그러나 SharePoint 파일을 스캔하려면 몇 개의 선택 끝점에 대한 인터넷 액세스를 제공해야 합니다. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["필요한 엔드포인트 목록은 여기 를 참조하십시오"].
+
+
+
+== SharePoint 계정을 추가하는 중입니다
+
+사용자 파일이 있는 SharePoint 계정을 추가합니다.
+
+.단계
+. 작업 환경 구성 페이지에서 * 데이터 원본 추가 * > * SharePoint Online 계정 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_add_sharepoint_button.png["SharePoint 추가 단추를 클릭할 수 있는 스캔 구성 페이지의 스크린 샷"]
+
+. SharePoint Online 계정 추가 대화 상자에서 * SharePoint에 로그인 * 을 클릭합니다.
+. 나타나는 Microsoft 페이지에서 SharePoint 계정을 선택하고 필요한 관리자 사용자 및 암호를 입력한 다음 * 수락 * 을 클릭하여 Cloud Data Sense가 이 계정에서 데이터를 읽을 수 있도록 합니다.
+
+
+SharePoint 계정이 작업 환경 목록에 추가됩니다.
+
+
+
+== 규정 준수 검사에 SharePoint 사이트 추가
+
+Cloud Data Sense에서 연결된 파일을 검사하도록 개별 SharePoint 사이트 또는 계정의 모든 SharePoint 사이트를 추가할 수 있습니다.
+
+.단계
+. Configuration_ 페이지에서 SharePoint 계정의 * Configuration * 버튼을 클릭합니다.
++
+image:screenshot_compliance_sharepoint_add_sites.png["구성 버튼을 선택할 수 있는 Scan Configuration(스캔 구성) 페이지의 스크린 샷"]
+
+. 이 SharePoint 계정에 대한 사이트를 처음으로 추가하는 경우 * 첫 번째 SharePoint 사이트 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_sharepoint_add_initial_sites.png["스캔할 초기 사이트를 추가하려면 첫 번째 SharePoint 사이트 추가 단추를 보여 주는 스크린샷"]
+
++
+SharePoint 계정에서 사용자를 추가하려면 * SharePoint 사이트 추가 * 를 클릭합니다.
+
++
+image:screenshot_compliance_sharepoint_add_more_sites.png["계정에 사이트를 더 추가하는 데 사용할 수 있는 SharePoint 사이트 추가 단추를 보여 주는 스크린샷"]
+
+. 파일을 스캔할 사이트의 URL을 한 줄에 하나씩(세션당 최대 100개) 추가하고 * 사이트 추가 * 를 클릭합니다.
++
+image:screenshot_compliance_sharepoint_add_site.png["스캔할 사이트를 추가할 수 있는 SharePoint 사이트 추가 페이지의 스크린 샷"]
+
++
+확인 대화 상자에 추가된 사이트 수가 표시됩니다.
+
++
+대화 상자에 추가할 수 없는 사이트가 나열되어 있으면 이 정보를 캡처하여 문제를 해결할 수 있습니다. 경우에 따라 수정된 URL을 사용하여 사이트를 다시 추가할 수 있습니다.
+
+. SharePoint 사이트의 파일에서 매핑 전용 스캔 또는 매핑 및 분류 검사를 사용하도록 설정합니다.
++
+[cols="45,45"]
+|===
+| 대상: | 방법은 다음과 같습니다. 
+
+
+| 파일에서 매핑 전용 스캔을 활성화합니다 | Map * 을 클릭합니다 
+
+
+| 파일에 대한 전체 스캔을 활성화합니다 | 지도 및 분류 * 를 클릭합니다 
+
+
+| 파일 스캔을 비활성화합니다 | Off * 를 클릭합니다 
+|===
+
+
+Cloud Data Sense는 추가한 SharePoint 사이트의 파일을 스캔하기 시작하며, 그 결과는 대시보드와 다른 위치에 표시됩니다.
+
+
+
+== 규정 준수 검사에서 SharePoint 사이트 제거
+
+나중에 SharePoint 사이트를 제거하거나 SharePoint 사이트의 파일을 검색하지 않도록 결정한 경우 언제든지 개별 SharePoint 사이트를 제거하여 파일을 검색할 수 있습니다. 구성 페이지에서 * SharePoint 사이트 제거 * 를 클릭하기만 하면 됩니다.
+
+image:screenshot_compliance_sharepoint_remove_site.png["단일 SharePoint 사이트의 파일 검색 방법을 보여 주는 스크린샷"]

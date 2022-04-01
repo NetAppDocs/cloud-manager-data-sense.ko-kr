@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
+summary: 필요한 경우 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정 또는 SharePoint 계정을 검색하지 못하도록 Cloud Data Sense를 중지할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 있습니다. 
+---
+= 클라우드 데이터 센스에서 데이터 소스를 제거합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+필요한 경우 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정 또는 SharePoint 계정을 검색하지 못하도록 Cloud Data Sense를 중지할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 있습니다.
+
+
+
+== 작업 환경에 대한 규정 준수 검사 비활성화
+
+스캔을 비활성화하면 Cloud Data Sense는 더 이상 작업 환경의 데이터를 스캔하지 않고 Data Sense 인스턴스에서 인덱싱된 규정 준수 정보를 제거합니다(작업 환경 자체의 데이터는 삭제되지 않음).
+
+. Configuration_ 페이지에서 을 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] 작업 환경 행에 있는 단추를 클릭한 다음 * 데이터 감지 비활성화 * 를 클릭합니다.
+
+
+image:screenshot_deactivate_compliance_scan.png["데이터 감지 비활성화 를 선택할 수 있는 작업 아이콘의 스크린샷. 이 옵션은 Canvas 페이지에서 작업 환경을 선택한 후에 사용할 수 있습니다."]
+
+
+TIP: 작업 환경을 선택할 때 서비스 패널에서 작업 환경에 대한 준수 검사를 비활성화할 수도 있습니다.
+
+
+
+== 클라우드 데이터 센스에서 데이터베이스를 제거하는 중입니다
+
+특정 데이터베이스를 더 이상 스캔하지 않으려면 Cloud Data Sense 인터페이스에서 해당 데이터베이스를 삭제하고 모든 스캔을 중지할 수 있습니다.
+
+. Configuration_ 페이지에서 을 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] 단추를 클릭한 다음 * DB 서버 제거 * 를 클릭합니다.
+
+
+image:screenshot_compliance_remove_db.png["스캔 구성 페이지의 DB 서버 제거 단추 스크린샷"]
+
+
+
+== Cloud Data Sense에서 OneDrive 또는 SharePoint 계정 제거
+
+특정 OneDrive 계정 또는 특정 SharePoint 계정에서 사용자 파일을 더 이상 스캔하지 않으려는 경우 Cloud Data Sense 인터페이스에서 계정을 삭제하고 모든 검사를 중지할 수 있습니다.
+
+.단계
+. Configuration_ 페이지에서 을 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] 단추를 클릭하고 * OneDrive 계정 제거 * 또는 * SharePoint 계정 제거 * 를 클릭합니다.
++
+image:screenshot_compliance_remove_onedrive.png["스캔 구성 페이지의 OneDrive 제거 단추 스크린샷"]
+
+. 확인 대화 상자에서 * 계정 삭제 * 를 클릭합니다.
+
+
+
+
+== Cloud Data Sense에서 파일 공유 그룹을 제거하는 중입니다
+
+파일 공유 그룹에서 사용자 파일을 더 이상 스캔하지 않으려면 Cloud Data Sense 인터페이스에서 파일 공유 그룹을 삭제하고 모든 스캔을 중지할 수 있습니다.
+
+.단계
+. Configuration_ 페이지에서 을 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] File Shares Group 행의 버튼을 클릭한 다음 * Remove File Shares Group * 을 클릭합니다.
++
+image:screenshot_compliance_remove_fileshare_group.png["스캔 구성 페이지의 파일 공유 그룹 제거 단추 스크린샷"]
+
+. 확인 대화 상자에서 * 공유 그룹 삭제 * 를 클릭합니다.
+
+
+
+
+== 데이터 감지 스캔 속도를 줄입니다
+
+데이터 스캔은 스토리지 시스템과 데이터에 경미한 영향을 줍니다. 그러나 아주 작은 충격에도 신경 쓰면 데이터 센스를 구성하여 "느린" 스캔을 수행할 수 있습니다. 이 옵션을 설정하면 모든 데이터 소스에서 느린 스캔이 사용됩니다. 단일 작업 환경 또는 데이터 원본에 대해 느린 스캔을 구성할 수 없습니다.
+
+
+TIP: 데이터베이스를 스캔할 때는 스캔 속도를 줄일 수 없습니다.
+
+.단계
+. Configuration_page 하단에서 슬라이더를 오른쪽으로 이동하여 저속 스캔을 활성화합니다.
++
+image:screenshot_slow_scan_enable.png["저속 규정 준수 스캔을 활성화하는 방법을 보여 주는 스크린샷"]
+
++
+구성 페이지 맨 위에는 저속 스캔이 활성화되어 있습니다.
+
++
+image:screenshot_slow_scan_disable.png["저속 규정 준수 스캔을 활성화하는 방법을 보여 주는 스크린샷"]
+
+. 이 메시지에서 * Disable * 을 클릭하여 저속 스캔을 비활성화할 수 있습니다.
+
+
+
+
+== 클라우드 데이터 감지 인스턴스를 삭제하는 중입니다
+
+더 이상 데이터 센스를 사용하지 않으려면 Cloud Data Sense 인스턴스를 삭제할 수 있습니다. 인스턴스를 삭제하면 인덱싱된 데이터가 있는 연결된 디스크도 삭제됩니다.
+
+. 클라우드 공급자의 콘솔로 이동하여 Cloud Data Sense 인스턴스를 삭제합니다.
++
+인스턴스의 이름은 _CloudCompliance_이며 생성된 해시(UUID)와 연결됩니다. 예: _CloudCompliance-16b6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
