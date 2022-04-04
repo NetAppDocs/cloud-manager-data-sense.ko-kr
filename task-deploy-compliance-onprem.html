@@ -695,7 +695,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:18:30 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 20:35:23 +0000">04/04/2022</time>
     
   
 
@@ -902,24 +902,6 @@ Azure NetApp Files 볼륨을 스캔할 계획이라면 스캔할 볼륨과 동�
 <dt class="hdlist1">Cloud Manager에 필요한 권한이 있는지 확인합니다</dt>
 <dd>
 <p>Cloud Manager에 리소스를 구축하고 Cloud Data Sense 인스턴스에 대한 보안 그룹을 생성할 수 있는 권한이 있는지 확인합니다. 에서 최신 Cloud Manager 사용 권한을 찾을 수 있습니다 <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"NetApp에서 제공하는 정책"</a>.</p>
-<div class="openblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>참고: * Cloud Manager 3.9.10 이상을 사용하여 GCP에서 Connector를 만든 경우 모두 설정됩니다. 이전 버전을 사용하여 Connector를 생성한 경우 Connector와 연결된 GCP 서비스 계정에 다음 권한을 추가하여 Cloud Data Sense를 GCP에 배포해야 합니다.</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp</code></pre>
-</div>
-</div>
-</div>
-</div>
 </dd>
 <dt class="hdlist1">Cloud Manager Connector가 클라우드 데이터 센스에 액세스할 수 있는지 확인합니다</dt>
 <dd>
@@ -999,6 +981,9 @@ compute.subnetworks.useExternalIp</code></pre>
 <p>Linux 시스템에 대한 루트 권한이 있는지 확인합니다.</p>
 </li>
 <li>
+<p>프록시를 사용하고 있고 TLS 가로채기를 수행하는 경우 TLS CA 인증서가 저장되는 Data Sense Linux 시스템의 경로를 알아야 합니다.</p>
+</li>
+<li>
 <p>오프라인 환경이 필요한 를 충족하는지 확인합니다 <a href="#Verify Cloud Manager and Data Sense prerequisites">사용 권한 및 연결</a>.</p>
 </li>
 </ul>
@@ -1042,7 +1027,7 @@ compute.subnetworks.useExternalIp</code></pre>
 </div>
 </li>
 <li>
-<p>설치 프로그램에서 프롬프트가 표시되면 일련의 프롬프트에 필요한 값을 입력하거나 첫 번째 프롬프트에 Complete 명령을 입력할 수 있습니다.</p>
+<p>설치 프로그램에서 프롬프트가 표시되면 일련의 프롬프트에 필요한 값을 입력하거나 설치 프로그램에 명령줄 인수로 필요한 매개 변수를 제공할 수 있습니다.</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1072,7 +1057,7 @@ compute.subnetworks.useExternalIp</code></pre>
 </li>
 </ol>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">또는 전체 명령을 미리 만들어 첫 번째 프롬프트에 'sudo./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt;--host &lt;ds_host&gt;--cm-host &lt;cm_host&gt;--proxy-host &lt;proxy_host&gt;--proxy-port &lt;proxy_port&gt;- proxy-proxy-proxy-password- proxy -proxy user -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -password&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">또는 필요한 호스트 및 프록시 매개 변수 'sudo./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt;--host &lt;ds_host&gt;--manager -host &lt;cm_host&gt;--proxy-host &lt;proxy_host&gt;--proxy scheme -port &lt;proxy_port&gt; -proxy -proxy -proxy -dir&#8217;를 제공하여 전체 명령을 미리 생성할 수 있습니다</p></td>
 </tr>
 </tbody>
 </table>
@@ -1110,6 +1095,9 @@ compute.subnetworks.useExternalIp</code></pre>
 </li>
 <li>
 <p><em>proxy_password</em>=지정한 사용자 이름의 암호입니다.</p>
+</li>
+<li>
+<p><em>ca_cert_dir</em>=추가 TLS CA 인증서 번들이 포함된 Data Sense Linux 시스템의 경로입니다. 프록시가 TLS 가로채기를 수행하는 경우에만 필요합니다.</p>
 </li>
 </ul>
 </div>
@@ -1213,12 +1201,12 @@ compute.subnetworks.useExternalIp</code></pre>
 <p>에서 1단계부터 7단계까지 수행합니다 <a href="#Single-host installation for typical configurations">단일 호스트 설치</a> 관리자 노드에서.</p>
 </li>
 <li>
-<p>8단계에서 설명한 것처럼 설치 프로그램에서 프롬프트가 나타나면 일련의 프롬프트에 필요한 값을 입력하거나 첫 번째 프롬프트에 Complete 명령을 입력할 수 있습니다.</p>
+<p>8단계에서 설명한 것처럼 설치 프로그램에서 메시지를 표시하면 일련의 프롬프트에 필요한 값을 입력하거나 설치 프로그램에 명령줄 인수로 필요한 매개 변수를 제공할 수 있습니다.</p>
 <div class="paragraph">
 <p>단일 호스트 설치에 사용할 수 있는 변수 외에도 새 옵션 * -n&lt;node_ip&gt; * 를 사용하여 스캐너 노드의 IP 주소를 지정할 수 있습니다. 여러 스캐너 노드 IP는 쉼표로 구분됩니다.</p>
 </div>
 <div class="paragraph">
-<p>예를 들어, 이 명령은 scanner 노드 3개를 추가합니다. sudo./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt;--host &lt;DS_host&gt;--cm-host &lt;cm_host&gt; * -n &lt;node_IP1&gt;, &lt;node_ip2&gt;, &lt;node_ip2&gt;, &lt;node_proxy scheme-proxy -proxy -proxy -host &lt; 프록시 포트 프록시 -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -port -proxy -proxy -proxy -proxy -proxy -host</p>
+<p>예를 들어, 이 명령은 scanner 노드 3개를 추가합니다. sudo./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt;--host &lt;DS_host&gt;--manager -host &lt;cm_host&gt; * -n &lt;node_IP1&gt;, &lt;node_ip2&gt;, &lt;node_ip2&gt;, &lt;node_proxy scheme -proxy -proxy -proxy -host &lt; 프록시 포트 프록시 -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -proxy -port -proxy -proxy -host &lt;</p>
 </div>
 </li>
 <li>

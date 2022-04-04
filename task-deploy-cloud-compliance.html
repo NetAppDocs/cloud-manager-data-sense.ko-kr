@@ -695,7 +695,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:18:30 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 20:35:23 +0000">04/04/2022</time>
     
   
 
@@ -883,24 +883,6 @@ Azure NetApp Files 볼륨을 스캔할 계획이라면 스캔할 볼륨과 동�
 <dt class="hdlist1">Cloud Manager에 필요한 권한이 있는지 확인합니다</dt>
 <dd>
 <p>Cloud Manager에 리소스를 구축하고 Cloud Data Sense 인스턴스에 대한 보안 그룹을 생성할 수 있는 권한이 있는지 확인합니다. 에서 최신 Cloud Manager 사용 권한을 찾을 수 있습니다 <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"NetApp에서 제공하는 정책"</a>.</p>
-<div class="openblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>참고: * Cloud Manager 3.9.10 이상을 사용하여 GCP에서 Connector를 만든 경우 모두 설정됩니다. 이전 버전을 사용하여 Connector를 생성한 경우 Connector와 연결된 GCP 서비스 계정에 다음 권한을 추가하여 Cloud Data Sense를 GCP에 배포해야 합니다.</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp</code></pre>
-</div>
-</div>
-</div>
-</div>
 </dd>
 <dt class="hdlist1">vCPU 한도를 확인하십시오</dt>
 <dd>
