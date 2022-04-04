@@ -133,7 +133,7 @@ image:screenshot_compliance_file_details.png["데이터 조사 페이지의 파�
 * 파일을 삭제할 수 있습니다. 을 참조하십시오 link:task-managing-highlights.html#deleting-source-files["원본 파일을 삭제하는 중입니다"] 를 참조하십시오.
 * 파일에 특정 상태를 할당할 수 있습니다. 을 참조하십시오 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["태그 적용 중"] 를 참조하십시오.
 * 파일을 Cloud Manager 사용자에게 할당하여 파일에 대해 수행해야 하는 후속 작업을 책임질 수 있습니다. 을 참조하십시오 link:task-org-private-data.html#assigning-users-to-manage-certain-files["파일에 사용자 할당"] 를 참조하십시오.
-* AIP 레이블을 Cloud Data Sense와 통합한 경우 이 파일에 레이블을 지정하거나 이미 있는 경우 다른 레이블로 변경할 수 있습니다. 을 참조하십시오 link:task-org-private-data.html#assigning-aip-labels-manually["AIP 레이블을 수동으로 할당합니다"^] 를 참조하십시오.
+* AIP 레이블을 Cloud Data Sense와 통합한 경우 이 파일에 레이블을 지정하거나 이미 있는 경우 다른 레이블로 변경할 수 있습니다. 을 참조하십시오 link:task-org-private-data.html#assigning-aip-labels-manually["AIP 레이블을 수동으로 할당합니다"] 를 참조하십시오.
 
 
 
@@ -154,7 +154,7 @@ image:screenshot_compliance_permissions.png["자세한 파일 사용 권한을 �
 
 중복 파일이 스토리지 시스템에 저장되어 있는지 확인할 수 있습니다. 이 기능은 저장 공간을 절약할 수 있는 영역을 확인하고자 할 때 유용합니다. 또한 특정 사용 권한이나 중요한 정보가 있는 특정 파일이 스토리지 시스템에서 불필요하게 복제되지 않도록 하는 것이 도움이 될 수 있습니다.
 
-중복 파일 목록을 다운로드하여 스토리지 관리자에게 전송하여 삭제할 수 있는 파일이 있는지 확인할 수 있습니다. 아니면 가능합니다 link:task-managing-highlights.html#deleting-source-files["파일을 삭제합니다"^] 특정 버전의 파일이 필요하지 않을 경우
+중복 파일 목록을 다운로드하여 스토리지 관리자에게 전송하여 삭제할 수 있는 파일이 있는지 확인할 수 있습니다. 아니면 가능합니다 link:task-managing-highlights.html#deleting-source-files["파일을 삭제합니다"] 특정 버전의 파일이 필요하지 않을 경우
 
 
 

@@ -42,7 +42,7 @@ NOTE: 현재 데이터베이스 내에서 데이터 주제 검색이 지원되�
 
 == 데이터 주체 검색 및 보고서 다운로드
 
-데이터 주체의 전체 이름 또는 알려진 식별자를 검색한 다음 파일 목록 보고서 또는 DSAR 보고서를 다운로드합니다. 검색할 수 있는 기준 link:task-controlling-private-data.html#types-of-personal-data["모든 개인 정보 유형입니다"^].
+데이터 주체의 전체 이름 또는 알려진 식별자를 검색한 다음 파일 목록 보고서 또는 DSAR 보고서를 다운로드합니다. 검색할 수 있는 기준 link:reference-private-data-categories.html#types-of-personal-data["모든 개인 정보 유형입니다"^].
 
 
 NOTE: 데이터 주체 이름을 검색할 때 영어, 독일어 및 스페인어가 지원됩니다. 더 많은 언어에 대한 지원은 나중에 추가됩니다.

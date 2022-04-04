@@ -53,7 +53,9 @@ Cloud Data Sense를 활성화하기 전에 다음 사전 요구 사항을 검토
 
 이미 구축된 인스턴스가 없으면 Cloud Data Sense를 구축하십시오.
 
-데이터 센스 가능 link:task-deploy-cloud-compliance.html["클라우드에 구축"^] 또는 link:task-deploy-compliance-onprem.html["인터넷 액세스가 가능한 사내 위치"^].
+인터넷을 통해 액세스할 수 있는 S3 오브젝트 스토리지에서 데이터를 스캔하는 경우 link:task-deploy-cloud-compliance.html["클라우드 데이터 센스를 클라우드에 배포합니다"^] 또는 link:task-deploy-compliance-onprem.html["인터넷에 액세스할 수 있는 온프레미스 위치에 데이터 센스를 배포하십시오"^].
+
+인터넷에 액세스할 수 없는 어두운 사이트에 설치된 S3 오브젝트 스토리지에서 데이터를 스캔하는 경우, 다음을 수행해야 합니다 link:task-deploy-compliance-dark-site.html["인터넷에 액세스할 수 없는 동일한 사내 위치에 클라우드 데이터 센스를 배포합니다"^]. 또한 Cloud Manager Connector를 동일한 사내 위치에 구축해야 합니다.
 
 데이터 감지 소프트웨어로 업그레이드하는 것은 인스턴스에 인터넷 연결이 있는 한 자동으로 수행됩니다.
 

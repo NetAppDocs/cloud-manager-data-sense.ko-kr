@@ -22,13 +22,13 @@ summary: 클라우드 데이터 센스를 사용하여 ONTAP 볼륨에 대한 Am
 * 데이터 센스를 구축 및 관리하려면 AWS에 액티브 커넥터가 필요합니다.
 * 작업 환경을 생성할 때 선택한 보안 그룹은 Cloud Data Sense 인스턴스의 트래픽을 허용해야 합니다. ONTAP용 FSx 파일 시스템에 연결된 ENI를 사용하여 관련 보안 그룹을 찾은 다음 AWS 관리 콘솔을 사용하여 편집할 수 있습니다.
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux 인스턴스용 AWS 보안 그룹"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["Linux 인스턴스용 AWS 보안 그룹"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows 인스턴스용 AWS 보안 그룹"]
+https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["Windows 인스턴스용 AWS 보안 그룹"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS의 탄력적인 네트워크 인터페이스(ENI)"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS의 탄력적인 네트워크 인터페이스(ENI)"^]
 
 
 

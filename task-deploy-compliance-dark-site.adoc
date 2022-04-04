@@ -29,9 +29,7 @@ summary: 인터넷 액세스가 없는 사내 사이트의 호스트에 클라�
 * S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지
 
 
-매우 안전한 Cloud Manager 설치가 필요하지만 OneDrive 계정 또는 SharePoint 계정도 스캔하려는 특수한 상황에서는 Data Sense 오프라인 설치 프로그램을 사용하여 몇 개의 선택 끝점에 대한 인터넷 액세스를 제공할 수 있습니다. 을 참조하십시오 <<SharePoint and OneDrive special requirements,SharePoint 및 OneDrive 특별 요구 사항>> 를 참조하십시오.
-
-현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP 또는 AWS S3 계정을 스캔할 수 없습니다.
+현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP, AWS S3 또는 OneDrive 및 SharePoint 계정을 스캔할 수 없습니다.
 
 
 
@@ -42,7 +40,7 @@ summary: 인터넷 액세스가 없는 사내 사이트의 호스트에 클라�
 * Microsoft Azure 정보 보호(AIP) 레이블 관리
 * Cloud Manager에서 소프트웨어 업그레이드 자동화
 +
-Cloud Manager Connector와 데이터 센스 모두 새로운 기능을 사용하기 위해 정기적인 수동 업그레이드가 필요합니다. 데이터 감지 UI 페이지 하단에 데이터 감지 버전이 표시됩니다. 를 확인하십시오 link:whats-new.html["클라우드 데이터 감지 릴리스 정보"] 각 릴리스의 새 기능 및 소프트웨어 업데이트 패키지를 사용할 수 있는 시기를 확인합니다. 그런 다음 의 단계를 수행할 수 있습니다 <<Upgrade Data Sense software,데이터 감지 소프트웨어를 업그레이드하십시오>>.
+Cloud Manager Connector와 데이터 센스 모두 새로운 기능을 사용하기 위해 정기적인 수동 업그레이드가 필요합니다. 데이터 감지 UI 페이지 하단에 데이터 감지 버전이 표시됩니다. 를 확인하십시오 link:whats-new.html["클라우드 데이터 감지 릴리스 정보"] 각 릴리스의 새로운 기능과 해당 기능을 원하는지 여부를 확인합니다. 그런 다음 의 단계를 수행할 수 있습니다 <<Upgrade Data Sense software,데이터 감지 소프트웨어를 업그레이드하십시오>>.
 
 
 
@@ -95,7 +93,7 @@ CPU가 적고 RAM이 적은 시스템에 데이터 센스를 배포할 수 있�
 
 
 
-Data Sense를 설치하기 전에 다음 소프트웨어가 호스트에 설치되어 있어야 합니다.
+Data Sense를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.
 
 * Docker Engine 버전 19 이상 https://docs.docker.com/engine/install/["설치 지침을 봅니다"^].
 * Python 3 버전 3.6 이상. https://www.python.org/downloads/["설치 지침을 봅니다"^].
@@ -121,24 +119,6 @@ Cloud Manager에서 설치 진행률을 볼 수 있도록 포트 8080이 열려 
 Data Sense 인스턴스는 개인 IP 주소를 사용하여 인덱싱된 데이터에 다른 사용자가 액세스할 수 없도록 합니다. 따라서 Cloud Manager에 액세스하는 데 사용하는 웹 브라우저에는 해당 프라이빗 IP 주소에 연결되어 있어야 합니다. 이 연결은 Data Sense 인스턴스와 동일한 네트워크 내에 있는 호스트에서 발생할 수 있습니다.
 
 
-
-
-
-== SharePoint 및 OneDrive 특별 요구 사항
-
-인터넷에 액세스할 수 없는 사이트에 Cloud Manager 및 Data Sense를 배포하는 경우, 몇 개의 특정 엔드포인트에 대한 인터넷 액세스를 제공하여 SharePoint 및 OneDrive 계정의 파일을 검색할 수 있습니다.
-
-[cols="50,50"]
-|===
-| 엔드포인트 | 목적 
-
-
-| login.microsoft.com \graph.microsoft.com 으로 문의하십시오 | Microsoft 서버와 통신하여 선택한 온라인 서비스에 로그인합니다. 
-
-
-| https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | NetApp 계정을 포함한 Cloud Manager 서비스와 통신합니다. 
-|===
-이러한 외부 서비스에 처음 연결하는 동안에만 _cloudmanager.cloud.netapp.com_ 에 액세스해야 합니다.
 
 
 
@@ -192,7 +172,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["클라우드 데이터 �
 ----
 tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ----
-. 설치 프로그램에서 프롬프트가 표시되면 일련의 프롬프트에 필요한 값을 입력하거나 첫 번째 프롬프트에 Complete 명령을 입력할 수 있습니다.
+. 설치 프로그램에서 프롬프트가 표시되면 일련의 프롬프트에 필요한 값을 입력하거나 설치 프로그램에 명령줄 인수로 필요한 매개 변수를 제공할 수 있습니다.
 +
 [cols="50a,50"]
 |===
@@ -203,9 +183,8 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 .. 7단계:'SUDO./install.sh -a<account_id> -c<agent_id> -t<token>--darsite'에서 복사한 정보를 붙여 넣습니다
 .. Connector 인스턴스에서 액세스할 수 있도록 Data Sense 호스트 시스템의 IP 주소 또는 호스트 이름을 입력합니다.
 .. Data Sense 인스턴스에서 액세스할 수 있도록 Cloud Manager Connector 호스트 시스템의 IP 주소 또는 호스트 이름을 입력합니다.
-.. 메시지가 나타나면 프록시 세부 정보를 입력합니다. Cloud Manager에서 이미 프록시를 사용하고 있는 경우, Data Sense에서 Cloud Manager에서 사용하는 프록시를 자동으로 사용하기 때문에 이 정보를 다시 입력할 필요가 없습니다.
 
-| 또는 전체 명령을 미리 만들어 첫 번째 프롬프트에 'sudo./install.sh -a <account_id> -c <agent_id> -t <token>--host <ds_host>--cm-host <cm_host>--proxy-host <proxy_host>--proxy-port <proxy_port>- proxy-proxy-proxy-password< proxy-proxy-proxy-proxy-user -proxy-password><proxy-password><agent_password><agent_password><agent_password><agent_id><agent_proxy-proxy-proxy- 
+| 또는 필요한 호스트 매개 변수 'sudo./install.sh -a <account_id> -c <agent_id> -t <token>--host <DS_host>--manager-host <cm_host>--no-proxy--dar사이트'를 제공하여 전체 명령을 미리 생성할 수 있습니다 
 |===
 +
 변수 값:
@@ -216,11 +195,6 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ** _token_= JWT 사용자 토큰
 ** _DS_HOST_= Data Sense Linux 시스템의 IP 주소 또는 호스트 이름입니다.
 ** _cm_host_= Cloud Manager Connector 시스템의 IP 주소 또는 호스트 이름입니다.
-** _proxy_host_= 호스트가 프록시 서버 뒤에 있는 경우 프록시 서버의 IP 또는 호스트 이름입니다.
-** _proxy_port_= 프록시 서버에 연결할 포트(기본값 80).
-** _proxy_scheme_= 연결 체계: https 또는 http(기본값 http).
-** _proxy_user_= 기본 인증이 필요한 경우 프록시 서버에 연결할 인증된 사용자입니다.
-** _proxy_password_=지정한 사용자 이름의 암호입니다.
 
 
 
@@ -275,12 +249,12 @@ Data Sense 설치 프로그램은 패키지를 설치하고, 설치를 등록하
 
 .단계
 . 에서 1단계부터 8단계까지 수행합니다 link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["단일 호스트 설치"] 관리자 노드에서.
-. 9단계에서 설명한 것처럼 설치 프로그램에서 프롬프트가 나타나면 일련의 프롬프트에 필요한 값을 입력하거나 첫 번째 프롬프트에 Complete 명령을 입력할 수 있습니다.
+. 9단계에서 설명한 것처럼 설치 관리자가 메시지를 표시하면 일련의 프롬프트에 필요한 값을 입력하거나 설치 프로그램에 명령줄 인수로 필요한 매개 변수를 제공할 수 있습니다.
 +
 단일 호스트 설치에 사용할 수 있는 변수 외에도 새 옵션 * -n<node_ip> * 를 사용하여 스캐너 노드의 IP 주소를 지정할 수 있습니다. 여러 노드 IP는 쉼표로 구분됩니다.
 
 +
-예를 들어, 이 명령은 scanner 노드 3개를 추가합니다. sudo./install.sh -a <account_id> -c <agent_id> -t <token>--host <DS_host>--cm-host <cm_host> * -n <node_IP1>, <node_ip2>, <node_ip2>, <node_proxy scheme-proxy -host 프록시 포트 프록시 프록시 프록시 -프록시 -프록시 -프록시 -프록시 -host <프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -프록시 -host
+예를 들어, 이 명령은 3개의 스캐너 노드(sudo./install.sh -a <account_id> -c <agent_id> -t <token>--host <DS_host>--manager-host <cm_host> * -n <node_IP1>, <node_IP2>, <node_ip3> * -- no-proxy-site)를 추가합니다
 
 . 관리자 노드 설치가 완료되기 전에 스캐너 노드에 필요한 설치 명령이 대화 상자에 표시됩니다. 명령을 복사하여 텍스트 파일에 저장합니다. 예를 들면 다음과 같습니다.
 +
@@ -300,7 +274,7 @@ Data Sense 설치 프로그램은 패키지를 설치하고, 설치를 등록하
 
 Cloud Data Sense 설치 프로그램이 패키지 설치를 완료하고 설치를 등록합니다. 설치에는 15 ~ 25분이 소요될 수 있습니다.
 
-구성 페이지에서 로컬 을 선택할 수 있습니다 link:task-getting-started-compliance.html["온프레미스 ONTAP 클러스터"] 및 link:task-scanning-databases.html["데이터베이스를 지원합니다"] 선택합니다.
+구성 페이지에서 로컬 을 선택할 수 있습니다 link:task-getting-started-compliance.html["온프레미스 ONTAP 클러스터"] 및 로컬 link:task-scanning-databases.html["데이터베이스를 지원합니다"] 선택합니다.
 
 또한 가능합니다 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["Cloud Data Sense에 대한 BYOL 라이센싱 설정"] 현재 Digital Wallet 페이지에서 확인할 수 있습니다. 데이터 양이 1TB를 초과할 때까지 비용이 청구되지 않습니다.
 
