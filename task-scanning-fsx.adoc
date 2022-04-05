@@ -39,7 +39,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS의 탄�
 다음 단계를 따라 빠르게 시작하거나 아래로 스크롤하여 자세한 내용을 확인하십시오.
 
 [role="quick-margin-para"]
-ONTAP 볼륨에 대해 FSx를 스캔하기 전에 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["볼륨이 구성된 FSx 작업 환경이 있어야 합니다"^].
+ONTAP 볼륨에 대해 FSx를 스캔하기 전에 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["볼륨이 구성된 FSx 작업 환경이 있어야 합니다"^].
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["Cloud Manager에 클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
@@ -70,7 +70,7 @@ link:task-deploy-cloud-compliance.html["Cloud Manager에 클라우드 데이터 
 
 스캔할 ONTAP 파일 시스템용 FSx가 Cloud Manager에 작업 환경으로 설정되어 있지 않은 경우 이 파일을 캔버스에 추가할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/task-creating-fsx-working-environment.html["Cloud Manager에서 ONTAP 파일 시스템용 FSx를 검색 또는 생성하는 방법을 확인하십시오"^].
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Cloud Manager에서 ONTAP 파일 시스템용 FSx를 검색 또는 생성하는 방법을 확인하십시오"^].
 
 
 

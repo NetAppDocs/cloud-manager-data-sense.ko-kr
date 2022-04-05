@@ -106,12 +106,12 @@ image:diagram_cloud_compliance_instance.png["클라우드 공급자가 실행 �
 
 기본 인스턴스에 대한 다음 사항에 유의하십시오.
 
-* AWS에서 Cloud Data Sense는 에서 실행됩니다 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4x큰 인스턴스"] 500GB GP2 디스크 사용. 운영 체제 이미지는 Amazon Linux 2(Red Hat 7.3.1)입니다.
+* AWS에서 Cloud Data Sense는 에서 실행됩니다 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4x큰 인스턴스"^] 500GB GP2 디스크 사용. 운영 체제 이미지는 Amazon Linux 2(Red Hat 7.3.1)입니다.
 +
 m5.4xLarge를 사용할 수 없는 지역에서는 데이터 센스를 m4.4x4xLarge 인스턴스에서 대신 실행합니다.
 
-* Azure에서 Cloud Data Sense는 에서 실행됩니다 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["standard_d16s_v3 vm"] 512GB 디스크 사용 운영 체제 이미지는 CentOS 7.8입니다.
-* GCP에서 Cloud Data Sense는 에서 실행됩니다 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-표준-16 VM"] 512GB 표준 영구 디스크 사용. 운영 체제 이미지는 CentOS 7.9입니다.
+* Azure에서 Cloud Data Sense는 에서 실행됩니다 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["standard_d16s_v3 vm"^] 512GB 디스크 사용 운영 체제 이미지는 CentOS 7.8입니다.
+* GCP에서 Cloud Data Sense는 에서 실행됩니다 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["N2-표준-16 VM"^] 512GB 표준 영구 디스크 사용. 운영 체제 이미지는 CentOS 7.9입니다.
 +
 n2-standard-16을 사용할 수 없는 지역에서는 n2d-standard-16 또는 n1-standard-16 VM에서 데이터 센스를 대신 실행합니다.
 
@@ -256,4 +256,4 @@ SaaS 모드에서 Cloud Manager를 사용할 경우 Cloud Manager에 대한 연�
 * Compliance Viewer * 역할의 사용자는 규정 준수 정보를 보고 액세스 권한이 있는 시스템에 대한 보고서만 생성할 수 있습니다. 이러한 사용자는 볼륨, 버킷 또는 데이터베이스 스키마 스캔을 활성화/비활성화할 수 없습니다. 이러한 사용자는 파일을 복사, 이동 또는 삭제할 수 없습니다.
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager 역할에 대해 자세히 알아보십시오"^] 및 방법 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-cloud-central-accounts.html#adding-users["특정 역할을 가진 사용자를 추가합니다"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Cloud Manager 역할에 대해 자세히 알아보십시오"^] 및 방법 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["특정 역할을 가진 사용자를 추가합니다"^].

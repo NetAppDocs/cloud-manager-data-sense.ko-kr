@@ -52,7 +52,7 @@ image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense Governanc
 
 조사 페이지에 결과를 표시하려면 _Policy_영역에서 정책 이름을 클릭합니다. 사용 가능한 모든 정책 목록을 보려면 * 모두 보기 * 를 클릭합니다.
 
-을 클릭합니다 link:task-managing-highlights.html#controlling-your-data-using-policies["여기"^] 정책에 대해 자세히 알아보십시오.
+을 클릭합니다 link:task-org-private-data.html#controlling-your-data-using-policies["여기"] 정책에 대해 자세히 알아보십시오.
 
 
 
@@ -105,7 +105,7 @@ Age_and_Size_graphs의 항목을 조사하여 삭제해야 할 데이터가 있�
 
 === 가장 많이 식별된 데이터 분류
 
-Classification_area는 가장 많이 식별된 목록을 제공합니다 link:task-controlling-private-data.html#viewing-files-by-categories["범주"^], link:task-controlling-private-data.html#viewing-files-by-file-types["파일 형식"^], 및 link:task-managing-highlights.html#categorizing-your-data-using-aip-labels["AIP 레이블"^] 스캔 데이터.
+Classification_area는 가장 많이 식별된 목록을 제공합니다 link:task-controlling-private-data.html#viewing-files-by-categories["범주"^], link:task-controlling-private-data.html#viewing-files-by-file-types["파일 형식"^], 및 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP 레이블"^] 스캔 데이터.
 
 
 

@@ -73,7 +73,7 @@ Data Sense는 지금 OneDrive 계정 및 SharePoint 계정에서 스캔되는 �
 
 === Data Sense는 데이터 소스에서 타겟 위치로 파일을 복사하고 이러한 파일을 동기화할 수 있습니다.
 
-이 기능은 데이터를 마이그레이션할 때 파일의 마지막 변경 내용을 확인하고자 하는 경우에 유용합니다. 이 작업은 를 사용합니다 https://docs.netapp.com/us-en/cloud-manager-sync/concept_cloud_sync.html["NetApp Cloud Sync를 참조하십시오"^] 소스에서 타겟으로 데이터를 복제 및 동기화하는 기능
+이 기능은 데이터를 마이그레이션할 때 파일의 마지막 변경 내용을 확인하고자 하는 경우에 유용합니다. 이 작업은 를 사용합니다 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync를 참조하십시오"^] 소스에서 타겟으로 데이터를 복제 및 동기화하는 기능
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["파일 복사 및 동기화 방법을 참조하십시오"].
 

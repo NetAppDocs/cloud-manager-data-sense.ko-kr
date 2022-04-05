@@ -22,7 +22,7 @@ Azure NetApp Files용 클라우드 데이터 센스를 시작하려면 몇 단�
 다음 단계를 따라 빠르게 시작하거나 나머지 섹션을 아래로 스크롤하여 자세한 내용을 확인하십시오.
 
 [role="quick-margin-para"]
-Azure NetApp Files 볼륨을 스캔하기 전에 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["구성을 검색하려면 Cloud Manager를 설정해야 합니다"^].
+Azure NetApp Files 볼륨을 스캔하기 전에 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["구성을 검색하려면 Cloud Manager를 설정해야 합니다"^].
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["Cloud Manager에 클라우드 데이터 센스를 구축하십시오"^] 이미 배포된 인스턴스가 없는 경우
@@ -56,7 +56,7 @@ Compliance * > * Configuration * > * Edit CIFS Credentials * 를 클릭하고 �
 
 스캔할 Azure NetApp Files 시스템이 Cloud Manager에 작업 환경으로 설정되어 있지 않으면 현재 캔버스에 추가할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["Cloud Manager에서 Azure NetApp Files 시스템을 검색하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Cloud Manager에서 Azure NetApp Files 시스템을 검색하는 방법을 알아보십시오"^].
 
 
 

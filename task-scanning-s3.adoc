@@ -116,7 +116,7 @@ image:screenshot_s3_we.gif["Amazon S3 작업 환경 아이콘의 스크린샷"]
 +
 image:screenshot_s3_enable_compliance.gif["서비스 패널에서 클라우드 데이터 감지 서비스를 활성화하는 스크린샷"]
 
-. 메시지가 표시되면 가 있는 Cloud Data Sense 인스턴스에 IAM 역할을 할당합니다 <<Requirements specific to S3,필요한 권한>>.
+. 메시지가 표시되면 가 있는 Cloud Data Sense 인스턴스에 IAM 역할을 할당합니다 <<Reviewing S3 prerequisites,필요한 권한>>.
 +
 image:screenshot_s3_compliance_iam_role.gif["Cloud Data Sense에 대한 AWS IAM 역할 입력 스크린샷"]
 
