@@ -665,134 +665,88 @@
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">클라우드 데이터 센스의 새로운 기능에 대해 알아보십시오.</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">클라우드 데이터 센스의 새로운 기능</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022년 3월 15일</block>
-  <block id="443b6a9fca7102daed9087112c3dc457" category="section-title">새 필터 - 특정 사용자 또는 그룹에 읽기 또는 쓰기 권한이 있는 파일을 표시합니다.</block>
   <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">"사용자/그룹 권한"이라는 새 필터가 추가되어 특정 사용자 또는 그룹에 읽기 및/또는 쓰기 권한이 있는 파일을 나열할 수 있습니다. 사용자 이름 또는 그룹 이름 또는 부분 이름을 지정할 수 있습니다. 이 기능은 Cloud Volumes ONTAP, 온프레미스 ONTAP, Azure NetApp Files, ONTAP용 Amazon FSx 및 파일 공유의 볼륨에 사용할 수 있습니다.</block>
-  <block id="42b370a91c3c2a615e9d4ebc5cbf6884" category="section-title">Data Sense는 SharePoint 및 OneDrive 계정의 파일에 대한 사용 권한을 결정할 수 있습니다.</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense는 지금 OneDrive 계정 및 SharePoint 계정에서 스캔되는 파일에 대한 사용 권한을 읽을 수 있습니다. 이 정보는 파일에 대한 조사 창 세부 정보와 거버넌스 대시보드의 열기 권한 영역에 표시됩니다.</block>
-  <block id="0d42bc37b53fea02c9e72ed699e7bb18" category="section-title">데이터 센스로 두 가지 유형의 개인 데이터를 추가로 식별할 수 있습니다.</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">프랑스어 INSEE - INSEE 코드는 프랑스 통계 및 경제 연구(INSEE)에서 다양한 엔터티를 식별하기 위해 사용하는 숫자 코드입니다.</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">암호 - 이 정보는 영숫자 문자열 옆에 있는 "password"라는 단어의 변이를 찾아 근접 유효성 검사를 통해 식별됩니다. 찾은 항목 수는 규정 준수 대시보드의 "개인 결과" 아래에 나열됩니다. 검색 창에서 Filter * Personal Data &gt; Password * 를 사용하여 암호가 포함된 파일을 검색할 수 있습니다.</block>
-  <block id="425adda56e394de12209334423b302c9" category="section-title">Cloud Data Sense를 사용하여 Cloud Backup 파일을 검사하는 베타 기능은 이 릴리즈에서 더 이상 제공되지 않습니다.</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022년 2월 9일</block>
-  <block id="c6455eb299528a8932b8dab6eab3db21" category="section-title">Microsoft SharePoint 온라인 계정 검색에 대한 지원이 추가되었습니다.</block>
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">SharePoint 계정을 검색하는 방법을 알아봅니다</block>
-  <block id="0016e2969988059d89617a5a19121b57" category="section-title">Data Sense는 데이터 소스에서 타겟 위치로 파일을 복사하고 이러한 파일을 동기화할 수 있습니다.</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync를 참조하십시오</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">파일 복사 및 동기화 방법을 참조하십시오</block>
-  <block id="2344a9fc4e2f0117285de6fbb8ccfc92" category="section-title">SAR 보고서에 대한 새로운 언어 지원</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">DSAR(Data Subject Access Request) 보고서를 생성하기 위해 데이터 주체 이름을 검색할 때 독일어 및 스페인어가 지원됩니다. 이 보고서는 GDPR 또는 이와 유사한 데이터 개인 정보 보호 법률을 준수하기 위한 조직의 요구 사항을 돕기 위해 작성되었습니다.</block>
-  <block id="f1bd07460557f3bfd41cfe4955c30e27" category="section-title">데이터 센스를 통해 세 가지 유형의 개인 데이터를 추가로 식별할 수 있습니다.</block>
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link-macro">스캔 시 데이터 센스에서 식별하는 모든 개인 데이터 유형 목록을 참조하십시오</block>
-  <block id="adadebc06cff6c0ac4463e1ff0c359f3" category="section-title">커넥터에 대한 데이터 감지 통신을 위해 보안 그룹 포트가 변경되었습니다.</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector의 보안 그룹은 보안을 강화하기 위해 Data Sense 인스턴스에 대한 인바운드 및 아웃바운드 트래픽에 포트 80 대신 포트 443을 사용합니다. 두 포트 모두 현재 열려 있으므로 문제가 발생하지 않도록 해야 합니다. 하지만 포트 80은 향후 릴리스에서 더 이상 사용되지 않으므로 이전 버전의 Connector 배포에서 보안 그룹을 업데이트해야 합니다.</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022년 1월 2일</block>
-  <block id="99b8b3c5a2dd0ee3c962eb7d9f6ba79b" category="section-title">글로벌 Active Directory를 통합하여 파일 소유자 및 권한을 식별하는 기능입니다.</block>
   <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">이제 글로벌 Active Directory를 클라우드 데이터 센스와 통합하여 파일 소유자에 대한 데이터 센스 보고서와 파일에 액세스할 수 있는 사용자 및 그룹에 대한 결과를 개선할 수 있습니다.</block>
   <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link-macro">글로벌 Active Directory를 설정하는 방법을 확인하십시오</block>
-  <block id="aaa8cfc760432289a7a79ef5e2443065" category="section-title">이제 데이터 감지 "정책"을 사용하여 파일을 삭제할 수 있습니다.</block>
   <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link-macro">사용자 지정 정책을 만드는 방법을 알아봅니다</block>
   <block id="096a1667ae412a6b3dd6d7318a0fb8d4" category="section-title">2021년 12월 16일</block>
-  <block id="de70d65908dbf00b3db904233205b2eb" category="section-title">데이터 감지 기능으로 어두운 사이트에서 데이터를 스캔할 수 있습니다.</block>
-  <block id="9cf152a5e0126404c2835d3823d404fa" category="paragraph">Cloud Manager와 클라우드 데이터 센스 모두 인터넷에 액세스할 수 없는 사내 사이트에 구축할 수 있습니다. 이제 클라우드 관리자를 사용하여 온프레미스 ONTAP 클러스터를 관리하고, 클러스터 간에 데이터를 복제하며, 클라우드 데이터 센스를 사용하여 클러스터에서 데이터를 검색할 수 있습니다.</block>
   <block id="1eee0717fa00b6d32dfb2ab489f54964" category="inline-link-macro">인터넷에 연결되지 않은 사이트에 클라우드 데이터 센스를 구축하는 방법을 알아보십시오</block>
   <block id="b8039ded95757c80005c804fabc145a1" category="paragraph"><block ref="79863890a17e4bdd9593d37ca0d14fc0" category="inline-link-macro-rx"></block>.</block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021년 11월 28일</block>
-  <block id="2a4905f244d5a39d380455eb8bdea5bf" category="section-title">Data Sense는 ONTAP 시스템에서 볼륨을 복제하는 데 사용할 수 있습니다.</block>
   <block id="0e65b1a6d06c19deb46ff998c80de0a5" category="paragraph">데이터 센스를 사용하여 ONTAP 볼륨을 복제할 수 있지만 소스 볼륨에서 선택한 파일만 새 클론 복제된 볼륨에 포함할 수 있습니다. 이 기능은 데이터를 마이그레이션하는 동안 특정 파일을 제외하려는 경우 또는 테스트할 볼륨의 복사본을 만들려는 경우에 유용합니다.</block>
   <block id="e0dab5e04e9cb55716e589595b1e6b4b" category="inline-link-macro">볼륨을 복제하는 방법을 확인하십시오</block>
   <block id="9d321eefe3fb98368019ac183d4f559f" category="paragraph"><block ref="99c1ffe6c02d2af43316b015cbc9c8a2" category="inline-link-macro-rx"></block>.</block>
-  <block id="a9760d7195cde848a43dcf9f49ae5a3d" category="section-title">Cloud Manager의 GCP Marketplace 구독에 이제 Cloud Data Sense에 대한 지원이 포함됩니다.</block>
   <block id="4932ec0144d6d1640460f5cfee326e0f" category="inline-link-macro">Cloud Manager용 GCP Marketplace 구독</block>
-  <block id="d5b817fd2402b13ecd711e18cd96c889" category="section-title">장기 실행 준수 작업의 상태를 볼 수 있는 기능.</block>
   <block id="c066aa13effff0bea79252a20699074b" category="paragraph">50개의 파일을 삭제하는 등 여러 파일에 대해 조사 결과 창에서 작업을 실행할 경우 프로세스에 약간의 시간이 걸릴 수 있습니다. 이제 이러한 비동기 작업의 상태를 모니터링하여 모든 파일에 언제 적용되었는지 알 수 있습니다.</block>
   <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">진행 중인 규정 준수 작업의 상태를 확인하는 방법을 알아봅니다</block>
   <block id="0a8b229d21efe889c341133fa43bc3f7" category="paragraph"><block ref="b64e3c30f28dd83a2184563dc44ee1de" category="inline-link-macro-rx"></block>.</block>
   <block id="6241446e1383ab0c8cc0cebdfbb90484" category="inline-link-macro">스캔 시 데이터 센스에서 찾는 모든 개인 데이터 유형 목록을 참조하십시오</block>
   <block id="2164b22cc8c41bee72c53771bd025c07" category="paragraph">이제 데이터 센스에서 파일의 개인 데이터 유형인 "영국 여권" 및 "국립보건원(NHS) 번호"를 찾을 수 있습니다. <block ref="ce74ef267e6a0fa015475f7a67f6924a" category="inline-link-macro-rx"></block>.</block>
-  <block id="6befd2c8e71418a3ca013ef46c44772c" category="section-title">새 필터 - 특정 작업 환경 유형에 속하는 파일을 표시합니다.</block>
   <block id="9a67fa9362671e5cfd7881e63183490e" category="paragraph">데이터 조사 페이지에서 데이터를 필터링할 때 "작업 환경 유형"에 대한 새 필터가 추가되었습니다. 이를 통해 Cloud Volumes ONTAP 시스템, ONTAP 시스템용 FSx, 온프레미스 ONTAP 시스템 등에 대한 결과를 필터링할 수 있습니다.</block>
-  <block id="d8e0e204ff2077fca1d230cb9a8e0ccf" category="section-title">2021년 11월 7일</block>
-  <block id="2b53d7d9fa1c2a4e657db77147cf5b6d" category="section-title">이제 작업 환경에서 개별 볼륨을 매핑하거나 분류할 수 있습니다.</block>
   <block id="8226af020361fe3987ed52162cbc4d06" category="paragraph">과거에는 모든 볼륨을 매핑하거나 각 작업 환경의 모든 볼륨을 매핑 및 분류할 수 있었습니다. 이제 개별 볼륨을 매핑_또는_매핑 및 분류할 수 있습니다. 이 옵션은 Cloud Volumes ONTAP 볼륨, ANF 볼륨, 온프레미스 ONTAP 볼륨 및 ONTAP 볼륨용 FSx에 사용할 수 있습니다.</block>
-  <block id="32714cb970be008eead50cd62f2c7ecc" category="section-title">Data Sense는 데이터 소스에서 대상 NFS 공유로 파일을 복사할 수 있습니다.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">자세한 정보</block>
   <block id="489bbace9696e34940e2b4012383115f" category="paragraph">Data Sense에서 검색 중인 소스 파일을 대상 NFS 공유에 복사할 수 있습니다. 이 기능은 특정 데이터의 복제본을 만들어 다른 NFS 위치로 이동하려는 경우 유용합니다. <block ref="d05c5872a8ecb6f8190249ddc8786d34" category="inline-link-macro-rx"></block>.</block>
-  <block id="555e44c526ee18afef10a2a1e5ff1ad6" category="section-title">FSx에서 ONTAP 파일 시스템용 데이터 보호 볼륨을 스캔할 수 있습니다.</block>
   <block id="d80d3c7ebf333488ef4d2c74d7fde58e" category="paragraph">이제 FSx에서 ONTAP 파일 시스템용 데이터 보호 볼륨을 스캔할 수 있습니다. <block ref="12146991433bc5a213bcb83d563990f4" category="inline-link-macro-rx"></block>.</block>
-  <block id="b015890a088e8ef072d94f1448fd8542" category="section-title">데이터 센스를 처음 검색한 날짜 범위별로 파일을 표시하는 새 필터.</block>
   <block id="e02ef706eaed7e8a20115407bffb0216" category="paragraph">"검색된 시간"이라는 조사 페이지의 새 필터를 사용하면 데이터 센스에서 파일을 처음 검색한 날짜 범위별로 파일을 볼 수 있습니다. 검색 시간도 파일 세부 정보 페이지 및 파일에 대해 CSV 형식으로 출력한 보고서에 추가되었습니다.</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">SOC 2 Type 2 인증</block>
   <block id="bda633aa50f099014aa085ad93af9cff" category="paragraph">독립 공인 회계사 및 서비스 감사원이 Cloud Data Sense를 조사하여 해당 신뢰 서비스 기준에 따라 SOC 2 Type 2 보고서를 획득하였다는 것을 확인했습니다.</block>
   <block id="582a36961cbdd6ca90f6672041cdab83" category="inline-link">NetApp의 SOC 2 보고서 보기</block>
   <block id="f982fa3c6fb84f7cccc6a84a6ffc9a1d" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block>.</block>
-  <block id="1d9b19895587e0b25381eb63ed0a09b9" category="section-title">2021년 10월 4일</block>
-  <block id="db1f9cd9b64a98ecf4a7da5631c676fe" category="section-title">NetApp의 BYOL 라이센싱 지원</block>
   <block id="c513c649fe64ed52674dbb18376d71fa" category="paragraph">클라우드 공급자 마켓플레이스를 통해 데이터 센스를 라이센스하는 것 외에도, 이제 NetApp에서 BYOL(Bring-Your-Own-License)을 구매하여 Cloud Manager 계정의 모든 작업 환경 및 데이터 소스에서 사용할 수 있습니다.</block>
   <block id="00beacb1f1189c9f01dd562d2e17ba8f" category="inline-link-macro">새로운 Cloud Data Sense BYOL 라이센스에 대해 자세히 알아보십시오</block>
   <block id="9091d7d6e522e57e8207ba8ce0760373" category="paragraph"><block ref="acbd27f5f515b9d59280399ad7e728ba" category="inline-link-macro-rx"></block>.</block>
-  <block id="7db06ba5dc017862a1f854386676dc22" category="section-title">Google Cloud Platform 지원</block>
   <block id="defb90791cab3206e78b5423ed2c8b26" category="paragraph">이제 클라우드 데이터 센스를 통해 GCP에 구축된 Cloud Volumes ONTAP 시스템에서 데이터를 검색할 수 있습니다. 데이터 센스를 GCP에 구축해야 하며 커넥터는 GCP 또는 온프레미스에 구축해야 합니다. Connector와 연결된 GCP 서비스 계정은 Cloud Data Sense to GCP를 배포하기 위한 최신 권한이 필요합니다.</block>
-  <block id="a6ab9789f1da02ca410374cab3bfac30" category="section-title">FSx에서 ONTAP 파일 시스템용 CIFS 볼륨을 스캔할 수 있습니다.</block>
   <block id="4ad745dcbae16cc9cbfa352d10dee9d2" category="inline-link-macro">ONTAP 볼륨에 대해 Amazon FSx를 스캔하는 방법을 확인하십시오</block>
   <block id="a840a5a79ff17611f610aea797443528" category="paragraph">이제 Data Sense는 ONTAP 시스템용 FSx에서 CIFS 볼륨을 스캔할 수 있습니다. <block ref="0eeca2862916d1603da10da4ea8f7a8e" category="inline-link-macro-rx"></block>.</block>
-  <block id="3b7a1a77cdd08778e0827fbf312442b7" category="section-title">2021년 9월 2일</block>
-  <block id="3f4287bce14225399672e0de4347c702" category="section-title">FSx에서 ONTAP 파일 시스템용 NFS 볼륨을 스캔할 수 있습니다.</block>
   <block id="f0e03aeff7590515947d417df3c44149" category="inline-link-macro">ONTAP 시스템에 대한 FSx 검사를 구성하는 방법을 참조하십시오</block>
   <block id="d3a24d1f0136676bd5e6c7dfdd76a1f3" category="paragraph">ONTAP 시스템용 Amazon FSx의 NFS 볼륨에서 데이터를 스캔하는 기능이 추가되었습니다. <block ref="78789fe6f73d50e026d33dc711bd85c0" category="inline-link-macro-rx"></block>.</block>
-  <block id="0846489e3c907f729db5452c0887d873" category="section-title">데이터 감지 "상태" 항목이 "태그" 항목으로 변경되었습니다.</block>
   <block id="3dcb86dca720d483150e850e6939f919" category="inline-link-macro">파일 레벨 태그에 대해 자세히 알아보십시오</block>
   <block id="396db0ecff0e339a92f9b3a2af31d263" category="paragraph">Data Sense를 사용하여 파일에 "상태" 정보를 추가하는 기능이 용어를 "태그"로 변경했습니다. 이러한 태그는 파일 레벨 태그이며 볼륨, EC2 인스턴스, 가상 머신 등에 적용할 수 있는 리소스 레벨 태깅과 혼동하지 않습니다 <block ref="fae0dc82413cbf28598c32b2f2b30fe3" category="inline-link-macro-rx"></block>.</block>
-  <block id="feaee5d58494deaebb1ce5a1c3fce93b" category="section-title">2021년 8월 1일</block>
-  <block id="60a596f8cf86535b77cc5f5078e4f0bd" category="section-title">한 번에 여러 파일의 파일 설정을 관리할 수 있습니다.</block>
   <block id="911d437fe43df208c05b7bd0a3a5fd36" category="paragraph">이전 버전의 Cloud Data Sense에서는 상태 태그 추가, 사용자 할당 및 AIP 레이블 추가와 같은 작업을 한 번에 한 파일에 수행할 수 있습니다. 이제 데이터 조사 페이지에서 여러 파일을 선택하고 여러 파일에 대해 각 작업을 수행할 수 있습니다.</block>
-  <block id="4c808fe73f7fecbc9ade315103130f0d" category="section-title">거버넌스 대시보드에는 데이터가 생성된 시점 또는 마지막으로 액세스한 시별 데이터가 표시됩니다.</block>
   <block id="81fa8b9a7e51e3b6727474568dca14d0" category="paragraph">마지막으로 수정한 시간을 기준으로 데이터를 볼 수 있을 뿐 아니라 Governance 대시보드에서 데이터 사용 기간 그래프를 볼 때는 데이터가 생성된 시점 또는 마지막으로 액세스한 시점(읽었을 때)을 기준으로 데이터를 볼 수 있습니다. 이 정보는 데이터 매핑 보고서에도 제공됩니다.</block>
-  <block id="990718526c14f7e97571ddb65632b4c8" category="section-title">대규모 구성을 스캔할 때 추가 처리 성능을 위해 여러 호스트를 사용할 수 있습니다.</block>
   <block id="5b36750f739fc1c783153e7581ff604f" category="paragraph">이제 온프레미스에 Data Sense를 구축할 때 페타바이트 데이터를 포함하는 구성을 스캔하려는 경우 추가 온프레미스 호스트에 스캐닝 소프트웨어를 설치할 수 있습니다. 이러한 추가 _scanner 노드는 매우 큰 구성을 스캔할 때 처리 능력을 높여 줍니다.</block>
   <block id="cec6006ebbef58d19ece0bccf55641bd" category="inline-link-macro">여러 호스트에 데이터 감지 소프트웨어를 배포합니다</block>
   <block id="65fa82fb8a157d27290b37d014a1e038" category="paragraph">자세한 내용은 를 참조하십시오 <block ref="fcd2ff9a961d403217fed261cd527026" category="inline-link-macro-rx"></block>.</block>
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021년 7월 7일</block>
-  <block id="94da2a895b7e100e53ac7ebaa05de322" category="section-title">데이터 센스를 사용하면 데이터 소스에서 대상 NFS 공유로 파일을 이동할 수 있습니다.</block>
   <block id="f30ef67a4274772079ff06a86e3a74e2" category="inline-link-macro">데이터 센스에서 스캔 중인 소스 파일을 모든 NFS 공유로 이동합니다</block>
   <block id="c1f264653480074b4ff5c33f6da78cca" category="paragraph">새로운 기능을 통해 를 수행할 수 있습니다 <block ref="cc908d8cc2317a532e385546a3f8e196" category="inline-link-macro-rx"></block>. 따라서 중요한 파일이나 보안 관련 파일을 특수 영역으로 이동하여 더 많은 분석을 수행할 수 있습니다.</block>
-  <block id="193e6f6228e2bb47b7d6fdea7a0a40ad" category="section-title">전체 분류 스캔을 수행하는 대신 데이터를 신속하게 범주화할 수 있습니다.</block>
   <block id="ed4bdff0b14403bf62e234ebd3b70386" category="inline-link-macro">데이터 매핑 보고서를 봅니다</block>
   <block id="8b1cff14f17bbdf3a25104f916729ebc" category="paragraph">이제 전체 분류 스캔을 수행하는 대신 데이터를 범주로 빠르게 매핑할 수 있습니다. 이를 통해 를 수행할 수 있습니다 <block ref="6b081f418bc21ae87c3e1758cd454263" category="inline-link-macro-rx"></block> 거버넌스 대시보드에서 전체 스캔을 실행할 필요가 없는 특정 데이터 소스가 있을 때 데이터에 대한 개요를 확인할 수 있습니다.</block>
-  <block id="c76a2171c6f8d4aa9c171bb6d7f01352" category="section-title">Cloud Manager 사용자에게 파일을 할당할 수 있습니다.</block>
   <block id="91905b6c0e5bd3b31a5a9faff7fc5218" category="inline-link-macro">특정 Cloud Manager 사용자에게 파일을 할당합니다</block>
   <block id="ebc240befa04f487177655f353d72802" category="paragraph">이제 가능합니다 <block ref="60706a069633267dd80739a874a1ee5a" category="inline-link-macro-rx"></block> 따라서 해당 파일에 대해 수행해야 하는 모든 후속 조치에 대해 책임을 질 수 있습니다. 이 기능을 기존 기능과 함께 사용하여 파일에 사용자 지정 태그를 추가할 수 있습니다.</block>
   <block id="596f96f82c371a240d0be177aa3f1ee0" category="paragraph">또한 조사 페이지의 새 필터를 사용하면 "담당자" 필드에 동일한 사람이 있는 모든 파일을 쉽게 볼 수 있습니다.</block>
-  <block id="da632fd37857cea05b8c4b8e0e575166" category="section-title">더 작은 Cloud Data Sense 인스턴스를 사용할 수 있습니다.</block>
   <block id="cf3f2cc15d62c716232f57e1283f8347" category="inline-link-macro">이러한 제한 사항이 무엇인지 먼저 확인하십시오</block>
   <block id="60ee57016f16f38febc0431619eaa4bb" category="paragraph">스캔 요구 사항이 적은 일부 사용자는 더 작은 Cloud Data Sense 인스턴스를 사용할 수 있어야 했습니다. 이제 가능합니다. 이러한 작은 인스턴스를 사용할 때는 몇 가지 제한 사항이 있습니다 <block ref="2721bef887c25ebcb5745416e289e70e" category="inline-link-macro-rx"></block>.</block>
-  <block id="f485ba9213c23f6d6e7ad0ce11d8e5f6" category="section-title">저속 스캔 수행 기능.</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">방법을 확인하십시오</block>
   <block id="5eea29ff6cc3dad991a8789d591533a9" category="paragraph">데이터 스캔은 스토리지 시스템과 데이터에 경미한 영향을 줍니다. 하지만 아주 작은 충격에도 신경 쓰면 데이터 센스를 구성하여 "느린" 스캔을 수행할 수 있습니다. <block ref="be5ca65137ce848c8d09c371939d6748" category="inline-link-macro-rx"></block>.</block>
-  <block id="2d52b2f359085302215b82c3ef4febc5" category="section-title">Data Sense는 파일에 마지막으로 액세스한 시간을 추적합니다.</block>
   <block id="34549c51a038d2c00ade5270b233fb1c" category="paragraph">마지막으로 액세스한 시간 값이 파일 세부 정보 페이지 및 CSV 형식으로 출력되는 보고서에 추가되어 사용자가 마지막으로 파일에 액세스한 시간을 확인할 수 있습니다.</block>
   <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021년 6월 7일</block>
   <block id="6561d0dbae2df54bbe8349c518489172" category="section-title">Cloud Compliance는 Cloud Data Sense로 이름이 바뀌었습니다.</block>
   <block id="d3c761a2e0f04b6d5a3de0a1d64ba674" category="paragraph">이번 릴리즈로 Cloud Compliance의 이름이 * Cloud Data Sense * 로 변경되었습니다. 제품에 포함된 모든 새로운 거버넌스 및 기타 기능을 통해 규정 준수 이름은 전체 기능 세트를 홍보하지 않았습니다.</block>
-  <block id="83b79ba53f12d1ae6ec7195ada46f459" category="section-title">거버넌스 대시보드에서 새로운 "전체 데이터 매핑" 보고서를 사용할 수 있습니다.</block>
   <block id="b1c097baa7655613db39bdfee4aa9834" category="paragraph">Governance Dashboard에서 새로운 _Full Data Mapping_Report를 사용하여 마이그레이션, 백업, 보안 및 규정 준수 프로세스 결정에 도움이 되도록 기업 데이터 소스에 저장되는 데이터에 대한 개요를 제공할 수 있습니다.</block>
   <block id="e4769dc6302d1988b2db369ee09d08df" category="inline-link-macro">여기로 이동</block>
   <block id="e49617bb2d098bc9411a20ab9cc7800e" category="paragraph">이 보고서는 모든 작업 환경 및 데이터 소스를 요약하고 각 작업 환경에 대한 분석을 제공하는 개요 페이지를 제공합니다. <block ref="69c5d3a80c29cb6ecc9dff8619a99bf7" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="8e51837e62ce5b71ea5c42d92ce157f8" category="section-title">조사 페이지의 새 필터를 사용하여 모든 중복 파일을 봅니다.</block>
   <block id="7a75a1cb539ce717ffb70a6f45b1183c" category="inline-link-macro">모든 중복 파일을 보는 방법을 확인하십시오</block>
   <block id="49088960be4d8db4c1a11ba7678fee3f" category="paragraph">데이터 조사 페이지의 새 필터를 사용하면 스토리지 시스템 전체에서 복제된 모든 파일의 목록을 볼 수 있습니다. 이 기능은 저장소 공간을 절약할 수 있는 영역을 식별하거나, 저장소 전체에서 복제하지 않으려는 특정 사용 권한이나 중요한 정보가 있는 파일을 식별하는 데 유용합니다. <block ref="9b932b7183a8b1eae080a32497be2440" category="inline-link-macro-rx"></block>.</block>
-  <block id="dfb260333575c59337c69ab7c25980f6" category="section-title">Data Sense는 사용자 지정 태그를 조직용 파일에 추가할 수 있습니다.</block>
   <block id="3bef072dfa864da4aa8559c03c7d0ca8" category="inline-link-macro">파일에서 태그를 적용하고 보는 방법을 알아봅니다</block>
   <block id="cf5c65a6d69d1529a0f0cd6dd86b5edb" category="paragraph">데이터 센스에서 스캔 중 파일에 사용자 정의 태그를 추가할 수 있습니다. 태그가 AIP 라벨과 같은 방식으로 파일에 추가되지 않습니다. 이 태그는 Cloud Manager 사용자가 볼 수 있으므로 어떤 이유로 파일을 삭제하거나 확인해야 하는지 여부를 나타낼 수 있습니다. <block ref="7a35795d2be1b40763c1be0abb286f6d" category="inline-link-macro-rx"></block>.</block>
   <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">조사 페이지의 새 필터를 사용하면 태그가 지정된 모든 파일을 쉽게 볼 수 있습니다.</block>
-  <block id="659cff608fd2170e403a7ffa61589550" category="section-title">DCM 및 .DICOM 파일 스캔 기능.</block>
   <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">Cloud Data Sense는 .dcm 및 .dicom의 두 가지 추가 파일 유형에서 개인 식별 정보(PII)를 검색할 수 있습니다.</block>
-  <block id="3347ae4bd01a51cf2550da4ee4945f11" category="section-title">이제 데이터 센스에서 파일의 추가 속성을 추적합니다.</block>
   <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">CSV 형식으로 출력하는 보고서에 파일 크기, 만든 날짜 및 마지막으로 수정한 날짜 값이 추가되었습니다. 만든 날짜 는 조사 페이지 검색 결과의 범위를 좁히는 데 사용할 수 있는 새 필터이기도 합니다.</block>
   <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021년 5월 5일</block>
-  <block id="e04501bf2142c7fbcbe675ce8d61226d" category="section-title">Azure Blob에 저장된 데이터를 스캔할 수 있습니다.</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">S3 프로토콜을 사용하는 오브젝트 스토리지 스캔</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO 서비스</block>
-  <block id="0e7f3bd52176e33fdeec7f114366de00" category="section-title">추가적인 개인 데이터 유형은 데이터 센스로 식별할 수 있습니다.</block>
   <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data Sense는 이제 파일에서 오스트리아 SSN을 찾을 수 있습니다.</block>
   <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data Sense는 볼륨, Amazon S3 버킷, 데이터베이스, OneDrive 폴더 및 SharePoint 계정에서 여러 유형의 프라이빗 데이터를 식별할 수 있습니다. 아래 범주를 참조하십시오.</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">개인 데이터의 범주입니다</block>
@@ -1618,7 +1572,6 @@
   <block id="3c6a08ac87f0c74657dbe6a08d65a90c" category="section-title">Cloud Manager Connector를 설치합니다</block>
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">오프라인 사내 사이트에 Cloud Manager Connector가 아직 설치되지 않은 경우<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 오프라인 사이트의 Linux 호스트</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Linux 호스트 시스템을 준비합니다</block>
-  <block id="df5748fad9ff6f2a543703b454542c39" category="paragraph">Data Sense 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.</block>
   <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">운영 체제: Red Hat Enterprise Linux 또는 CentOS 버전 8.0 또는 8.1</block>
   <block id="46123563d68443141506bf3d78c3f494" category="list-text">버전 7.8을 사용할 수 있지만 Linux 커널 버전은 4.14 이상이어야 합니다</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">OS에서 Docker Engine을 설치할 수 있어야 합니다(예: 필요한 경우 _firewalld_service 사용 안 함).</block>
@@ -2224,10 +2177,8 @@
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022년 4월 5일</block>
-  <block id="41f52a9df0c19d41d935d656fb938433" category="section-title">네 가지 새로운 유형의 호주 개인 데이터는 데이터 센스로 식별할 수 있습니다.</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">데이터 센스에서 식별할 수 있는 모든 유형의 개인 데이터를 확인하십시오</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">데이터 센스를 사용하면 오스트레일리아 TFN(세금 파일 번호), 오스트레일리아 운전면허증 번호, 오스트레일리아 의료보험 번호 및 호주 여권 번호가 포함된 파일을 식별하고 분류할 수 있습니다.<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>.</block>
-  <block id="79a1cd072dfc91cd46891838564f2047" category="section-title">이제 글로벌 Active Directory 서버가 LDAP 서버가 될 수 있습니다.</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense와 통합하는 글로벌 Active Directory 서버는 이제 이전에 지원되는 DNS 서버 외에도 LDAP 서버가 될 수 있습니다.<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>.</block>
   <block id="592c8c1b273df763193797348c862319" category="paragraph">이제 SharePoint 사이트의 문서 및 파일을 스캔하기 위해 SharePoint 온라인 계정을 데이터 센스에 추가할 수 있습니다.<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>.</block>
   <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>.</block>
@@ -2292,4 +2243,54 @@
   <block id="1512503c318779a183367c2326a24f21" category="list-text">온프레미스 커넥터 소프트웨어가 최신 버전으로 업그레이드되었는지 확인합니다.<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>.</block>
   <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">을 클릭합니다 <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> 정책에 대해 자세히 알아보십시오.</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">Classification_area는 가장 많이 식별된 목록을 제공합니다 <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>, <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>, 및 <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> 스캔 데이터.</block>
+  <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">네 가지 새로운 유형의 호주 개인 데이터는 데이터 센스로 식별할 수 있습니다</block>
+  <block id="0387123627dfe002c7435c0101983f19" category="section-title">이제 글로벌 Active Directory 서버가 LDAP 서버가 될 수 있습니다</block>
+  <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">새 필터 - 특정 사용자 또는 그룹에 읽기 또는 쓰기 권한이 있는 파일을 표시합니다</block>
+  <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense는 SharePoint 및 OneDrive 계정의 파일에 대한 사용 권한을 결정할 수 있습니다</block>
+  <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">데이터 센스로 두 가지 유형의 개인 데이터를 추가로 식별할 수 있습니다</block>
+  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">Cloud Data Sense를 사용하여 Cloud Backup 파일을 검사하는 베타 기능은 이 릴리즈에서 더 이상 제공되지 않습니다</block>
+  <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">Microsoft SharePoint 온라인 계정 검색에 대한 지원이 추가되었습니다</block>
+  <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">Data Sense는 데이터 소스에서 타겟 위치로 파일을 복사하고 이러한 파일을 동기화할 수 있습니다</block>
+  <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">SAR 보고서에 대한 새로운 언어 지원</block>
+  <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">데이터 센스를 통해 세 가지 유형의 개인 데이터를 추가로 식별할 수 있습니다</block>
+  <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">커넥터에 대한 데이터 감지 통신을 위해 보안 그룹 포트가 변경되었습니다</block>
+  <block id="39ad63f56fe19489716d253d535f6033" category="section-title">글로벌 Active Directory를 통합하여 파일 소유자 및 권한을 식별하는 기능입니다</block>
+  <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">이제 데이터 감지 "정책"을 사용하여 파일을 삭제할 수 있습니다</block>
+  <block id="4fda7be69eb097891068c14360cba258" category="section-title">데이터 감지 기능으로 어두운 사이트에서 데이터를 스캔할 수 있습니다</block>
+  <block id="3c6e7a50358ad493c1281cc6aa27309a" category="paragraph">Cloud Manager(커넥터)와 Cloud Data Sense는 모두 인터넷에 액세스할 수 없는 사내 사이트에 배포할 수 있습니다. 이제 클라우드 관리자를 사용하여 온프레미스 ONTAP 클러스터를 관리하고, 클러스터 간에 데이터를 복제하며, 클라우드 데이터 센스를 사용하여 클러스터에서 데이터를 검색할 수 있습니다.</block>
+  <block id="6d732051b4ee221c3896e5943078d7c4" category="section-title">Data Sense는 ONTAP 시스템에서 볼륨을 복제하는 데 사용할 수 있습니다</block>
+  <block id="aa316c658b08b1eec45b0e73dc9d8e96" category="section-title">Cloud Manager의 GCP Marketplace 구독에 이제 Cloud Data Sense에 대한 지원이 포함됩니다</block>
+  <block id="49b8c4f61544245ecf36672ba0113068" category="section-title">장기 실행 준수 작업의 상태를 볼 수 있는 기능</block>
+  <block id="89372f2a277a8453dc542e88ba9ef4f0" category="section-title">새 필터 - 특정 작업 환경 유형에 속하는 파일을 표시합니다</block>
+  <block id="e370b3500d8b67f884ff10af2cab702c" category="section-title">2021년 11월 7일</block>
+  <block id="e48cb5e3594830a9679d2e76261df2e8" category="section-title">이제 작업 환경에서 개별 볼륨을 매핑하거나 분류할 수 있습니다</block>
+  <block id="ce8e3fe1aae847699e405f937430c727" category="section-title">Data Sense는 데이터 소스에서 대상 NFS 공유로 파일을 복사할 수 있습니다</block>
+  <block id="459fecfdaf1e78b26ef269df213bc81a" category="section-title">FSx에서 ONTAP 파일 시스템용 데이터 보호 볼륨을 스캔할 수 있습니다</block>
+  <block id="60465eb8970b5bad23ff0f639954b0ae" category="section-title">데이터 센스를 처음 검색한 날짜 범위별로 파일을 표시하는 새 필터</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021년 10월 4일</block>
+  <block id="7175abddc94aae9f582ff187e073eac7" category="section-title">NetApp의 BYOL 라이센싱 지원</block>
+  <block id="7e6a902227a5aff46cb434910e5c292f" category="section-title">Google Cloud Platform 지원</block>
+  <block id="5b5f95cb16cc6baa317f2459854a87af" category="section-title">FSx에서 ONTAP 파일 시스템용 CIFS 볼륨을 스캔할 수 있습니다</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021년 9월 2일</block>
+  <block id="e55ec0c0e7df55e996e766cf1ddfcd6c" category="section-title">FSx에서 ONTAP 파일 시스템용 NFS 볼륨을 스캔할 수 있습니다</block>
+  <block id="ed336c97bd7749d0b604d710a3169440" category="section-title">데이터 감지 "상태" 항목이 "태그" 항목으로 변경되었습니다</block>
+  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021년 8월 1일</block>
+  <block id="b2a24b78c7ab82f495008fb584802b8e" category="section-title">한 번에 여러 파일의 파일 설정을 관리할 수 있습니다</block>
+  <block id="a0c71efbfb9cd276842249b759494dca" category="section-title">거버넌스 대시보드에는 데이터가 생성된 시점 또는 마지막으로 액세스한 시별 데이터가 표시됩니다</block>
+  <block id="715df5847e32201de12278bd599a747f" category="section-title">대규모 구성을 스캔할 때 추가 처리 성능을 위해 여러 호스트를 사용할 수 있습니다</block>
+  <block id="0b8379ea047ac207c395c8a9c6709526" category="section-title">데이터 센스를 사용하면 데이터 소스에서 대상 NFS 공유로 파일을 이동할 수 있습니다</block>
+  <block id="002a13154f4ce5f6f1ca6b053cd26c76" category="section-title">전체 분류 스캔을 수행하는 대신 데이터를 신속하게 범주화할 수 있습니다</block>
+  <block id="d80b36ddfa007c5b8414c96e0ae118d9" category="section-title">Cloud Manager 사용자에게 파일을 할당할 수 있습니다</block>
+  <block id="bddd2179a36dc08b8bb7be3660c8fed4" category="section-title">더 작은 Cloud Data Sense 인스턴스를 사용할 수 있습니다</block>
+  <block id="a37544bc609cd0b6c2d725d27d13ab21" category="section-title">저속 스캔 수행 기능</block>
+  <block id="f1c9a9425a145e1b1614fa251d393989" category="section-title">Data Sense는 파일에 마지막으로 액세스한 시간을 추적합니다</block>
+  <block id="763a569da43c025c1d54060a2ef2efbe" category="section-title">거버넌스 대시보드에서 새로운 "전체 데이터 매핑" 보고서를 사용할 수 있습니다</block>
+  <block id="08684668c10e9c17789be7934ef88e51" category="section-title">조사 페이지의 새 필터를 사용하여 모든 중복 파일을 봅니다</block>
+  <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">Data Sense는 사용자 지정 태그를 조직용 파일에 추가할 수 있습니다</block>
+  <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">DCM 및 .DICOM 파일 스캔 기능</block>
+  <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">이제 데이터 센스에서 파일의 추가 속성을 추적합니다</block>
+  <block id="a201b1b21bb34cfc3cf0328307173ba5" category="section-title">Azure Blob에 저장된 데이터를 스캔할 수 있습니다</block>
+  <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">추가적인 개인 데이터 유형은 데이터 센스로 식별할 수 있습니다</block>
+  <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">Data Sense 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다. 다른 애플리케이션과 공유되는 호스트에서는 데이터 센스를 지원하지 않습니다. 호스트는 전용 호스트여야 합니다.</block>
+  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp에 5GiB입니다</block>
 </blocks>
