@@ -1322,7 +1322,6 @@
   <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">중복 파일 목록과 파일이 있는 위치를 보려면 * 세부 정보 보기 * 를 클릭합니다. 다음 페이지에서 * 중복 보기 * 를 클릭하여 조사 페이지에서 파일을 봅니다.</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">중복된 파일이 있는 위치를 보는 방법을 보여 주는 스크린샷</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f35afb3f187c9f321d2f0cf0cfce5233" category="admonition">이 페이지에 제공된 "파일 해시" 값을 사용하여 조사 페이지에 직접 입력하여 특정 중복 파일을 언제든지 검색하거나 정책에 사용할 수 있습니다.</block>
   <block id="c03eb1ff575a67ef8cf7b0cbe6f24dad" category="section-title">특정 작업 환경에 대한 대시보드 데이터 보기</block>
   <block id="17a399056a9dd9191155fe5c7a7dd3a2" category="paragraph">Cloud Data Sense 대시보드의 콘텐츠를 필터링하여 모든 작업 환경 및 데이터베이스에 대한 규정 준수 데이터를 확인하거나 특정 작업 환경에 대한 규정 준수 데이터를 확인할 수 있습니다.</block>
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">특정 작업 환경의 조사 결과를 필터링하는 방법을 보여 주는 스크린샷</block>
@@ -2305,4 +2304,6 @@
   <block id="dcbd0c81108f8a84d6e28aa71bb57afa" category="paragraph">BYOL 구독을 갱신하면 Cloud Manager에서 라이센스를 자동으로 업데이트합니다. Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 직접 파일을 얻고 Cloud Manager에 수동으로 업로드할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>.</block>
   <block id="9d21e20ef25e8b74361e9e64a818de8b" category="paragraph">PAYGO 라이센스로 전환된 시스템은 자동으로 BYOL 라이센스로 돌아갑니다. 라이센스 없이 실행 중인 시스템은 경고 표시를 중지하고 라이센스가 만료된 동안 발생한 작업에 대해 비용이 청구됩니다.</block>
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">그러면 설치 파일 * cc_onpremise_installer_&lt;version&gt;.tar.gz * 가 추출됩니다.</block>
+  <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">데이터 센스(Data Sense)는 해시 기술을 사용하여 중복 파일을 결정합니다. 파일에 다른 파일과 동일한 해시 코드가 있으면 파일 이름이 다르더라도 파일이 정확하게 중복되었는지 100% 확인할 수 있습니다.</block>
+  <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">이 페이지에 제공된 "파일 해시" 값을 사용하여 조사 페이지에 직접 입력하여 특정 중복 파일을 언제든지 검색할 수도 있고, 정책에 사용할 수도 있습니다.</block>
 </blocks>
