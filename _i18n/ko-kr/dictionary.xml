@@ -2192,7 +2192,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">호주 여권 번호</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">AIP 레이블을 Cloud Data Sense와 통합한 경우 이 파일에 레이블을 지정하거나 이미 있는 경우 다른 레이블로 변경할 수 있습니다. 을 참조하십시오 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">중복 파일 목록을 다운로드하여 스토리지 관리자에게 전송하여 삭제할 수 있는 파일이 있는지 확인할 수 있습니다. 아니면 가능합니다 <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 특정 버전의 파일이 필요하지 않을 경우</block>
-  <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP, AWS S3 또는 OneDrive 및 SharePoint 계정을 스캔할 수 없습니다.</block>
   <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector와 데이터 센스 모두 새로운 기능을 사용하기 위해 정기적인 수동 업그레이드가 필요합니다. 데이터 감지 UI 페이지 하단에 데이터 감지 버전이 표시됩니다. 를 확인하십시오 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 각 릴리스의 새로운 기능과 해당 기능을 원하는지 여부를 확인합니다. 그런 다음 의 단계를 수행할 수 있습니다 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>.</block>
   <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">Data Sense를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.</block>
   <block id="44913217828f63e33072c448b10eb218" category="list-text">설치 프로그램에서 프롬프트가 표시되면 일련의 프롬프트에 필요한 값을 입력하거나 설치 프로그램에 명령줄 인수로 필요한 매개 변수를 제공할 수 있습니다.</block>
@@ -2306,4 +2305,22 @@
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">그러면 설치 파일 * cc_onpremise_installer_&lt;version&gt;.tar.gz * 가 추출됩니다.</block>
   <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">데이터 센스(Data Sense)는 해시 기술을 사용하여 중복 파일을 결정합니다. 파일에 다른 파일과 동일한 해시 코드가 있으면 파일 이름이 다르더라도 파일이 정확하게 중복되었는지 100% 확인할 수 있습니다.</block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">이 페이지에 제공된 "파일 해시" 값을 사용하여 조사 페이지에 직접 입력하여 특정 중복 파일을 언제든지 검색할 수도 있고, 정책에 사용할 수도 있습니다.</block>
+  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">어두운 사이트에 배포할 때 OneDrive 및 SharePoint 데이터 스캔 지원</block>
+  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">다음 끝점에 대한 액세스를 허용해야 합니다.</block>
+  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">인터넷에 액세스할 수 없는 온프레미스 사이트의 호스트에 Cloud Data Sense를 배포했다면 이제 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 검색할 수 있습니다.<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
+  <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint 및 OneDrive 특별 요구 사항</block>
+  <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">매우 안전한 Cloud Manager 설치가 필요하지만 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 스캔하려는 특수한 상황에서는 Data Sense 오프라인 설치 프로그램을 사용하여 몇 개의 선택 끝점에 대한 인터넷 액세스를 제공할 수 있습니다. 을 참조하십시오 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP 또는 AWS S3 계정을 스캔할 수 없습니다.</block>
+  <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">특정 중요 정책에서 결과를 반환하는 경우 Cloud Manager 사용자에게 이메일 알림을 보냅니다</block>
+  <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">여러 사용자에 대한 Cloud Manager 역할 설정(예: 계정 관리자 또는 규정 준수 뷰어)</block>
+  <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">Cloud Sync를 사용하여 소스 파일 복사 및 동기화</block>
+  <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">사용자 피드백을 받는 중입니다</block>
+  <block id="d988b54f3b64e974362e6cbf74785f60" category="paragraph">인터넷에 액세스할 수 없는 사이트에 Cloud Manager 및 Data Sense를 배포하는 경우, 몇 개의 선택 엔드포인트에 대한 인터넷 액세스를 제공하여 SharePoint 및 OneDrive 계정의 로컬 파일을 검색할 수 있습니다.</block>
+  <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">login.microsoft.com \graph.microsoft.com 으로 문의하십시오</block>
+  <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">Microsoft 서버와 통신하여 선택한 온라인 서비스에 로그인합니다.</block>
+  <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">이러한 외부 서비스에 처음 연결하는 동안에만 _cloudmanager.cloud.netapp.com_ 에 액세스해야 합니다.</block>
+  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">인터넷에 액세스할 수 없는 온프레미스 위치에 배포되었습니다</block>
+  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">필요한 엔드포인트 목록은 여기 를 참조하십시오</block>
+  <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">데이터 센스도 가능합니다 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>. 그러나 로컬 SharePoint 파일을 검색하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>.</block>
+  <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">데이터 센스도 가능합니다 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>. 하지만 로컬 OneDrive 파일을 검색하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>.</block>
 </blocks>

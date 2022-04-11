@@ -57,6 +57,12 @@ Data Sense는 지금 OneDrive 계정 및 SharePoint 계정에서 스캔되는 �
 
 
 
+=== 어두운 사이트에 배포할 때 OneDrive 및 SharePoint 데이터 스캔 지원
+
+인터넷에 액세스할 수 없는 온프레미스 사이트의 호스트에 Cloud Data Sense를 배포했다면 이제 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 검색할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["다음 끝점에 대한 액세스를 허용해야 합니다."]
+
+
+
 === Cloud Data Sense를 사용하여 Cloud Backup 파일을 검사하는 베타 기능은 이 릴리즈에서 더 이상 제공되지 않습니다
 
 

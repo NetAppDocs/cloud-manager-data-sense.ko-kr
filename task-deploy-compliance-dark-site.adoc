@@ -29,7 +29,9 @@ summary: 인터넷 액세스가 없는 사내 사이트의 호스트에 클라�
 * S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지
 
 
-현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP, AWS S3 또는 OneDrive 및 SharePoint 계정을 스캔할 수 없습니다.
+매우 안전한 Cloud Manager 설치가 필요하지만 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 스캔하려는 특수한 상황에서는 Data Sense 오프라인 설치 프로그램을 사용하여 몇 개의 선택 끝점에 대한 인터넷 액세스를 제공할 수 있습니다. 을 참조하십시오 <<SharePoint and OneDrive special requirements,SharePoint 및 OneDrive 특별 요구 사항>> 를 참조하십시오.
+
+현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP 또는 AWS S3 계정을 스캔할 수 없습니다.
 
 
 
@@ -38,6 +40,10 @@ summary: 인터넷 액세스가 없는 사내 사이트의 호스트에 클라�
 대부분의 데이터 감지 기능은 인터넷에 연결되지 않은 사이트에 구축할 때 작동합니다. 그러나 인터넷 액세스가 필요한 특정 기능은 지원되지 않습니다. 예를 들면 다음과 같습니다.
 
 * Microsoft Azure 정보 보호(AIP) 레이블 관리
+* 특정 중요 정책에서 결과를 반환하는 경우 Cloud Manager 사용자에게 이메일 알림을 보냅니다
+* 여러 사용자에 대한 Cloud Manager 역할 설정(예: 계정 관리자 또는 규정 준수 뷰어)
+* Cloud Sync를 사용하여 소스 파일 복사 및 동기화
+* 사용자 피드백을 받는 중입니다
 * Cloud Manager에서 소프트웨어 업그레이드 자동화
 +
 Cloud Manager Connector와 데이터 센스 모두 새로운 기능을 사용하기 위해 정기적인 수동 업그레이드가 필요합니다. 데이터 감지 UI 페이지 하단에 데이터 감지 버전이 표시됩니다. 를 확인하십시오 link:whats-new.html["클라우드 데이터 감지 릴리스 정보"] 각 릴리스의 새로운 기능과 해당 기능을 원하는지 여부를 확인합니다. 그런 다음 의 단계를 수행할 수 있습니다 <<Upgrade Data Sense software,데이터 감지 소프트웨어를 업그레이드하십시오>>.
@@ -120,6 +126,24 @@ Cloud Manager에서 설치 진행률을 볼 수 있도록 포트 8080이 열려 
 Data Sense 인스턴스는 개인 IP 주소를 사용하여 인덱싱된 데이터에 다른 사용자가 액세스할 수 없도록 합니다. 따라서 Cloud Manager에 액세스하는 데 사용하는 웹 브라우저에는 해당 프라이빗 IP 주소에 연결되어 있어야 합니다. 이 연결은 Data Sense 인스턴스와 동일한 네트워크 내에 있는 호스트에서 발생할 수 있습니다.
 
 
+
+
+
+== SharePoint 및 OneDrive 특별 요구 사항
+
+인터넷에 액세스할 수 없는 사이트에 Cloud Manager 및 Data Sense를 배포하는 경우, 몇 개의 선택 엔드포인트에 대한 인터넷 액세스를 제공하여 SharePoint 및 OneDrive 계정의 로컬 파일을 검색할 수 있습니다.
+
+[cols="50,50"]
+|===
+| 엔드포인트 | 목적 
+
+
+| login.microsoft.com \graph.microsoft.com 으로 문의하십시오 | Microsoft 서버와 통신하여 선택한 온라인 서비스에 로그인합니다. 
+
+
+| https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | NetApp 계정을 포함한 Cloud Manager 서비스와 통신합니다. 
+|===
+이러한 외부 서비스에 처음 연결하는 동안에만 _cloudmanager.cloud.netapp.com_ 에 액세스해야 합니다.
 
 
 

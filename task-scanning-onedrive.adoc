@@ -53,6 +53,8 @@ Cloud Data Sense를 활성화하기 전에 다음 사전 요구 사항을 검토
 
 데이터 감지 소프트웨어로 업그레이드하는 것은 인스턴스에 인터넷 연결이 있는 한 자동으로 수행됩니다.
 
+데이터 센스도 가능합니다 link:task-deploy-compliance-dark-site.html["인터넷에 액세스할 수 없는 온프레미스 위치에 배포되었습니다"^]. 하지만 로컬 OneDrive 파일을 검색하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["필요한 엔드포인트 목록은 여기 를 참조하십시오"].
+
 
 
 == OneDrive 계정 추가
