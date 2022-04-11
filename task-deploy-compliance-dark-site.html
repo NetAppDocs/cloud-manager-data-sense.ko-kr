@@ -695,7 +695,7 @@
         </li>
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ko-kr/cloud/">클라우드 문서</a>
+          <a href="https://docs.netapp.com/us-en/cloud/">클라우드 문서</a>
         </li>
         
 
@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:32:53 +0000">04/06/2022</time>
+    <time datetime="2022-04-11 14:48:18 +0000">04/11/2022</time>
     
   
 
@@ -773,7 +773,10 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP, AWS S3 또는 OneDrive 및 SharePoint 계정을 스캔할 수 없습니다.</p>
+<p>매우 안전한 Cloud Manager 설치가 필요하지만 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 스캔하려는 특수한 상황에서는 Data Sense 오프라인 설치 프로그램을 사용하여 몇 개의 선택 끝점에 대한 인터넷 액세스를 제공할 수 있습니다. 을 참조하십시오 <a href="#SharePoint and OneDrive special requirements">SharePoint 및 OneDrive 특별 요구 사항</a> 를 참조하십시오.</p>
+</div>
+<div class="paragraph">
+<p>현재 Cloud Volumes ONTAP, Azure NetApp Files, FSx for ONTAP 또는 AWS S3 계정을 스캔할 수 없습니다.</p>
 </div>
 </div>
 </div>
@@ -787,6 +790,18 @@
 <ul>
 <li>
 <p>Microsoft Azure 정보 보호(AIP) 레이블 관리</p>
+</li>
+<li>
+<p>특정 중요 정책에서 결과를 반환하는 경우 Cloud Manager 사용자에게 이메일 알림을 보냅니다</p>
+</li>
+<li>
+<p>여러 사용자에 대한 Cloud Manager 역할 설정(예: 계정 관리자 또는 규정 준수 뷰어)</p>
+</li>
+<li>
+<p>Cloud Sync를 사용하여 소스 파일 복사 및 동기화</p>
+</li>
+<li>
+<p>사용자 피드백을 받는 중입니다</p>
 </li>
 <li>
 <p>Cloud Manager에서 소프트웨어 업그레이드 자동화</p>
@@ -919,6 +934,39 @@
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sharepoint-및-onedrive-특별-요구-사항">SharePoint 및 OneDrive 특별 요구 사항</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>인터넷에 액세스할 수 없는 사이트에 Cloud Manager 및 Data Sense를 배포하는 경우, 몇 개의 선택 엔드포인트에 대한 인터넷 액세스를 제공하여 SharePoint 및 OneDrive 계정의 로컬 파일을 검색할 수 있습니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">엔드포인트</th>
+<th class="tableblock halign-left valign-top">목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login.microsoft.com \graph.microsoft.com 으로 문의하십시오</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft 서버와 통신하여 선택한 온라인 서비스에 로그인합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a> 으로 문의하십시오</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp 계정을 포함한 Cloud Manager 서비스와 통신합니다.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이러한 외부 서비스에 처음 연결하는 동안에만 <em>cloudmanager.cloud.netapp.com</em> 에 액세스해야 합니다.</p>
 </div>
 </div>
 </div>
