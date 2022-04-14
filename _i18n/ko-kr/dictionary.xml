@@ -85,7 +85,6 @@
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다</block>
   <block id="452acc708bda26e157f53750f7abfdf4" category="list-text">Cloud Data Sense를 사용하려면 Connector를 구축해야 합니다. 대부분의 경우 Cloud Manager에서 사용 중인 다른 스토리지 및 서비스로 인해 이미 Connector를 사용하고 있습니다. Connector 인스턴스를 사용하면 배포된 클라우드 공급자가 비용을 청구합니다. 를 참조하십시오<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>. 커넥터를 온프레미스 시스템에 설치하는 경우 비용이 들지 않습니다.</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">데이터 전송 비용</block>
-  <block id="0ed9dc4d5a9f2cf157dc4dd5c2a2ddb9" category="paragraph">데이터 전송 비용은 설정에 따라 다릅니다. Cloud Data Sense 인스턴스 및 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 클러스터 또는 S3 버킷과 같은 데이터 소스가 _different_Availability Zone 또는 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다. 자세한 내용은 다음 링크를 참조하십시오.</block>
   <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS: Amazon EC2 가격</block>
   <block id="865fef30627e082f6460395b15ac714b" category="list-text"><block ref="865fef30627e082f6460395b15ac714b" category="inline-link-rx"></block></block>
   <block id="ec41ccef0058f3bdb78fe38313b87456" category="inline-link">Microsoft Azure: 대역폭 가격 세부 정보</block>
@@ -318,10 +317,8 @@
   <block id="2eca340e84cb2a3820700c247ca90524" category="paragraph">라이센스가 부여된 기간이 만료일이 다가오고 있거나 라이센스가 부여된 용량이 한도에 도달한 경우 Cloud Data Sense에서 알림을 받게 됩니다.</block>
   <block id="421498634f452574329d3bb9680d93d0" category="inline-image-macro">클라우드 데이터 감지 페이지에 만료 예정인 라이센스가 표시된 스크린샷</block>
   <block id="4aabbc203fdc0de0f5453627625ee6eb" category="paragraph"><block ref="4aabbc203fdc0de0f5453627625ee6eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8bd7b9c63d108bd78a0f8686edde58cb" category="paragraph">이 상태는 Digital Wallet 페이지에도 표시됩니다.</block>
   <block id="89ec6475bcd2a52ce9ca1c8fa843339e" category="inline-image-macro">Digital Wallet 페이지에 만료 중인 라이센스를 보여 주는 스크린샷.</block>
   <block id="44850d609fe11e3b8ab4acea8a524829" category="paragraph"><block ref="44850d609fe11e3b8ab4acea8a524829" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3296c08e481ebfd495353e2c64d86c09" category="paragraph">클라우드 데이터 감지 라이센스가 만료되기 전에 Cloud Data Sense 라이센스를 업데이트하여 데이터 스캔 기능을 중단하지 않아도 됩니다.</block>
   <block id="3117a20957c46eaf722b74248c7555a4" category="list-text">Cloud Manager의 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 특정 일련 번호에 대한 Cloud Data Sense 라이센스에서 기간 연장 또는 추가 용량을 요청합니다. 또한 mailto:ng-contact-data-sense@netapp.com?subject=Licensing[라이센스 업데이트를 요청하려면 이메일을 보내십시오]을 사용할 수 있습니다.</block>
   <block id="2c03e04d86836c39240387af58347149" category="paragraph">라이센스 비용을 지불하고 NetApp Support 사이트에 등록된 Cloud Manager는 Digital Wallet의 라이센스를 자동으로 업데이트하며, 데이터 서비스 라이센스 페이지에는 변경 사항이 5~10분 안에 반영됩니다.</block>
   <block id="5db79377894ec784205c3c0fad010171" category="list-text">Cloud Manager에서 라이센스를 자동으로 업데이트할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 라이센스 파일을 수동으로 업로드해야 합니다.</block>
@@ -1692,7 +1689,6 @@
   <block id="5b593e548a1a3aa15a09eaa9173c45bd" category="paragraph">데이터 감지 UI 페이지 하단에 있는 버전을 확인하여 소프트웨어가 업데이트되었는지 확인할 수 있습니다.</block>
   <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp은 다양한 방법으로 Cloud Manager를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
-  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
   <block id="a1244561bd1d271f7f6a76554fae2cde" category="summary">조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어할 수 있습니다. Cloud Data Sense는 오래된 데이터, 비업무용 데이터, 중복 파일 및 시스템의 대용량 파일을 식별하므로 일부 파일을 제거하거나 더 저렴한 오브젝트 스토리지에 계층화할 것인지 결정할 수 있습니다.</block>
   <block id="16ace13e9030ba8b43b8bf469be3ffff" category="doc">조직에 저장된 데이터에 대한 거버넌스 세부 정보 보기</block>
   <block id="8e907bbc7c59c56a9ea9a3660e214fb9" category="paragraph">또한, 데이터를 사내 위치에서 클라우드로 마이그레이션하려는 경우 데이터의 크기와 데이터를 이동하기 전에 중요한 정보가 포함되어 있는지 여부를 확인할 수 있습니다.</block>
@@ -1875,8 +1871,6 @@
   <block id="f13aece6b768921832b7bb943cab9f19" category="list-text">소스 ONTAP 시스템에서 처음에 NFS 볼륨으로 생성된 볼륨이 설정됩니다.</block>
   <block id="70397bc1b30df5af8cc61673df2f897d" category="list-text">소스 ONTAP 시스템에서 CIFS 볼륨으로 처음 생성된 볼륨을 사용하려면 CIFS 자격 증명을 입력하여 해당 DP 볼륨을 스캔해야 합니다. Cloud Data Sense가 CIFS 볼륨을 스캔할 수 있도록 Active Directory 자격 증명을 이미 입력한 경우 해당 자격 증명을 사용하거나 다른 관리자 자격 증명 세트를 지정할 수 있습니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9에 대한 고지 사항</block>
   <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">클라우드 데이터 센스에 대한 고지 사항</block>
@@ -2116,7 +2110,6 @@
   <block id="338bab1be2b874ad2e6906e8c71283d5" category="paragraph">Cloud Data Sense 설치 프로그램이 패키지, Docker 설치를 완료하고 설치를 등록합니다. 설치는 10분에서 20분 정도 걸릴 수 있습니다.</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
-  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
@@ -2292,16 +2285,10 @@
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">Data Sense 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다. 다른 애플리케이션과 공유되는 호스트에서는 데이터 센스를 지원하지 않습니다. 호스트는 전용 호스트여야 합니다.</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp에 5GiB입니다</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL 라이센스 고려사항</block>
-  <block id="ea788b146da4003e2a945bfac897d653" category="paragraph">Cloud Data Sense BYOL 라이센스를 사용하는 경우, 스캐닝하는 모든 데이터의 크기가 용량 제한에 도달하거나 라이센스 만료 날짜가 임박한 경우 Cloud Manager에서 사용자 인터페이스에 경고를 표시합니다. 다음과 같은 경고가 표시됩니다.</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">스캔 중인 데이터의 양이 라이센스 용량의 80%에 도달한 경우, 제한에 도달하면 다시 한 번 표시됩니다</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">라이센스가 만료되기 30일 전에 라이센스가 만료되고 라이센스가 만료되면 다시 만료됩니다</block>
   <block id="e8c240ac70f9e6acaa6b979acb3be469" category="paragraph">이러한 경고가 표시되면 Cloud Manager 인터페이스 오른쪽 아래에 있는 채팅 아이콘을 사용하여 라이센스를 갱신하십시오.</block>
-  <block id="788e4ff805005ba0a3c88a392b87f9a6" category="paragraph">라이센스가 만료되면 다음 두 가지 상황이 발생할 수 있습니다.</block>
-  <block id="4682818c4f814fd62499f53422b70f33" category="list-text">사용 중인 계정에 마켓플레이스 가입이 있는 경우 Data Sense는 계속 실행되지만 PAYGO 라이센스 모델로 이전됩니다. 스캔 중인 데이터의 양에 대한 요금이 부과됩니다.</block>
-  <block id="2ed7f1db5e75685e121a0c29a15e4247" category="list-text">사용 중인 계정에 마켓플레이스 가입이 없는 경우 데이터 센스가 계속 실행되지만 경고가 계속 표시됩니다.</block>
   <block id="c438a45ba498e9cee6eb5d6bb573e3dc" category="inline-xref">Cloud Data Sense 라이센스를 업데이트하는 방법</block>
-  <block id="dcbd0c81108f8a84d6e28aa71bb57afa" category="paragraph">BYOL 구독을 갱신하면 Cloud Manager에서 라이센스를 자동으로 업데이트합니다. Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 직접 파일을 얻고 Cloud Manager에 수동으로 업로드할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>.</block>
-  <block id="9d21e20ef25e8b74361e9e64a818de8b" category="paragraph">PAYGO 라이센스로 전환된 시스템은 자동으로 BYOL 라이센스로 돌아갑니다. 라이센스 없이 실행 중인 시스템은 경고 표시를 중지하고 라이센스가 만료된 동안 발생한 작업에 대해 비용이 청구됩니다.</block>
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">그러면 설치 파일 * cc_onpremise_installer_&lt;version&gt;.tar.gz * 가 추출됩니다.</block>
   <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">데이터 센스(Data Sense)는 해시 기술을 사용하여 중복 파일을 결정합니다. 파일에 다른 파일과 동일한 해시 코드가 있으면 파일 이름이 다르더라도 파일이 정확하게 중복되었는지 100% 확인할 수 있습니다.</block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">이 페이지에 제공된 "파일 해시" 값을 사용하여 조사 페이지에 직접 입력하여 특정 중복 파일을 언제든지 검색할 수도 있고, 정책에 사용할 수도 있습니다.</block>
@@ -2323,4 +2310,61 @@
   <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">필요한 엔드포인트 목록은 여기 를 참조하십시오</block>
   <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">데이터 센스도 가능합니다 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>. 그러나 로컬 SharePoint 파일을 검색하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>.</block>
   <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">데이터 센스도 가능합니다 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>. 하지만 로컬 OneDrive 파일을 검색하려면 몇 개의 선택 끝점에 인터넷 액세스를 제공해야 합니다. <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>.</block>
+  <block id="9aa68bac48e77ad847d7e57a68f08944" category="paragraph">이 상태는 디지털 지갑에도 표시됩니다.</block>
+  <block id="06314d3359f0409e52f485d16ab0c81f" category="paragraph">Cloud Data Sense 라이센스가 만료되기 전에 업데이트하여 스캔한 데이터에 대한 액세스 중단이 발생하지 않도록 할 수 있습니다.</block>
+  <block id="97746363437883c04054266c7437dd32" category="paragraph">Cloud Data Sense BYOL 라이센스를 사용하는 경우, 스캔 중인 모든 데이터의 크기가 용량 제한에 근접하거나 라이센스 만료 날짜가 임박한 경우 Cloud Manager는 Data Sense UI 및 Digital Wallet UI에 경고를 표시합니다. 다음과 같은 경고가 표시됩니다.</block>
+  <block id="fb319f290355569f99ed376ce5d98c05" category="paragraph">라이센스가 만료되면 Data Sense는 계속 실행되지만, 스캔된 데이터에 대한 정보를 볼 수 없도록 대시보드에 대한 액세스가 차단됩니다. 라이센스 한도 내에서 용량 사용을 잠재적으로 가져오기 위해 스캔되는 볼륨 수를 줄이려는 경우 _Configuration_ 페이지만 사용할 수 있습니다.</block>
+  <block id="ead7d63a9d9b27cce1fef2638b16cffc" category="paragraph">BYOL 라이센스를 갱신하면 Cloud Manager가 Digital Wallet에서 라이센스를 자동으로 업데이트하고 모든 대시보드에 대한 모든 액세스를 제공합니다. Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 직접 파일을 얻고 Cloud Manager에 수동으로 업로드할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>.</block>
+  <block id="becde272662faf1aa4393e2cd5fbf2f7" category="admonition">사용 중인 계정에 BYOL 라이센스와 PAYGO 구독이 모두 있는 경우, BYOL 라이센스가 만료되면 Data Sense_NOT_SHIFT가 PAYGO 구독으로 전환됩니다. BYOL 라이센스를 갱신해야 합니다.</block>
+  <block id="14aeecf5ef82e6232639978162b42963" category="paragraph">데이터 전송 비용은 설정에 따라 다릅니다. Cloud Data Sense 인스턴스 및 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 시스템 또는 S3 버킷과 같은 데이터 소스가 _different_Availability Zone 또는 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다. 자세한 내용은 다음 링크를 참조하십시오.</block>
+  <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">NSS 계정을 추가합니다</block>
+  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">지원 대시보드를 이용하면 모든 NetApp Support 사이트 계정을 단일 위치에서 추가 및 관리할 수 있습니다.</block>
+  <block id="5be2593b5948f30a15179a32daa73ee2" category="inline-link">1인 등록</block>
+  <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">아직 NetApp Support 사이트 계정이 없는 경우<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>.</block>
+  <block id="0046efb3377274ff3215d4b30269809e" category="list-text">Cloud Manager 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 클릭합니다.</block>
+  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
+  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
+  <block id="f5fb4199485234c409525f430b737010" category="paragraph">이 작업을 수행하면 Cloud Manager에서 NSS 계정을 사용할 수 있습니다.</block>
+  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">참고 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님).</block>
+  <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">계정을 등록하여 지원을 받을 수 있습니다</block>
+  <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">지원 등록은 지원 대시보드의 Cloud Manager에서 가능합니다.</block>
+  <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">Resources * 탭에서 * Register for Support * 를 클릭합니다.</block>
+  <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">등록할 NSS 자격 증명을 선택한 다음 * 등록 * 을 클릭합니다.</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="51719eefc68685ac0e2a11057a44b8be" category="paragraph">NetApp은 다양한 방법으로 Cloud Manager 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">자체 지원</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
+  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
+  <block id="76b571fb5edea1c1994fa0ff01f7b1e2" category="paragraph">Cloud Manager 기술 자료를 검색하여 문제를 해결할 수 있는 유용한 문서를 찾습니다.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7f3490343cad8dc3bfdb72dd5d957e8d" category="paragraph">Cloud Manager 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만들어보십시오.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
+  <block id="3c313458d6e15dd2c4336e47118d0a8f" category="paragraph">현재 보고 있는 Cloud Manager 문서입니다.</block>
+  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]</block>
+  <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. 클라우드 관리자 개선에 도움이 되는 피드백을 제출해 주십시오.</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 지원</block>
+  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 엔지니어와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
+  <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager에서 * 도움말 &gt; 지원 * 을 클릭합니다.</block>
+  <block id="f5052c65917d7341726235d4d4941461" category="list-text">기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
+  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
+  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
 </blocks>

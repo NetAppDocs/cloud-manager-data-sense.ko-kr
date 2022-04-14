@@ -6,6 +6,7 @@ summary: Cloud Data Sense는 개인 데이터를 관리하고 구성할 수 있�
 ---
 = 개인 데이터 구성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

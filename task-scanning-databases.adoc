@@ -6,6 +6,7 @@ summary: 클라우드 데이터 센스를 사용하여 데이터베이스 스키
 ---
 = 데이터베이스 스키마를 검색하는 중입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

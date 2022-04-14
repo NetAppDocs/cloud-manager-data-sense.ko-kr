@@ -6,6 +6,7 @@ summary: 클라우드 데이터 센스를 사용하여 Cloud Volumes ONTAP 및 �
 ---
 = Cloud Volumes ONTAP 및 사내 ONTAP에 대한 클라우드 데이터 센스를 시작하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

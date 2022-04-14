@@ -6,6 +6,7 @@ summary: 'Cloud Data Sense를 사용하여 오브젝트 스토리지 내에서 �
 ---
 = S3 프로토콜을 사용하는 오브젝트 스토리지 스캔
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

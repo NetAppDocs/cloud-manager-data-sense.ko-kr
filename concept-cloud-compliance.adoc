@@ -6,6 +6,7 @@ summary: Cloud Data Sense는 Cloud Manager를 위한 데이터 거버넌스 서�
 ---
 = 클라우드 데이터 센스에 대해 알아보십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -86,7 +87,7 @@ link:task-licensing-datasense.html["Cloud Data Sense에 대한 라이센스 부�
 
 === 데이터 전송 비용
 
-데이터 전송 비용은 설정에 따라 다릅니다. Cloud Data Sense 인스턴스 및 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 클러스터 또는 S3 버킷과 같은 데이터 소스가 _different_Availability Zone 또는 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다. 자세한 내용은 다음 링크를 참조하십시오.
+데이터 전송 비용은 설정에 따라 다릅니다. Cloud Data Sense 인스턴스 및 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 시스템 또는 S3 버킷과 같은 데이터 소스가 _different_Availability Zone 또는 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다. 자세한 내용은 다음 링크를 참조하십시오.
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS: Amazon EC2 가격"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure: 대역폭 가격 세부 정보"^]

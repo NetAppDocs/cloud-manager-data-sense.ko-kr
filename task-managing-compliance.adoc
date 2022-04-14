@@ -6,6 +6,7 @@ summary: 필요한 경우 하나 이상의 작업 환경, 데이터베이스, �
 ---
 = 클라우드 데이터 센스에서 데이터 소스를 제거합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

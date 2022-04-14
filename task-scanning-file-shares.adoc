@@ -6,6 +6,7 @@ summary: Cloud Data Sense를 사용하여 NetApp이 아닌 NFS 또는 CIFS 파�
 ---
 = 파일 공유를 검색하는 중입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 클라우드 데이터 센스를 클라우드에 구축하려면 몇 �
 ---
 = 클라우드 데이터 센스를 클라우드에 배포합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Cloud Data Sense는 Amazon S3 버킷을 스캔하여 S3 오브젝트 �
 ---
 = Amazon S3에 대한 Cloud Data Sense 시작하기
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

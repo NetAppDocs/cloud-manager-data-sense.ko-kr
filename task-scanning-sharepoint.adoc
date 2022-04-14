@@ -6,6 +6,7 @@ summary: Cloud Data Sense를 사용하여 SharePoint 계정의 파일 스캔을 
 ---
 = SharePoint 계정 스캔 중
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

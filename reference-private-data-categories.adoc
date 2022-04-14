@@ -6,6 +6,7 @@ summary: Cloud Data Sense는 볼륨, Amazon S3 버킷, 데이터베이스, OneDr
 ---
 = 개인 데이터의 범주입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

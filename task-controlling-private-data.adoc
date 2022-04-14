@@ -6,6 +6,7 @@ summary: 조직의 개인 데이터 및 민감한 개인 데이터에 대한 세
 ---
 = 조직에 저장된 데이터에 대한 규정 준수 세부 정보 보기
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 글로벌 Active Directory를 클라우드 데이터 센스와 통합�
 ---
 = Active Directory를 클라우드 데이터 센스에 통합합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

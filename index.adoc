@@ -7,6 +7,7 @@ summary: Cloud Data Sense는 데이터 소스를 검사하여 데이터를 매�
 ---
 = 클라우드 데이터 감지 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

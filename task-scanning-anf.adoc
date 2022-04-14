@@ -6,6 +6,7 @@ summary: Azure NetApp Files용 클라우드 데이터 센스를 시작하려면 
 ---
 = Azure NetApp Files용 클라우드 데이터 센스를 시작하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

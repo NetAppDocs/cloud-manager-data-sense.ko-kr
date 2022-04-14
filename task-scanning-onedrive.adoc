@@ -6,6 +6,7 @@ summary: Cloud Data Sense를 사용하여 사용자의 OneDrive 폴더에 있는
 ---
 = OneDrive 계정 스캔 중
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

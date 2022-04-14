@@ -6,6 +6,7 @@ summary: '"Data Fusion"라고 하는 기능을 사용하면 조직의 데이터�
 ---
 = Data Fusion를 사용하여 개인 데이터 식별자를 추가합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
