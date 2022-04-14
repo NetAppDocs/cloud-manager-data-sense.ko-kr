@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:32:53 +0000">04/06/2022</time>
+    <time datetime="2022-04-14 13:34:13 +0000">04/14/2022</time>
     
   
 
@@ -949,13 +949,13 @@ Your browser does not support the video tag.
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc1.png" alt="클라우드 데이터 감지 페이지에 만료 예정인 라이센스가 표시된 스크린샷"></span></p>
 </div>
 <div class="paragraph">
-<p>이 상태는 Digital Wallet 페이지에도 표시됩니다.</p>
+<p>이 상태는 디지털 지갑에도 표시됩니다.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc2.png" alt="Digital Wallet 페이지에 만료 중인 라이센스를 보여 주는 스크린샷."></span></p>
 </div>
 <div class="paragraph">
-<p>클라우드 데이터 감지 라이센스가 만료되기 전에 Cloud Data Sense 라이센스를 업데이트하여 데이터 스캔 기능을 중단하지 않아도 됩니다.</p>
+<p>Cloud Data Sense 라이센스가 만료되기 전에 업데이트하여 스캔한 데이터에 대한 액세스 중단이 발생하지 않도록 할 수 있습니다.</p>
 </div>
 <div class="olist arabic">
 <div class="title">단계</div>
@@ -994,7 +994,7 @@ Your browser does not support the video tag.
 <div class="sect2">
 <h3 id="byol-라이센스-고려사항">BYOL 라이센스 고려사항</h3>
 <div class="paragraph">
-<p>Cloud Data Sense BYOL 라이센스를 사용하는 경우, 스캐닝하는 모든 데이터의 크기가 용량 제한에 도달하거나 라이센스 만료 날짜가 임박한 경우 Cloud Manager에서 사용자 인터페이스에 경고를 표시합니다. 다음과 같은 경고가 표시됩니다.</p>
+<p>Cloud Data Sense BYOL 라이센스를 사용하는 경우, 스캔 중인 모든 데이터의 크기가 용량 제한에 근접하거나 라이센스 만료 날짜가 임박한 경우 Cloud Manager는 Data Sense UI 및 Digital Wallet UI에 경고를 표시합니다. 다음과 같은 경고가 표시됩니다.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1010,23 +1010,22 @@ Your browser does not support the video tag.
 <p>이러한 경고가 표시되면 Cloud Manager 인터페이스 오른쪽 아래에 있는 채팅 아이콘을 사용하여 라이센스를 갱신하십시오.</p>
 </div>
 <div class="paragraph">
-<p>라이센스가 만료되면 다음 두 가지 상황이 발생할 수 있습니다.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>사용 중인 계정에 마켓플레이스 가입이 있는 경우 Data Sense는 계속 실행되지만 PAYGO 라이센스 모델로 이전됩니다. 스캔 중인 데이터의 양에 대한 요금이 부과됩니다.</p>
-</li>
-<li>
-<p>사용 중인 계정에 마켓플레이스 가입이 없는 경우 데이터 센스가 계속 실행되지만 경고가 계속 표시됩니다.</p>
-</li>
-</ul>
+<p>라이센스가 만료되면 Data Sense는 계속 실행되지만, 스캔된 데이터에 대한 정보를 볼 수 없도록 대시보드에 대한 액세스가 차단됩니다. 라이센스 한도 내에서 용량 사용을 잠재적으로 가져오기 위해 스캔되는 볼륨 수를 줄이려는 경우 <em>Configuration</em> 페이지만 사용할 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>BYOL 구독을 갱신하면 Cloud Manager에서 라이센스를 자동으로 업데이트합니다. Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 직접 파일을 얻고 Cloud Manager에 수동으로 업로드할 수 있습니다. 자세한 내용은 을 참조하십시오 <a href="#Update a Cloud Data Sense BYOL license">Cloud Data Sense 라이센스를 업데이트하는 방법</a>.</p>
+<p>BYOL 라이센스를 갱신하면 Cloud Manager가 Digital Wallet에서 라이센스를 자동으로 업데이트하고 모든 대시보드에 대한 모든 액세스를 제공합니다. Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우(예: 어두운 사이트에 설치된 경우) 직접 파일을 얻고 Cloud Manager에 수동으로 업로드할 수 있습니다. 자세한 내용은 을 참조하십시오 <a href="#Update a Cloud Data Sense BYOL license">Cloud Data Sense 라이센스를 업데이트하는 방법</a>.</p>
 </div>
-<div class="paragraph">
-<p>PAYGO 라이센스로 전환된 시스템은 자동으로 BYOL 라이센스로 돌아갑니다. 라이센스 없이 실행 중인 시스템은 경고 표시를 중지하고 라이센스가 만료된 동안 발생한 작업에 대해 비용이 청구됩니다.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-data-sense/images/tip.svg" alt="팁">
+</td>
+<td class="content">
+사용 중인 계정에 BYOL 라이센스와 PAYGO 구독이 모두 있는 경우, BYOL 라이센스가 만료되면 Data Sense_NOT_SHIFT가 PAYGO 구독으로 전환됩니다. BYOL 라이센스를 갱신해야 합니다.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
