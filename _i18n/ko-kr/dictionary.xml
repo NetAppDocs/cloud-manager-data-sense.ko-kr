@@ -1824,9 +1824,7 @@
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Google Cloud 설명서: 리소스 할당량</block>
   <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
   <block id="d7a48de9510bd2b767d3d5fc0a2c7716" category="list-text">Cloud Manager Connector가 클라우드 데이터 센스에 액세스할 수 있는지 확인합니다</block>
-  <block id="7a1ca71e0bd803afb25df05b1d1dd052" category="list-text">Connector와 Cloud Data Sense 인스턴스 간의 연결을 확인합니다. Connector의 보안 그룹은 포트 443을 통해 데이터 감지 인스턴스 간에 인바운드 및 아웃바운드 트래픽을 허용해야 합니다. 이 연결을 통해 Data Sense 인스턴스를 구축할 수 있으며 규정 준수 및 거버넌스 탭에서 정보를 볼 수 있습니다.</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">AWS의 커넥터 규칙</block>
-  <block id="bb607285829b82b3d72af8d273125f48" category="paragraph">Cloud Data Sense는 AWS 및 Azure의 정부 지역에서 지원됩니다. AWS 및 AWS GovCloud 배포에는 추가 인바운드 및 아웃바운드 규칙이 필요합니다. 을 참조하십시오<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="71a1162233b51bce893571d72cd943d1" category="list-text">클라우드 데이터 센스를 계속 운영할 수 있는지 확인하십시오</block>
   <block id="8412fae8dddba4e0747379264d31e177" category="list-text">데이터를 지속적으로 스캔하려면 Cloud Data Sense 인스턴스가 켜져 있어야 합니다.</block>
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">클라우드 데이터 센스에 대한 웹 브라우저 연결을 확인합니다</block>
@@ -2367,4 +2365,8 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
+  <block id="eee50fc2c4ac06219bb486e05b8250f7" category="list-text">Connector와 Cloud Data Sense 인스턴스 간의 연결을 확인합니다. Connector의 보안 그룹은 포트 443을 통해 데이터 감지 인스턴스 간에 인바운드 및 아웃바운드 트래픽을 허용해야 합니다. 이 연결을 통해 Data Sense 인스턴스를 구축할 수 있으며 규정 준수 및 거버넌스 탭에서 정보를 볼 수 있습니다. Cloud Data Sense는 AWS 및 Azure의 정부 지역에서 지원됩니다.</block>
+  <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS 및 AWS GovCloud 배포에는 추가 인바운드 및 아웃바운드 규칙이 필요합니다. 을 참조하십시오<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure의 커넥터 규칙</block>
+  <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure 및 Azure Government 배포에는 추가 인바운드 및 아웃바운드 규칙이 필요합니다. 을 참조하십시오<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> 를 참조하십시오.</block>
 </blocks>
