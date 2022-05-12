@@ -41,7 +41,7 @@ Active Directory와 클라우드 데이터 센스를 통합하면 다음 데이�
 * 비 NetApp CIFS 파일 공유(NFS 파일 공유 제외)
 
 
-S3(Simple Storage Service) 프로토콜을 사용하는 데이터베이스 스키마, OneDrive 계정, SharePoint 계정, Amazon S3 계정 또는 오브젝트 스토리지에서 사용자 및 권한 정보를 식별할 수 있는 기능은 없습니다.
+데이터베이스 스키마, OneDrive 계정, SharePoint 계정, Google Drive 계정, Amazon S3 계정, S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 를 참조하십시오.
 
 
 

@@ -61,7 +61,7 @@ Cloud Data Sense는 .DOC, .DOCX, .PDF, .PPTX, .XLS 파일 형식 내에서 AIP �
 
 [NOTE]
 ====
-* 현재 30MB를 초과하는 파일의 레이블은 변경할 수 없습니다. OneDrive 및 SharePoint 계정의 경우 최대 파일 크기는 4MB입니다.
+* 현재 30MB를 초과하는 파일의 레이블은 변경할 수 없습니다. OneDrive, SharePoint 및 Google Drive 계정의 경우 최대 파일 크기는 4MB입니다.
 * 파일에 AIP에 더 이상 존재하지 않는 레이블이 있는 경우 Cloud Data Sense는 이 레이블을 레이블이 없는 파일로 간주합니다.
 * 인터넷에 액세스할 수 없는 온프레미스 위치(어두운 사이트라고도 함)에 Data Sense 인스턴스를 배포한 경우에는 AIP 레이블 기능을 사용할 수 없습니다.
 

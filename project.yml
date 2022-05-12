@@ -44,6 +44,8 @@ sidebar:
         url: "/task-scanning-onedrive.html"
       - title: SharePoint 계정
         url: "/task-scanning-sharepoint.html"
+      - title: Google Drive 계정
+        url: "/task-scanning-google-drive.html"
       - title: 파일 공유
         url: "/task-scanning-file-shares.html"
       - title: 오브젝트 스토리지
@@ -100,7 +102,7 @@ homepage:
       url: task-add-active-directory-datasense.html
     - title: 라이센스를 설정합니다
       url: task-licensing-datasense.html
-  - title: 데이터 소스에서 스캔을 활성화합니다
+  - title: 작업 환경을 스캔합니다
     links:
     - title: Cloud Volumes ONTAP 볼륨
       url: task-getting-started-compliance.html
@@ -112,6 +114,8 @@ homepage:
       url: task-scanning-fsx.html
     - title: Amazon S3 버킷
       url: task-scanning-s3.html
+  - title: 다른 데이터 소스를 스캔합니다
+    links:
     - title: 일반 S3 버킷
       url: task-scanning-object-storage.html
     - title: 비 NetApp 파일 공유
@@ -122,34 +126,40 @@ homepage:
       url: task-scanning-onedrive.html
     - title: SharePoint 계정
       url: task-scanning-sharepoint.html
-  - title: 프라이빗 데이터 관리
+    - title: Google Drive 계정
+      url: task-scanning-google-drive.html
+  - title: 데이터에 대한 세부 정보를 봅니다
     links:
-    - title: AIP 레이블을 사용하여 데이터를 분류합니다
-      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
-    - title: 규정을 준수하지 않는 데이터가 발견되면 이메일 경고를 생성합니다
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
-    - title: 사용자 지정 개인 데이터 식별자를 추가합니다
-      url: task-managing-data-fusion.html
+    - title: 개인 정보가 포함된 파일을 봅니다
+      url: task-controlling-private-data.html
+    - title: 스토리지에 복제된 파일을 봅니다
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: 특정 파일을 보려면 데이터를 필터링합니다
+      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+    - title: 상위 검색을 볼 수 있는 정책을 생성합니다
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: 규정 준수 보고서를 생성합니다
+      url: task-generating-compliance-reports.html
+  - title: 개인 데이터를 구성합니다
+    links:
     - title: 주의가 필요한 파일에 태그 및 소유자 적용
       url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
-    - title: 데이터 주체 액세스 요청에 응답합니다
-      url: task-responding-to-dsar.html
+    - title: AIP 레이블을 사용하여 데이터를 분류합니다
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 사용자 지정 개인 데이터 식별자를 추가합니다
+      url: task-managing-data-fusion.html
+  - title: 개인 데이터를 관리합니다
+    links:
     - title: 원본 파일을 복사합니다
       url: task-managing-highlights.html#copying-source-files
     - title: 원본 파일 이동
       url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
     - title: 원본 파일을 삭제합니다
       url: task-managing-highlights.html#deleting-source-files
-  - title: 데이터에 대한 세부 정보를 봅니다
-    links:
-    - title: 상위 검색을 볼 수 있는 정책을 생성합니다
-      url: task-org-private-data.html#controlling-your-data-using-policies
-    - title: 개인 정보가 포함된 파일을 봅니다
-      url: task-controlling-private-data.html
-    - title: 스토리지에 복제된 파일을 봅니다
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
-    - title: 규정 준수 보고서를 생성합니다
-      url: task-generating-compliance-reports.html
+    - title: 규정을 준수하지 않는 데이터가 발견되면 이메일 경고를 생성합니다
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: 데이터 주체 액세스 요청에 응답합니다
+      url: task-responding-to-dsar.html
   - title: 블로그 커뮤니티
     links:
     - title: NetApp 커뮤니티

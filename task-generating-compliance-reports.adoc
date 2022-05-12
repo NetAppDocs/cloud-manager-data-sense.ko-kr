@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
-keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa 
+keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
 summary: Cloud Data Sense는 조직의 데이터 개인 정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다. 
 ---
 = 준수 보고서 보기
@@ -16,14 +16,15 @@ summary: Cloud Data Sense는 조직의 데이터 개인 정보 보호 프로그�
 [role="lead"]
 Cloud Data Sense는 조직의 데이터 개인 정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다.
 
-기본적으로 Cloud Data Sense 대시보드에는 모든 작업 환경 및 데이터베이스에 대한 규정 준수 및 거버넌스 데이터가 표시됩니다. 일부 작업 환경에 대한 데이터만 포함된 보고서를 보려면 <<Selecting the working environments for reports,작업 환경을 선택합니다>>.
+기본적으로 Cloud Data Sense 대시보드에는 모든 작업 환경, 데이터베이스 및 데이터 소스에 대한 규정 준수 및 거버넌스 데이터가 표시됩니다. 일부 작업 환경에 대한 데이터만 포함된 보고서를 보려면 <<Selecting the working environments for reports,작업 환경을 선택합니다>>.
+
+[NOTE]
+====
+* 이 섹션에 설명된 보고서는 데이터 소스에서 전체 분류 검사를 수행하도록 선택한 경우에만 사용할 수 있습니다. 매핑 전용 스캔이 있는 데이터 원본은 데이터 매핑 보고서만 생성할 수 있습니다.
+* NetApp은 Cloud Data Sense에서 식별할 수 있는 개인 데이터와 민감한 개인 데이터의 100% 정확성을 보장할 수 없습니다. 항상 데이터를 검토하여 정보의 유효성을 확인해야 합니다.
 
 
-NOTE: 이 섹션에 설명된 보고서는 데이터 소스에서 전체 분류 검사를 수행하도록 선택한 경우에만 사용할 수 있습니다. 매핑 전용 스캔이 있는 데이터 원본은 데이터 매핑 보고서만 생성할 수 있습니다.
-
-
-NOTE: NetApp은 Cloud Data Sense에서 식별할 수 있는 개인 데이터와 민감한 개인 데이터의 100% 정확성을 보장할 수 없습니다. 항상 데이터를 검토하여 정보의 유효성을 확인해야 합니다.
-
+====
 
 
 == 개인 정보 보호 위험 평가 보고서
@@ -197,6 +198,65 @@ image:screenshot_compliance_data_mapping_report_button.png["데이터 매핑 보
 
 
 Cloud Data Sense는 PDF 보고서를 생성하여 필요에 따라 다른 그룹에 검토 및 전송할 수 있습니다.
+
+
+
+== 데이터 조사 보고서
+
+데이터 조사 보고서는 데이터 조사 페이지의 내용을 다운로드하는 것입니다. link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["데이터 조사 페이지에 대해 자세히 알아보십시오"].
+
+보고서를 로컬 컴퓨터에 .csv 파일로 저장할 수 있으며, 여기에는 최대 5,000개의 데이터 행이 포함될 수 있습니다. 데이터 센스가 데이터베이스 테이블(구조화된 데이터) 및 파일(구조화되지 않은 데이터)을 검색하는 경우 .csv 보고서를 최대 2개까지 다운로드할 수 있습니다.
+
+
+
+=== 데이터 조사 보고서 생성
+
+.단계
+. 데이터 조사 페이지에서 을 클릭합니다 image:button_download.png["다운로드 버튼"] 버튼을 클릭합니다.
+
+
+보고서를 다운로드하는 중이라는 메시지가 대화 상자에 표시됩니다.
+
+
+
+=== 각 데이터 조사 보고서에 포함된 내용
+
+비정형 파일 데이터 보고서 * 에는 파일에 대한 다음 정보가 포함됩니다.
+
+* 파일 이름입니다
+* 위치 유형
+* 작업 환경 이름입니다
+* 스토리지 저장소(예: 볼륨, 버킷, 공유)
+* 작업 환경 유형입니다
+* 파일 경로
+* 파일 형식
+* 파일 크기
+* 만든 시간
+* 마지막 수정
+* 마지막 액세스
+* 파일 소유자
+* 범주
+* 개인 정보
+* 민감한 개인 정보
+* 삭제 감지 날짜입니다
++
+삭제 감지 날짜는 파일이 삭제되거나 이동된 날짜를 나타냅니다. 이렇게 하면 중요한 파일이 이동된 시기를 식별할 수 있습니다. 삭제된 파일은 대시보드나 조사 페이지에 나타나는 파일 번호 개수에 포함되지 않습니다. 파일은 CSV 보고서에만 나타납니다.
+
+
+
+Structured Data Report * 에는 데이터베이스 테이블에 대한 다음 정보가 포함되어 있습니다.
+
+* DB 테이블 이름입니다
+* 위치 유형
+* 작업 환경 이름입니다
+* 스토리지 저장소(예: 스키마)
+* 열 개수
+* 행 수
+* 개인 정보
+* 민감한 개인 정보
+
+
+* 참고: * 폴더에 대한 정보는 현재 보고서에서 사용할 수 없습니다.
 
 
 

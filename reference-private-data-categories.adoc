@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-private-data-categories.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
-summary: Cloud Data Sense는 볼륨, Amazon S3 버킷, 데이터베이스, OneDrive 폴더 및 SharePoint 계정에서 여러 유형의 프라이빗 데이터를 식별할 수 있습니다. 아래 범주를 참조하십시오. 
+summary: Cloud Data Sense는 다양한 유형의 프라이빗 데이터를 볼륨, Amazon S3 버킷, 데이터베이스, OneDrive 폴더, SharePoint 계정에서 식별할 수 있습니다. Google Drive 계정을 만듭니다. 
 ---
 = 개인 데이터의 범주입니다
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense는 볼륨, Amazon S3 버킷, 데이터베이스, OneDr
 
 
 [role="lead"]
-Cloud Data Sense는 볼륨, Amazon S3 버킷, 데이터베이스, OneDrive 폴더 및 SharePoint 계정에서 여러 유형의 프라이빗 데이터를 식별할 수 있습니다. 아래 범주를 참조하십시오.
+Cloud Data Sense는 다양한 유형의 프라이빗 데이터를 볼륨, Amazon S3 버킷, 데이터베이스, OneDrive 폴더, SharePoint 계정에서 식별할 수 있습니다. Google Drive 계정을 만듭니다. 아래 범주를 참조하십시오.
 
 
 TIP: Cloud Data Sense를 사용하여 추가 국가 ID 번호 또는 의료 식별자 등과 같은 다른 프라이빗 데이터 유형을 식별하려면 ng-contact-data-sense@netapp.com 으로 이메일을 보내 요청하십시오.
@@ -299,7 +299,7 @@ Cloud Data Sense는 모든 파일에서 범주 및 메타데이터 정보를 검
 
 그러나 데이터 센스에서 PII(개인 식별 정보)를 감지하거나 DSAR 검색을 수행할 경우 다음 파일 형식만 지원됩니다.
 
-'+.csv, .dcm, .dicom, .DOC, .DOCX, .JSON, .pdf, .PPTX, .rtf, .TXT, XLS 및 .XLSX.+'
+'+.csv, .dcm, .dicom, .DOC, .DOCX, .JSON, .pdf, .PPTX, .rtf, .TXT, XLS, .XLSX, Docs, Sheets, Slides+'
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
 summary: Cloud Data Sense는 Cloud Manager를 위한 데이터 거버넌스 서비스로, 회사의 사내 및 클라우드 데이터 소스와 작업 환경을 검사하여 데이터를 매핑 및 분류하고 프라이빗 정보를 식별합니다. 따라서 보안 및 규정 준수 위험을 줄이고 스토리지 비용을 절감하며 데이터 마이그레이션 프로젝트를 지원할 수 있습니다. 
 ---
 = 클라우드 데이터 센스에 대해 알아보십시오
@@ -67,6 +67,7 @@ Cloud Data Sense는 다음과 같은 유형의 작업 환경 및 데이터 소�
 * 데이터베이스를 지원합니다
 * OneDrive 계정
 * SharePoint 계정
+* Google Drive 계정
 
 
 Data Sense는 NFS 버전 3.x, 4.0, 4.1 및 CIFS 버전 1.x, 2.0, 2.1 및 3.0을 지원합니다.
@@ -80,7 +81,7 @@ Data Sense는 NFS 버전 3.x, 4.0, 4.1 및 CIFS 버전 1.x, 2.0, 2.1 및 3.0을 
 link:task-licensing-datasense.html["Cloud Data Sense에 대한 라이센스 부여 방법을 알아보십시오"^].
 
 * 클라우드에 Cloud Data Sense를 설치하려면 클라우드 인스턴스를 구축해야 하므로 클라우드 인스턴스가 구축된 클라우드 공급자가 비용을 지불해야 합니다. 을 참조하십시오 <<The Cloud Data Sense instance,각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다>>. 사내 시스템에 Data Sense를 설치하면 비용이 들지 않습니다.
-* Cloud Data Sense를 사용하려면 Connector를 구축해야 합니다. 대부분의 경우 Cloud Manager에서 사용 중인 다른 스토리지 및 서비스로 인해 이미 Connector를 사용하고 있습니다. Connector 인스턴스를 사용하면 배포된 클라우드 공급자가 비용을 청구합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다"^]. 커넥터를 온프레미스 시스템에 설치하는 경우 비용이 들지 않습니다.
+* Cloud Data Sense를 사용하려면 Cloud Manager Connector를 구축해야 합니다. 대부분의 경우 Cloud Manager에서 사용 중인 다른 스토리지 및 서비스로 인해 이미 Connector를 사용하고 있습니다. Connector 인스턴스를 사용하면 배포된 클라우드 공급자가 비용을 청구합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["각 클라우드 공급자에 대해 구축된 인스턴스 유형입니다"^]. 커넥터를 온프레미스 시스템에 설치하는 경우 비용이 들지 않습니다.
 
 
 
@@ -179,7 +180,7 @@ image:diagram_cloud_compliance_scan.png["클라우드 공급자가 실행 중인
 
 Cloud Data Sense를 사용하면 선택한 작업 환경 및 데이터 소스에서 일반적인 "매핑" 스캔을 실행할 수 있습니다. 매핑은 데이터에 대한 상위 수준의 개요만 제공하는 반면 분류는 데이터에 대한 세부 수준의 스캐닝을 제공합니다. 내부 데이터를 보기 위해 파일에 액세스하지 않기 때문에 데이터 소스에서 매핑을 매우 빠르게 수행할 수 있습니다.
 
-많은 사용자가 데이터를 신속하게 스캔하여 더 많은 연구가 필요한 데이터 소스를 식별하려고 하므로 이 기능을 좋아하고, 그런 다음 이러한 데이터 소스 또는 볼륨에서만 분류 검사를 활성화할 수 있습니다.
+많은 사용자가 데이터를 신속하게 스캔하여 더 많은 연구가 필요한 데이터 소스를 식별하려고 하므로 이 기능을 좋아하고, 그런 다음 필요한 데이터 소스 또는 볼륨에서만 분류 검사를 활성화할 수 있습니다.
 
 아래 표에는 몇 가지 차이점이 나와 있습니다.
 
