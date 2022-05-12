@@ -67,7 +67,7 @@ link:task-deploy-cloud-compliance.html["클라우드 데이터 센스를 구축�
 
 == Google Drive 계정을 추가하는 중입니다
 
-사용자 파일이 있는 Google Drive 계정을 추가합니다.
+사용자 파일이 있는 Google Drive 계정을 추가합니다. 여러 사용자의 파일을 스캔하려면 각 사용자에 대해 이 단계를 실행해야 합니다.
 
 .단계
 . 작업 환경 구성 페이지에서 * 데이터 소스 추가 * > * Google 드라이브 계정 추가 * 를 클릭합니다.

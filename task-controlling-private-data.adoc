@@ -207,7 +207,7 @@ image:screenshot_cloud_compliance_filter.gif["특정 작업 환경의 조사 결
 
 image:screenshot_compliance_investigation_filtered.png["조사 페이지에서 결과를 구체화할 때 사용할 수 있는 필터의 스크린샷."]
 
-* 최상위 탭을 사용하면 파일(비정형 데이터), 디렉토리(비정형 데이터) 또는 데이터베이스(구조화된 데이터)의 데이터를 볼 수 있습니다.
+* 최상위 탭을 사용하면 파일(구조화되지 않은 데이터), 디렉토리(폴더 및 파일 공유) 또는 데이터베이스(구조화된 데이터)에서 데이터를 볼 수 있습니다.
 * 각 열의 맨 위에 있는 컨트롤을 사용하여 결과를 숫자 또는 사전순으로 정렬할 수 있습니다.
 * 왼쪽 창 필터를 사용하면 다음 속성 중에서 선택하여 결과를 구체화할 수 있습니다.
 +
@@ -219,7 +219,7 @@ image:screenshot_compliance_investigation_filtered.png["조사 페이지에서 �
 | 정책 | 정책 또는 정책을 선택합니다. 이동 link:task-org-private-data.html#controlling-your-data-using-policies["여기"^] 기존 정책 목록을 보고 고유한 사용자 지정 정책을 만들려면 
 
 
-| 사용 권한을 엽니다 | 사용 권한 유형을 선택합니다 
+| 사용 권한을 엽니다 | 데이터 및 폴더/공유 내에서 사용 권한 유형을 선택합니다 
 
 
 | 사용자/그룹 권한 | 하나 이상의 사용자 이름 및/또는 그룹 이름을 선택하거나 부분 이름을 입력합니다 
@@ -291,3 +291,5 @@ image:screenshot_compliance_investigation_filtered.png["조사 페이지에서 �
 | 할당 대상 | 파일이 할당된 사람의 이름을 선택합니다 
 |===
 
+
+버튼 모음과 정책에서 사용할 수 있는 작업은 현재 "디렉토리" 수준에서 지원되지 않습니다.
