@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="조직의 개인 데이터 및 민감한 개인 데이터에 대한 세부 정보를 확인하여 개인 데이터를 제어할 수 있습니다. Cloud Data Sense가 데이터에서 발견한 범주와 파일 형식을 검토하여 가시성을 확보할 수도 있습니다.">
-  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, highlights, policies"><!-- Icons -->
+  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies"><!-- Icons -->
   <link rel="icon" href="/ko-kr/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 계정
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-file-shares.html">
         파일 공유
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:34:13 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:18:56 +0000">05/12/2022</time>
     
   
 
@@ -806,7 +810,7 @@
 <li>
 <p>특정 파일에 대한 세부 정보를 검색, 정렬, 확장하고 * 결과 조사 * 를 클릭하여 마스킹된 정보를 보거나 파일 목록을 다운로드하여 데이터를 조사합니다.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.gif" alt="조사 결과 를 클릭한 후의 세부 정보 스크린샷"></span></p>
+<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.png" alt="조사 결과 를 클릭한 후의 세부 정보 스크린샷"></span></p>
 </div>
 </li>
 </ol>
@@ -976,13 +980,16 @@
 <p>파일에 대한 액세스 권한이 있는 모든 사용자 또는 그룹의 목록과 사용 권한 유형을 보려면 * 모든 권한 보기 * 를 클릭합니다. 이 버튼은 CIFS 공유, SharePoint, OneDrive에 있는 파일에만 사용할 수 있습니다.</p>
 </div>
 <div class="paragraph">
+<p>사용자 및 그룹 이름 대신 SID(보안 식별자)가 표시되는 경우 Active Directory를 데이터 센스에 통합해야 합니다. <a href="task-add-active-directory-datasense.html">"이 작업을 수행하는 방법을 확인하십시오"</a>.</p>
+</div>
+<div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_permissions.png" alt="자세한 파일 사용 권한을 보여 주는 스크린샷"></span></p>
 </div>
 <div class="paragraph">
 <p>사용자 또는 그룹의 이름을 클릭하면 "사용자/그룹 권한" 필터에 해당 사용자 또는 그룹의 이름과 함께 조사 페이지가 표시되어 사용자 또는 그룹이 액세스할 수 있는 모든 파일을 볼 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>사용자 및 그룹 이름 대신 SID(보안 식별자)가 표시되는 경우 Active Directory를 데이터 센스에 통합해야 합니다. <a href="task-add-active-directory-datasense.html">"이 작업을 수행하는 방법을 확인하십시오"</a>.</p>
+<p>또한 를 클릭할 수도 있습니다 <span class="image"><img src="./media/button_down_caret.png" alt="아래쪽 캐럿"></span> 모든 그룹에 대해 그룹에 속한 사용자 목록을 표시합니다.</p>
 </div>
 </div>
 </div>
@@ -1059,7 +1066,10 @@
 <h2 id="데이터-조사-페이지의-데이터-필터링">데이터 조사 페이지의 데이터 필터링</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>조사 페이지의 내용을 필터링하여 원하는 결과만 표시할 수 있습니다. 내용을 구체화된 후 CSV 버전의 콘텐츠를 보고서로 저장하려면 을 클릭합니다 <span class="image"><img src="./media/button_download.png" alt="다운로드 버튼"></span> 단추를 클릭합니다.</p>
+<p>조사 페이지의 내용을 필터링하여 원하는 결과만 표시할 수 있습니다. 이 기능은 데이터를 구체화한 후 페이지 상단의 단추 모음을 사용하여 파일 복사, 파일 이동, 파일에 태그 또는 AIP 레이블 추가 등의 다양한 작업을 수행할 수 있으므로 매우 강력한 기능입니다.</p>
+</div>
+<div class="paragraph">
+<p>페이지 내용을 구체화한 후 보고서로 다운로드하려면 을 클릭합니다 <span class="image"><img src="./media/button_download.png" alt="다운로드 버튼"></span> 버튼을 클릭하여 .csv 파일을 저장합니다.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_investigation_filtered.png" alt="조사 페이지에서 결과를 구체화할 때 사용할 수 있는 필터의 스크린샷."></span></p>
@@ -1067,7 +1077,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>최상위 탭을 사용하면 파일(비정형 데이터) 또는 데이터베이스(구조화된 데이터)의 데이터를 볼 수 있습니다.</p>
+<p>최상위 탭을 사용하면 파일(비정형 데이터), 디렉토리(비정형 데이터) 또는 데이터베이스(구조화된 데이터)의 데이터를 볼 수 있습니다.</p>
 </li>
 <li>
 <p>각 열의 맨 위에 있는 컨트롤을 사용하여 결과를 숫자 또는 사전순으로 정렬할 수 있습니다.</p>
@@ -1088,7 +1098,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">정책</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">정책 또는 정책을 선택합니다. 이동 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"여기"</a> 기존 정책 목록을 보고 고유한 정책을 만들려면</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">정책 또는 정책을 선택합니다. 이동 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"여기"</a> 기존 정책 목록을 보고 고유한 사용자 지정 정책을 만들려면</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">사용 권한을 엽니다</p></td>
@@ -1096,7 +1106,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">사용자/그룹 권한</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">사용자 이름 또는 그룹 이름 또는 부분 이름을 입력합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">하나 이상의 사용자 이름 및/또는 그룹 이름을 선택하거나 부분 이름을 입력합니다</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">파일 소유자</p></td>
@@ -1104,11 +1114,11 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">라벨</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AIP 레이블을 선택합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">를 선택합니다 <a href="task-org-private-data.html#categorizing-your-data-using-aip-labels">"AIP 레이블"</a> 파일에 할당됩니다</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">작업 환경 유형</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">작업 환경의 유형을 선택합니다. OneDrive와 SharePoint는 "클라우드 앱"으로 분류됩니다.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">작업 환경의 유형을 선택합니다. OneDrive, SharePoint 및 Google Drive는 "클라우드 앱"으로 분류됩니다.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">작업 환경 이름</p></td>
@@ -1141,6 +1151,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">데이터 제목</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">데이터 주체의 전체 이름 또는 알려진 식별자를 입력합니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">디렉터리 유형</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"공유" 또는 "폴더"와 같은 디렉토리 유형을 선택합니다.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">파일 형식</p></td>
@@ -1176,7 +1190,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">태그</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">태그를 선택합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">를 선택합니다 <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"태그 또는 태그"</a> 파일에 할당됩니다</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">할당 대상</p></td>
@@ -1184,109 +1198,6 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>필터 창 상단의 _Policies_filter에는 저장된 데이터베이스 쿼리 또는 즐겨찾기 목록과 같이 일반적으로 요청된 필터 조합을 제공하는 사용자 지정 필터가 나열됩니다. 이동 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"여기"</a> 미리 정의된 정책 목록을 보고 사용자 지정 정책을 만드는 방법을 확인합니다.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="각-파일-목록-보고서csv-파일에-포함된-내용">각 파일 목록 보고서(CSV 파일)에 포함된 내용</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>각 조사 페이지에서 을(를) 클릭할 수 있습니다 <span class="image"><img src="./media/button_download.png" alt="다운로드 버튼"></span> 버튼을 클릭하여 식별된 파일에 대한 세부 정보가 포함된 파일 목록(CSV 형식)을 다운로드합니다. Data Sense가 정형(데이터베이스 테이블) 데이터와 비정형(파일) 데이터를 모두 스캔하는 경우 다운로드한 ZIP 파일에 두 개의 보고서가 포함되어 있습니다.</p>
-</div>
-<div class="paragraph">
-<p>10,000개가 넘는 결과가 있는 경우 최상위 10,000개만 목록에 표시됩니다.</p>
-</div>
-<div class="paragraph">
-<p>비정형 데이터 보고서 * 에는 다음 정보가 포함됩니다.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>파일 이름입니다</p>
-</li>
-<li>
-<p>위치 유형</p>
-</li>
-<li>
-<p>작업 환경 이름입니다</p>
-</li>
-<li>
-<p>스토리지 저장소(예: 볼륨, 버킷, 공유)</p>
-</li>
-<li>
-<p>작업 환경 유형입니다</p>
-</li>
-<li>
-<p>파일 경로</p>
-</li>
-<li>
-<p>파일 형식</p>
-</li>
-<li>
-<p>파일 크기</p>
-</li>
-<li>
-<p>만든 시간</p>
-</li>
-<li>
-<p>마지막 수정</p>
-</li>
-<li>
-<p>마지막 액세스</p>
-</li>
-<li>
-<p>파일 소유자</p>
-</li>
-<li>
-<p>범주</p>
-</li>
-<li>
-<p>개인 정보</p>
-</li>
-<li>
-<p>민감한 개인 정보</p>
-</li>
-<li>
-<p>삭제 감지 날짜입니다</p>
-<div class="paragraph">
-<p>삭제 감지 날짜는 파일이 삭제되거나 이동된 날짜를 나타냅니다. 이렇게 하면 중요한 파일이 이동된 시기를 식별할 수 있습니다. 삭제된 파일은 대시보드나 조사 페이지에 나타나는 파일 번호 개수에 포함되지 않습니다. 파일은 CSV 보고서에만 나타납니다.</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Structured Data Report * 에는 다음 정보가 포함됩니다.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>DB 테이블 이름입니다</p>
-</li>
-<li>
-<p>위치 유형</p>
-</li>
-<li>
-<p>작업 환경 이름입니다</p>
-</li>
-<li>
-<p>스토리지 저장소(예: 스키마)</p>
-</li>
-<li>
-<p>열 개수</p>
-</li>
-<li>
-<p>행 수</p>
-</li>
-<li>
-<p>개인 정보</p>
-</li>
-<li>
-<p>민감한 개인 정보</p>
 </li>
 </ul>
 </div>

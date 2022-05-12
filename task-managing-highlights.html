@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 계정
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-file-shares.html">
         파일 공유
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:34:13 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:18:56 +0000">05/12/2022</time>
     
   
 
@@ -773,7 +777,16 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="참고">
 </td>
 <td class="content">
-이 섹션에 설명된 기능은 데이터 소스에서 전체 분류 검사를 수행하도록 선택한 경우에만 사용할 수 있습니다. 매핑 전용 스캔이 있는 데이터 원본은 파일 수준 세부 정보를 표시하지 않습니다.
+<div class="ulist">
+<ul>
+<li>
+<p>이 섹션에 설명된 기능은 데이터 소스에서 전체 분류 검사를 수행하도록 선택한 경우에만 사용할 수 있습니다. 매핑 전용 스캔이 있는 데이터 원본은 파일 수준 세부 정보를 표시하지 않습니다.</p>
+</li>
+<li>
+<p>Google Drive 계정의 데이터는 현재 이러한 기능을 사용할 수 없습니다.</p>
+</li>
+</ul>
+</div>
 </td>
 </tr>
 </table>
@@ -1000,9 +1013,6 @@
 </li>
 <li>
 <p>선택한 모든 파일은 동일한 소스 저장소(ONTAP 볼륨, S3 버킷, NFS 또는 CIFS 공유 등)에서 가져온 것이어야 합니다.</p>
-</li>
-<li>
-<p>한 번에 최대 200,000개의 파일을 복사할 수 있습니다.</p>
 </li>
 <li>
 <p>Cloud Sync 서비스를 활성화하고 소스 시스템과 타겟 시스템 간에 파일을 전송하는 데 사용할 수 있는 데이터 브로커를 하나 이상 구성해야 합니다. 부터 시작되는 Cloud Sync 요구 사항을 검토합니다 <a href="https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html" target="_blank" rel="noopener">"빠른 시작 설명"</a>.</p>

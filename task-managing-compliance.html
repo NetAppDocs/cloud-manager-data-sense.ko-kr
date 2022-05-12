@@ -9,14 +9,14 @@
   <meta property="og:title" content="클라우드 데이터 센스에서 데이터 소스를 제거합니다 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-compliance.html" />
-	<meta property="og:description" content="필요한 경우 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정 또는 SharePoint 계정을 검색하지 못하도록 Cloud Data Sense를 중지할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense ..." />
+	<meta property="og:description" content="필요한 경우, 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정, Google Drive 계정, SharePoint 계정을 사용할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 ..." />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="필요한 경우 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정 또는 SharePoint 계정을 검색하지 못하도록 Cloud Data Sense를 중지할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense ...">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="필요한 경우, 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정, Google Drive 계정, SharePoint 계정을 사용할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 ...">
   <meta name="keywords" content=" remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense"><!-- Icons -->
   <link rel="icon" href="/ko-kr/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 계정
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive 계정
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-file-shares.html">
         파일 공유
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:34:13 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:18:56 +0000">05/12/2022</time>
     
   
 
@@ -745,7 +749,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>필요한 경우 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정 또는 SharePoint 계정을 검색하지 못하도록 Cloud Data Sense를 중지할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 있습니다.</p>
+<p>필요한 경우, 하나 이상의 작업 환경, 데이터베이스, 파일 공유 그룹, OneDrive 계정, Google Drive 계정, SharePoint 계정을 사용할 수 있습니다. 작업 환경에서 데이터 센스를 더 이상 사용하지 않으려면 Cloud Data Sense 인스턴스도 삭제할 수 있습니다.</p>
 </div>
 </div>
 </div>
@@ -798,16 +802,16 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="cloud-data-sense에서-onedrive-또는-sharepoint-계정-제거">Cloud Data Sense에서 OneDrive 또는 SharePoint 계정 제거</h2>
+<h2 id="클라우드-데이터-센스에서-onedrive-sharepoint-또는-google-drive-계정을-제거합니다">클라우드 데이터 센스에서 OneDrive, SharePoint 또는 Google Drive 계정을 제거합니다</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>특정 OneDrive 계정 또는 특정 SharePoint 계정에서 사용자 파일을 더 이상 스캔하지 않으려는 경우 Cloud Data Sense 인터페이스에서 계정을 삭제하고 모든 검사를 중지할 수 있습니다.</p>
+<p>특정 OneDrive 계정, 특정 SharePoint 계정 또는 Google Drive 계정에서 사용자 파일을 더 이상 스캔하지 않으려면 Cloud Data Sense 인터페이스에서 계정을 삭제하고 모든 스캔을 중지할 수 있습니다.</p>
 </div>
 <div class="olist arabic">
 <div class="title">단계</div>
 <ol class="arabic">
 <li>
-<p>Configuration_ 페이지에서 을 클릭합니다 <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="자세히 단추"></span> 단추를 클릭하고 * OneDrive 계정 제거 * 또는 * SharePoint 계정 제거 * 를 클릭합니다.</p>
+<p>Configuration_ 페이지에서 을 클릭합니다 <span class="image"><img src="./media/screenshot_gallery_options.gif" alt="자세히 단추"></span> 단추를 클릭하고 * OneDrive 계정 제거 *, * SharePoint 계정 제거 * 또는 * Google 드라이브 계정 제거 * 를 클릭합니다.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_remove_onedrive.png" alt="스캔 구성 페이지의 OneDrive 제거 단추 스크린샷"></span></p>
 </div>
