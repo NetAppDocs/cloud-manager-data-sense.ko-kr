@@ -141,15 +141,15 @@ image:screenshot_compliance_file_details.png["데이터 조사 페이지의 파�
 
 == 파일에 대한 권한 보기
 
-파일에 대한 액세스 권한이 있는 모든 사용자 또는 그룹의 목록과 사용 권한 유형을 보려면 * 모든 권한 보기 * 를 클릭합니다. 이 버튼은 CIFS 공유, SharePoint, OneDrive에 있는 파일에만 사용할 수 있습니다.
+파일에 대한 액세스 권한이 있는 모든 사용자 또는 그룹의 목록과 사용 권한 유형을 보려면 * 모든 권한 보기 * 를 클릭합니다. 이 버튼은 CIFS 공유, SharePoint, OneDrive의 데이터에만 사용할 수 있습니다.
 
 사용자 및 그룹 이름 대신 SID(보안 식별자)가 표시되는 경우 Active Directory를 데이터 센스에 통합해야 합니다. link:task-add-active-directory-datasense.html["이 작업을 수행하는 방법을 확인하십시오"].
 
 image:screenshot_compliance_permissions.png["자세한 파일 사용 권한을 보여 주는 스크린샷"]
 
-사용자 또는 그룹의 이름을 클릭하면 "사용자/그룹 권한" 필터에 해당 사용자 또는 그룹의 이름과 함께 조사 페이지가 표시되어 사용자 또는 그룹이 액세스할 수 있는 모든 파일을 볼 수 있습니다.
+를 클릭할 수 있습니다 image:button_down_caret.png["아래쪽 캐럿"] 모든 그룹에 대해 그룹에 속한 사용자 목록을 표시합니다.
 
-또한 를 클릭할 수도 있습니다 image:button_down_caret.png["아래쪽 캐럿"] 모든 그룹에 대해 그룹에 속한 사용자 목록을 표시합니다.
+또한 사용자 또는 그룹의 이름을 클릭하면 "사용자/그룹 권한" 필터에 입력된 사용자 또는 그룹의 이름과 함께 조사 페이지가 표시되어 사용자 또는 그룹이 액세스할 수 있는 모든 파일을 볼 수 있습니다.
 
 
 
@@ -203,7 +203,7 @@ image:screenshot_cloud_compliance_filter.gif["특정 작업 환경의 조사 결
 
 조사 페이지의 내용을 필터링하여 원하는 결과만 표시할 수 있습니다. 이 기능은 데이터를 구체화한 후 페이지 상단의 단추 모음을 사용하여 파일 복사, 파일 이동, 파일에 태그 또는 AIP 레이블 추가 등의 다양한 작업을 수행할 수 있으므로 매우 강력한 기능입니다.
 
-페이지 내용을 구체화한 후 보고서로 다운로드하려면 을 클릭합니다 image:button_download.png["다운로드 버튼"] 버튼을 클릭하여 .csv 파일을 저장합니다.
+페이지 내용을 구체화한 후 보고서로 다운로드하려면 을 클릭합니다 image:button_download.png["다운로드 버튼"] 단추를 클릭합니다. 보고서를 .csv 파일(최대 5,000개의 데이터 행 포함) 또는 NFS 공유로 내보내는 .JSON 파일(행 수 무제한 포함)로 로컬로 저장할 수 있습니다. link:task-generating-compliance-reports.html#data-investigation-report["데이터 조사 보고서에 대한 자세한 내용은 여기를 참조하십시오"].
 
 image:screenshot_compliance_investigation_filtered.png["조사 페이지에서 결과를 구체화할 때 사용할 수 있는 필터의 스크린샷."]
 
@@ -247,6 +247,9 @@ image:screenshot_compliance_investigation_filtered.png["조사 페이지에서 �
 
 
 | 감도 수준 | 감도 수준을 선택합니다 
+
+
+| 식별자 수입니다 | 파일당 감지된 중요 식별자의 범위를 선택합니다. 개인 데이터 및 민감한 개인 데이터가 포함됩니다. 
 
 
 | 개인 데이터 | 를 선택합니다 link:reference-private-data-categories.html#types-of-personal-data["개인 데이터의 유형입니다"^] 

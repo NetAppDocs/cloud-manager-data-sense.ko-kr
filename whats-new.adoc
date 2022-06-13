@@ -18,6 +18,44 @@ summary: 클라우드 데이터 센스의 새로운 기능에 대해 알아보�
 
 
 
+== 2022년 6월 12일
+
+
+
+=== 이제 데이터 조사 페이지에서 결과를 .JSON 보고서로 다운로드할 수 있습니다
+
+데이터 조사 페이지에서 데이터를 필터링한 후에는 데이터를 .JSON 파일에 보고서로 저장하여 NFS 공유로 내보낼 수 있으며 로컬 시스템의 .csv 파일에 데이터를 저장할 수도 있습니다. 데이터 센스에 내보내기 액세스에 대한 올바른 권한이 있는지 확인하십시오. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["데이터 조사 페이지에서 보고서를 만드는 방법을 알아봅니다"].
+
+
+
+=== Data Sense UI에서 Data Sense를 제거할 수 있습니다
+
+Data Sense를 제거하여 호스트에서 소프트웨어를 영구적으로 제거할 수 있으며, 클라우드 배포의 경우 Data Sense가 배포된 가상 머신/인스턴스를 삭제할 수 있습니다. 인스턴스를 삭제하면 데이터 센스에서 스캔한 모든 인덱싱된 정보가 영구적으로 삭제됩니다. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["방법을 확인하십시오"].
+
+
+
+=== 이제 감사 로깅을 사용하여 Data Sense가 수행한 작업 기록을 추적할 수 있습니다
+
+감사 로그는 Data Sense가 검색 중인 모든 작업 환경 및 데이터 소스의 파일에 대해 Data Sense가 수행한 관리 활동을 추적합니다. 작업은 사용자 생성(파일 삭제, 정책 생성 등) 또는 생성된 정책(파일에 레이블 자동 추가, 파일 자동 삭제 등)이 될 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["감사 로그에 대한 자세한 내용은 을 참조하십시오"].
+
+
+
+=== 데이터 조사 페이지의 중요 ID 수에 대한 새 필터
+
+“Number of identifier(식별자 수)” 필터를 사용하면 개인 데이터와 민감한 개인 데이터를 포함하여 특정 수의 중요한 식별자가 있는 파일을 나열할 수 있습니다. 1-10 또는 501-1000과 같은 범위를 선택하여 해당 수의 중요한 식별자가 포함된 파일만 볼 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["데이터를 조사하는 데 사용할 수 있는 모든 필터 목록을 확인하십시오"].
+
+
+
+=== 이제 작성한 기존 정책을 편집할 수 있습니다
+
+이전에 만든 사용자 지정 정책을 변경해야 하는 경우 새 정책을 만드는 대신 정책을 편집할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["정책을 편집하는 방법을 알아봅니다"].
+
+
+
 == 2022년 5월 11일
 
 
@@ -94,7 +132,7 @@ Data Sense는 지금 OneDrive 계정 및 SharePoint 계정에서 스캔되는 �
 
 === 어두운 사이트에 배포할 때 OneDrive 및 SharePoint 데이터 스캔 지원
 
-인터넷에 액세스할 수 없는 온프레미스 사이트의 호스트에 Cloud Data Sense를 배포했다면 이제 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 검색할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["다음 끝점에 대한 액세스를 허용해야 합니다."]
+인터넷에 액세스할 수 없는 온프레미스 사이트의 호스트에 Cloud Data Sense를 배포했다면 이제 OneDrive 계정 또는 SharePoint 계정에서 로컬 데이터를 검색할 수 있습니다. link:task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["다음 끝점에 대한 액세스를 허용해야 합니다."]
 
 
 
@@ -389,19 +427,3 @@ Cloud Data Sense는 .dcm 및 .dicom의 두 가지 추가 파일 유형에서 개
 === 이제 데이터 센스에서 파일의 추가 속성을 추적합니다
 
 CSV 형식으로 출력하는 보고서에 파일 크기, 만든 날짜 및 마지막으로 수정한 날짜 값이 추가되었습니다. 만든 날짜 는 조사 페이지 검색 결과의 범위를 좁히는 데 사용할 수 있는 새 필터이기도 합니다.
-
-
-
-== 2021년 5월 5일
-
-
-
-=== Azure Blob에 저장된 데이터를 스캔할 수 있습니다
-
-이제 를 사용할 때 Azure Blob에 저장된 데이터 스캔이 지원됩니다 https://min.io/["MinIO 서비스"^]. 을 참조하십시오 link:task-scanning-object-storage.html["S3 프로토콜을 사용하는 오브젝트 스토리지 스캔"] 를 참조하십시오.
-
-
-
-=== 추가적인 개인 데이터 유형은 데이터 센스로 식별할 수 있습니다
-
-Cloud Data Sense는 이제 파일에서 오스트리아 SSN을 찾을 수 있습니다.

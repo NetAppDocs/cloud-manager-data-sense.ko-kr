@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: task-audit-data-sense-actions.html 
+keywords: compliance, actions, view progress 
+summary: Data Sense는 모든 작업 환경의 파일에 대해 수행된 관리 작업과 데이터 센스에서 스캐닝하고 있는 데이터 소스를 기록합니다. Data Sense 감사 로그 파일의 내용을 보거나 다운로드하여 어떤 파일 변경이 언제 발생했는지 확인할 수 있습니다. 
+---
+= 데이터 감지 작업의 기록 감사
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense는 모든 작업 환경의 파일에 대해 수행된 관리 작업과 데이터 센스에서 스캐닝하고 있는 데이터 소스를 기록합니다. Data Sense 감사 로그 파일의 내용을 보거나 다운로드하여 어떤 파일 변경이 언제 발생했는지 확인할 수 있습니다.
+
+예를 들어, 어떤 요청이 실행되었는지, 요청 시간, 파일이 삭제된 경우 소스 위치 등의 세부 정보 또는 파일이 이동된 경우 소스 및 대상 위치를 확인할 수 있습니다.
+
+
+
+== 로그 파일 내용
+
+감사 로그의 각 줄에는 다음 형식의 정보가 포함되어 있습니다.
+
+'<full date>|<status>|datasense_audit_logger|<module>|0|0|파일 <full file path>이(가) 장치 <device path>-<result>'에서 삭제되었습니다
+
+* 날짜 및 시간 - 이벤트의 전체 타임 스탬프입니다
+* 상태 - 정보, 경고
+* 작업 유형(삭제, 복사, 이동, 정책 생성, 정책 업데이트, JSON 보고서 다운로드 등)
+* 파일 이름(작업이 파일과 관련된 경우)
+* 작업에 대한 세부 정보 – 수행한 작업: 작업에 따라 다릅니다
++
+** 정책 이름입니다
+** 이동 - 원본 및 대상
+** 복사 - 원본 및 대상
+** 태그 - 태그 이름
+** Assign to – user name(할당 대상 - 사용자 이름)에 대해
+** 이메일 알림의 경우 – 이메일 주소/계정입니다
+
+
+
+
+예를 들어, 로그 파일의 다음 줄은 성공적인 복사 작업과 실패한 복제 작업을 보여 줍니다.
+
+....
+2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /idanCIFS_share/data/dop1/random_positives.tsv from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
+2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /idanCIFS_share/data/compliance-netapp.tar.gz from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== 로그 파일에 액세스 중입니다
+
+감사 로그는 데이터 감지 시스템의 '/opt/netapp/audit_logs/<date>/DataSense_audit_log_<date>_<process_name>.log'에 있습니다
+
+온-프레미스 배포의 경우 로그 파일로 직접 이동할 수 있습니다.
+
+Data Sense가 클라우드에 배포되면 데이터 감지 인스턴스에 SSH를 사용할 수 있습니다. 사용자 및 암호를 입력하거나 Cloud Manager Connector 설치 중에 제공한 SSH 키를 사용하여 시스템에 SSH를 수행할 수 있습니다. SSH 명령은 다음과 같습니다.
+
+ ssh -i <path to the ssh key> <machine user>@<datasense ip>
+* ssh 키에 대한 경로> = ssh 인증 키의 위치입니다
+* 컴퓨터 사용자>:
++
+** AWS = 의 경우 <EC2-user>를 사용합니다
+** Azure의 경우: Cloud Manager 인스턴스에 대해 생성한 사용자를 사용합니다
+** GCP의 경우: Cloud Manager 인스턴스에 대해 생성한 사용자를 사용합니다
+
+
+* data sense ip> = 가상 시스템 인스턴스의 IP 주소입니다
+
+
+시스템에 액세스하려면 보안 그룹 인바운드 규칙을 수정해야 합니다. 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["포트 및 보안 그룹"^] 를 참조하십시오.

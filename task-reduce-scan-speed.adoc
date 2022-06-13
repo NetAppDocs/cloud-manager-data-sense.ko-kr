@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task-reduce-scan-speed.html 
+keywords: slow scans, reduce speed 
+summary: '데이터 스캔은 스토리지 시스템과 데이터에 경미한 영향을 줍니다. 그러나 아주 작은 충격에도 신경 쓰면 데이터 센스를 구성하여 "느린" 스캔을 수행할 수 있습니다.' 
+---
+= 데이터 감지 스캔 속도를 줄입니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+데이터 스캔은 스토리지 시스템과 데이터에 경미한 영향을 줍니다. 그러나 아주 작은 충격에도 신경 쓰면 데이터 센스를 구성하여 "느린" 스캔을 수행할 수 있습니다.
+
+이 옵션을 설정하면 모든 데이터 소스에서 느린 스캔이 사용됩니다. 단일 작업 환경 또는 데이터 원본에 대해 느린 스캔을 구성할 수 없습니다.
+
+
+TIP: 데이터베이스를 스캔할 때는 스캔 속도를 줄일 수 없습니다.
+
+.단계
+. Configuration_page 하단에서 슬라이더를 오른쪽으로 이동하여 저속 스캔을 활성화합니다.
++
+image:screenshot_slow_scan_enable.png["저속 규정 준수 스캔을 활성화하는 방법을 보여 주는 스크린샷"]
+
++
+구성 페이지 맨 위에는 저속 스캔이 활성화되어 있습니다.
+
++
+image:screenshot_slow_scan_disable.png["저속 규정 준수 스캔을 활성화하는 방법을 보여 주는 스크린샷"]
+
+. 이 메시지에서 * Disable * 을 클릭하여 저속 스캔을 비활성화할 수 있습니다.
+

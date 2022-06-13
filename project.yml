@@ -10,8 +10,6 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: 모든 Cloud Manager 설명서
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: Cloud Data Sense 문서
     url: "/index.html"
   - title: 릴리스 정보
@@ -66,16 +64,26 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: 개인 데이터를 관리합니다
       url: "/task-managing-highlights.html"
-    - title: 사용자 지정 개인 데이터 식별자를 추가합니다
-      url: "/task-managing-data-fusion.html"
     - title: 보고서를 생성합니다
       url: "/task-generating-compliance-reports.html"
     - title: SAR에 응답합니다
       url: "/task-responding-to-dsar.html"
     - title: 개인 데이터의 범주입니다
       url: "/reference-private-data-categories.html"
+  - title: 클라우드 데이터 센스를 관리합니다
+    entries:
+    - title: 사용자 지정 개인 데이터 식별자를 추가합니다
+      url: "/task-managing-data-fusion.html"
+    - title: 데이터 감지 작업의 상태를 봅니다
+      url: "/task-view-compliance-actions.html"
+    - title: 데이터 감지 작업의 기록을 감사합니다
+      url: "/task-audit-data-sense-actions.html"
+    - title: 데이터 감지 스캔 속도를 줄입니다
+      url: "/task-reduce-scan-speed.html"
     - title: 데이터 센스에서 데이터 소스를 제거합니다
       url: "/task-managing-compliance.html"
+    - title: 데이터 센스를 제거합니다
+      url: "/task-uninstall-data-sense.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
@@ -173,3 +181,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-data-sense.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud data sense, delete cloud data sense, terminate, deactivate, data sense 
+summary: 데이터 감지 소프트웨어를 제거하여 문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거할 수 있습니다. 또한 인스턴스를 삭제하면 인덱싱된 데이터가 있는 연결된 디스크도 삭제됩니다. 데이터 센스에서 검색한 모든 정보는 영구적으로 삭제됩니다. 
+---
+= 클라우드 데이터 센스를 제거하는 중입니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+데이터 감지 소프트웨어를 제거하여 문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거할 수 있습니다. 또한 인스턴스를 삭제하면 인덱싱된 데이터가 있는 연결된 디스크도 삭제됩니다. 데이터 센스에서 검색한 모든 정보는 영구적으로 삭제됩니다.
+
+클라우드에 Data Sense를 배포했는지 또는 온프레미스 호스트에 배포했는지의 여부에 따라 필요한 단계가 달라집니다.
+
+
+
+== 클라우드 배포에서 Data Sense를 제거합니다
+
+Data Sense를 더 이상 사용하지 않으려는 경우 클라우드 공급자에서 Cloud Data Sense 인스턴스를 제거하고 삭제할 수 있습니다.
+
+. 데이터 감지 페이지 상단에서 를 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] 단추를 클릭한 다음 * 데이터 감지 제거 * 를 클릭합니다.
++
+image:screenshot_compliance_uninstall.png["데이터 감지 소프트웨어를 제거하는 단추 스크린샷."]
+
+. 데이터 감지 제거 대화 상자에서 * 제거 * 를 입력하여 인스턴스 및 모든 관련 데이터를 삭제할 것인지 확인한 다음 * 제거 * 를 클릭합니다.
+
+
+클라우드 공급자의 콘솔로 이동하여 Cloud Data Sense 인스턴스도 삭제할 수 있습니다. 인스턴스의 이름은 _CloudCompliance_이며 생성된 해시(UUID)와 연결됩니다. 예: _CloudCompliance-16b6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+== 사내 배포에서 Data Sense를 제거합니다
+
+Data Sense를 더 이상 사용하지 않거나 재설치가 필요한 문제가 있는 경우 호스트에서 Data Sense를 제거할 수 있습니다.
+
+. 데이터 감지 페이지 상단에서 를 클릭합니다 image:screenshot_gallery_options.gif["자세히 단추"] 단추를 클릭한 다음 * 데이터 감지 제거 * 를 클릭합니다.
++
+image:screenshot_compliance_uninstall.png["데이터 감지 소프트웨어를 제거하는 단추 스크린샷."]
+
+. 데이터 감지 제거 대화 상자에서 * 제거 * 를 입력하여 모든 구성 정보를 지우고 * 제거 * 를 클릭합니다.
+. 호스트에서 제거를 완료하려면 호스트 시스템에서 제거 스크립트를 실행합니다. 예를 들면 다음과 같습니다.
++
+[source, cli]
+----
+uninstall.sh
+----
+
