@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">한국어</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">한국어</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-manager-data-sense/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/ko-kr/cloud-manager-data-sense/pdfs/fullsite-sidebar/클라우드_데이터_감지_설명서.pdf" >
           <img src="/ko-kr/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
-
-
 
 
 
@@ -515,6 +505,39 @@
 
 
 
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-manager-data-sense/pdfs/sidebar/클라우드_데이터_센스를_관리합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
+            클라우드 데이터 센스를 관리합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+
 
 
 
@@ -594,10 +617,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        모든 Cloud Manager 설명서
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/cloud-manager-family/"><img src="/ko-kr/cloud-manager-data-sense/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/index.html">
         Cloud Data Sense 문서
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/whats-new.html">
         릴리스 정보
@@ -655,16 +678,27 @@
         개인 데이터를 구성합니다
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-managing-highlights.html">
         개인 데이터를 관리합니다
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-managing-data-fusion.html">
-        사용자 지정 개인 데이터 식별자를 추가합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-generating-compliance-reports.html">
         보고서를 생성합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-responding-to-dsar.html">
         SAR에 응답합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/reference-private-data-categories.html">
         개인 데이터의 범주입니다
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 클라우드 데이터 센스를 관리합니다</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-managing-data-fusion.html">
+        사용자 지정 개인 데이터 식별자를 추가합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-view-compliance-actions.html">
+        데이터 감지 작업의 상태를 봅니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-audit-data-sense-actions.html">
+        데이터 감지 작업의 기록을 감사합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-reduce-scan-speed.html">
+        데이터 감지 스캔 속도를 줄입니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-managing-compliance.html">
         데이터 센스에서 데이터 소스를 제거합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-manager-data-sense/task-uninstall-data-sense.html">
+        데이터 센스를 제거합니다
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 지식 및 지원</div>
       </a>
@@ -743,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:18:56 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 13:29:42 +0000">06/13/2022</time>
     
   
 
@@ -893,7 +927,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>에서 복사 작업의 진행률을 볼 수 있습니다 <a href="#Viewing the status of your compliance actions">작업 상태 창</a>.</p>
+<p>에서 복사 작업의 진행률을 볼 수 있습니다 <a href="task-view-compliance-actions.html">"작업 상태 창"</a>.</p>
 </div>
 <div class="paragraph">
 <p>파일의 메타데이터 세부 정보를 볼 때 개별 파일을 복사할 수도 있습니다. 파일 복사 * 를 클릭하기만 하면 됩니다.</p>
@@ -983,7 +1017,7 @@
 <p>클론 복제된 새 볼륨은 소스 볼륨과 동일한 애그리게이트에 생성됩니다.</p>
 </div>
 <div class="paragraph">
-<p>에서 클론 작업의 진행률을 볼 수 있습니다 <a href="#Viewing the status of your compliance actions">작업 상태 창</a>.</p>
+<p>에서 클론 작업의 진행률을 볼 수 있습니다 <a href="task-view-compliance-actions.html">"작업 상태 창"</a>.</p>
 </div>
 <div class="paragraph">
 <p>소스 볼륨이 있는 작업 환경에 대해 데이터 센스를 활성화하면 처음에 * 모든 볼륨 매핑 * 또는 * 모든 볼륨 매핑 및 분류 * 를 선택한 경우 데이터 센스에서 복제된 새 볼륨을 자동으로 스캔합니다. 처음에 이러한 선택 항목을 사용하지 않은 경우 이 새 볼륨을 스캔하려면 가 필요합니다 <a href="task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes">"수동으로 볼륨에서 스캔을 활성화합니다"</a>.</p>
@@ -1226,7 +1260,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>에서 삭제 작업의 진행률을 볼 수 있습니다 <a href="#Viewing the status of your compliance actions">작업 상태 창</a>.</p>
+<p>에서 삭제 작업의 진행률을 볼 수 있습니다 <a href="task-view-compliance-actions.html">"작업 상태 창"</a>.</p>
 </div>
 <div class="paragraph">
 <p>파일의 메타데이터 세부 정보를 볼 때 개별 파일을 삭제할 수도 있습니다. 파일 삭제 * 를 클릭하기만 하면 됩니다.</p>
@@ -1289,58 +1323,8 @@
 <p>새 정책이 정책 탭에 나타납니다. 정책과 일치하는 파일은 정책이 실행될 때 하루에 한 번 삭제됩니다.</p>
 </div>
 <div class="paragraph">
-<p>에서 삭제된 파일 목록을 볼 수 있습니다 <a href="#Viewing the status of your compliance actions">작업 상태 창</a>.</p>
+<p>에서 삭제된 파일 목록을 볼 수 있습니다 <a href="task-view-compliance-actions.html">"작업 상태 창"</a>.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="준수-작업의-상태-보기">준수 작업의 상태 보기</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>100개의 파일을 삭제하는 등 여러 파일에 대해 조사 결과 창에서 작업을 실행할 경우 프로세스에 약간의 시간이 걸릴 수 있습니다. 모든 파일에 언제 적용되었는지 알 수 있도록 _Action Status_창에서 이러한 비동기 작업의 상태를 모니터링할 수 있습니다. 이를 통해 성공적으로 완료된 작업, 현재 진행 중인 작업 및 실패한 작업을 볼 수 있으므로 문제를 진단하고 해결할 수 있습니다.</p>
-</div>
-<div class="paragraph">
-<p>상태는 다음과 같습니다.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>완료되었습니다</p>
-</li>
-<li>
-<p>진행 중</p>
-</li>
-<li>
-<p>대기열에 있습니다</p>
-</li>
-<li>
-<p>취소됨</p>
-</li>
-<li>
-<p>실패했습니다</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>참고: "대기 중" 또는 "진행 중" 상태의 작업은 취소할 수 있습니다.</p>
-</div>
-<div class="olist arabic">
-<div class="title">단계</div>
-<ol class="arabic">
-<li>
-<p>데이터 감지 UI의 오른쪽 하단에 * 작업 상태 * 버튼이 있습니다 <span class="image"><img src="./media/button_actions_status.png" alt=""></span>.</p>
-</li>
-<li>
-<p>이 버튼을 클릭하면 최근 20개 작업이 나열됩니다.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_action_status.png" alt="구성 페이지에서 마지막 20개 작업과 해당 상태를 보여 주는 스크린샷"></span></p>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>작업 이름을 클릭하여 해당 작업에 해당하는 세부 정보를 볼 수 있습니다.</p>
 </div>
 </div>
 </div>
@@ -1490,4 +1474,5 @@
     </script>
     <script src='/ko-kr/cloud-manager-data-sense/js/www-ntap.js'></script>
     <script src='/ko-kr/cloud-manager-data-sense/js/tabbed-blocks.js'></script>
+    <script src='/ko-kr/cloud-manager-data-sense/js/sidebar.js'></script>
   </body></html>
