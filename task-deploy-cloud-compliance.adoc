@@ -52,6 +52,10 @@ Connector가 없는 경우 클라우드 공급자에 Connector를 생성합니�
 
 * AWS의 Cloud Volumes ONTAP, ONTAP용 Amazon FSx 또는 AWS S3 버킷에서 데이터를 스캔할 때는 AWS의 커넥터를 사용합니다.
 * Azure 또는 Azure NetApp Files의 Cloud Volumes ONTAP에서 데이터를 스캔할 때 Azure의 커넥터를 사용합니다.
++
+** Azure NetApp Files의 경우 스캔하려는 볼륨과 동일한 영역에 배포해야 합니다.
+
+
 * GCP의 Cloud Volumes ONTAP에서 데이터를 스캔할 때 GCP의 커넥터를 사용합니다.
 
 
@@ -62,7 +66,14 @@ Connector가 없는 경우 클라우드 공급자에 Connector를 생성합니�
 보시다시피 을 사용해야 하는 몇 가지 상황이 있을 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["다중 커넥터"].
 
 
-NOTE: Azure NetApp Files 볼륨을 스캔할 계획이라면 스캔할 볼륨과 동일한 영역에 를 배포해야 합니다.
+
+=== 정부 지역 지원
+
+Connector가 정부 지역(AWS GovCloud, Azure Gov 또는 Azure DoD)에 배포되면 Cloud Data Sense가 지원됩니다. 이러한 방식으로 구축할 경우 Data Sense는 다음과 같은 제한 사항을 따릅니다.
+
+* OneDrive 계정, SharePoint 계정 및 Google Drive 계정을 검색할 수 없습니다.
+* Microsoft Azure 정보 보호(AIP) 레이블 기능은 통합할 수 없습니다.
+
 
 
 
