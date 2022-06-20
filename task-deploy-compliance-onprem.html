@@ -777,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-15 20:31:45 +0000">06/15/2022</time>
+    <time datetime="2022-06-20 14:19:41 +0000">06/20/2022</time>
     
   
 
@@ -839,6 +839,13 @@
 </li>
 <li>
 <p>Azure 또는 Azure NetApp Files의 Cloud Volumes ONTAP에서 데이터를 스캔할 때 Azure의 커넥터를 사용합니다.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Azure NetApp Files의 경우 스캔하려는 볼륨과 동일한 영역에 배포해야 합니다.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>GCP의 Cloud Volumes ONTAP에서 데이터를 스캔할 때 GCP의 커넥터를 사용합니다.</p>
@@ -854,18 +861,6 @@
 <div class="paragraph">
 <p>보시다시피 을 사용해야 하는 몇 가지 상황이 있을 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors">"다중 커넥터"</a>.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="참고">
-</td>
-<td class="content">
-Azure NetApp Files 볼륨을 스캔할 계획이라면 스캔할 볼륨과 동일한 영역에 를 배포해야 합니다.
-</td>
-</tr>
-</table>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -880,6 +875,9 @@ Azure NetApp Files 볼륨을 스캔할 계획이라면 스캔할 볼륨과 동�
 <p>운영 체제: Red Hat Enterprise Linux 또는 CentOS 버전 8.0, 8.1 또는 8.4</p>
 <div class="ulist">
 <ul>
+<li>
+<p>버전 7.8 또는 7.9를 사용할 수 있지만 Linux 커널 버전은 4.14 이상이어야 합니다</p>
+</li>
 <li>
 <p>OS에서 Docker 엔진을 설치할 수 있어야 합니다(예: 필요한 경우 _firewalld_service 사용 안 함).</p>
 </li>
