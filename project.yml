@@ -64,6 +64,8 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: 개인 데이터를 관리합니다
       url: "/task-managing-highlights.html"
+    - title: 스캔 설정을 변경합니다
+      url: task-managing-repo-scanning.html
     - title: 보고서를 생성합니다
       url: "/task-generating-compliance-reports.html"
     - title: SAR에 응답합니다

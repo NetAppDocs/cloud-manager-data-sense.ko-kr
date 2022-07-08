@@ -108,7 +108,7 @@ Cloud Manager가 이 AWS 계정에서 S3 버킷을 자동으로 검색하여 Ama
 사전 요구 사항을 확인한 후 Amazon S3에서 클라우드 데이터 센스를 활성화합니다.
 
 .단계
-. Cloud Manager 상단에서 * Canvas * 를 클릭합니다.
+. Cloud Manager 왼쪽 탐색 메뉴에서 * Canvas * 를 클릭합니다.
 . Amazon S3 작업 환경을 선택합니다.
 +
 image:screenshot_s3_we.gif["Amazon S3 작업 환경 아이콘의 스크린샷"]

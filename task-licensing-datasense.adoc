@@ -119,7 +119,7 @@ Cloud Manager 상단의 * Account * (계정 *) 드롭다운을 선택한 다음 
 Cloud Manager 계정에 대한 Cloud Data Sense 라이센스를 구입한 후 Data Sense 서비스를 사용하려면 Cloud Manager에 라이센스를 추가해야 합니다.
 
 .단계
-. 모든 서비스 > 디지털 지갑 > 데이터 서비스 라이센스 * 를 클릭합니다.
+. Cloud Manager의 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 클릭한 다음 * Data Services Licenses * 탭을 선택합니다.
 . 라이선스 추가 * 를 클릭합니다.
 . Add License_대화 상자에서 라이센스 정보를 입력하고 * Add License * 를 클릭합니다.
 +

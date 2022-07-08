@@ -49,7 +49,7 @@ TIP: Cloud Data Sense를 사용하여 추가 국가 ID 번호 또는 의료 식�
 | 암호 | 예 
 
 
-.42+| 국가 식별자 | 오스트레일리아 TFN(세금 파일 번호) | 예 
+.45+| 국가 식별자 | 오스트레일리아 TFN(세금 파일 번호) | 예 
 
 
 | 오스트레일리아 운전면허증 번호 | 예 
@@ -124,6 +124,9 @@ TIP: Cloud Data Sense를 사용하여 추가 국가 ID 번호 또는 의료 식�
 | 헝가리 세금 식별 번호 | 예 
 
 
+| 인디애나 운전면허증 | 예 
+
+
 | 아일랜드 ID(PPS) | 예 
 
 
@@ -148,6 +151,9 @@ TIP: Cloud Data Sense를 사용하여 추가 국가 ID 번호 또는 의료 식�
 | NHS(National Health Service) 번호 | 예 
 
 
+| 뉴욕 운전면허증 | 예 
+
+
 | 폴란드어 ID(PESEL) | 예 
 
 
@@ -167,6 +173,9 @@ TIP: Cloud Data Sense를 사용하여 추가 국가 ID 번호 또는 의료 식�
 
 
 | 스웨덴 iD | 예 
+
+
+| Texas Driver의 라이센스 | 예 
 
 
 | 영국 ID(Nino) | 예 
