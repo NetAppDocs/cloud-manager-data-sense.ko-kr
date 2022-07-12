@@ -2609,4 +2609,6 @@
   <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">파일이나 디렉터리에 액세스할 수 있는 모든 사용자 또는 그룹의 목록과 해당 권한이 있는 권한 유형을 보려면 * 모든 권한 보기 * 를 클릭합니다. 이 버튼은 CIFS 공유, SharePoint, OneDrive의 데이터에만 사용할 수 있습니다.</block>
   <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">또한, 사용자 또는 그룹의 이름을 클릭하면 "사용자/그룹 권한" 필터에 입력된 사용자 또는 그룹의 이름과 함께 조사 페이지가 표시되어 사용자 또는 그룹이 액세스할 수 있는 모든 파일 및 디렉터리를 볼 수 있습니다.</block>
   <block id="5fbc192bfa4a81daea4e7a6b15e2ade8" category="sidebar">스캔 설정을 변경합니다</block>
+  <block id="3e75ffa254c777c4ea8d93dfbb0b6eba" category="paragraph">+ 데이터 감지 분류 검사로 "마지막 액세스 시간"이 변경되지 않도록 하려면 사용자에게 쓰기 속성 권한이 있는 것이 좋습니다. 가능하면 Active Directory 구성 사용자를 모든 파일에 대한 권한이 있는 조직의 상위 그룹에 구성하는 것이 좋습니다.</block>
+  <block id="8a45623b5a3c251ed21845e747d3e9fa" category="paragraph">CIFS 볼륨/파일 공유의 경우 데이터 감지 분류 검사에서 파일 "마지막 액세스 시간"이 변경되지 않도록 하려면 사용자에게 쓰기 속성 권한이 있는 것이 좋습니다. 가능하면 Active Directory 구성 사용자를 모든 파일에 대한 권한이 있는 조직의 상위 그룹에 구성하는 것이 좋습니다.</block>
 </blocks>
